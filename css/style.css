@@ -427,7 +427,7 @@ input.inputDate::-webkit-calendar-picker-indicator {margin: 0}
 .wrapProgress .listWrap .listType02 {overflow-y:auto;height:41rem;}
 .wrapProgress .listWrap .listType02 li {float:left;padding-left:1.5rem;width:50%;}
 .wrapProgress .listWrap .listType02 li:nth-child(2) {border-top:none;}
-.wrapProgress .listWrap .listType02 li span {overflow:hidden;white-space:nowrap;display:inline-block;text-overflow:ellipsis;max-width:60%;}
+.wrapProgress .listWrap .listType02 li span {overflow:hidden;white-space:nowrap;display:inline-block;text-overflow:ellipsis;max-width:35rem;}
 .wrapProgress .listWrap .list_flag_01 {background-color:#319b93;}
 .wrapProgress .listWrap .list_flag_02 {background-color:#97499e;}
 .alermWrap {overflow:hidden;margin-top:1rem;}
