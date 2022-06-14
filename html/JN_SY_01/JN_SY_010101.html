@@ -286,171 +286,205 @@
 							
 							<!-- 목료중량 달성율 -->
 							<div class="tabContent active" data-tab-cont="tab01">
-								<!-- <div class="main_date_graph">
-									<div class="chart" style="width:20rem">
-										<canvas id="myChart03">근무현황 차트</canvas>
-										<div class="perText">
-											<div>90<span>%</span></div>
-											<span class="txt">근무율</span>
-										</div>
+								<div class="graphWrap">
+									<div class="main_date_graph">
+										<section>
+											<div class="tit">2021년</div>
+											<div class="chart">
+												<canvas id="myChart03">2021년 목표중량 달성율 차트</canvas>
+												<div class="perText">
+													<div>80<span>%</span></div>
+												</div>
+											</div>
+											<script>
+												const ctx03 = document.getElementById('myChart03');
+												const myChart03 = new Chart(ctx03, {
+													type: 'doughnut',
+													data: {
+														labels: [
+															'2021년 목표중량 달성율',
+															'남은 달성율',
+														],
+														datasets: [{
+															data: [80, 20],      // 2021년 목표중량 달성율, 남은 달성율
+															backgroundColor: [
+															'#0050cb',			// 2021년 목표중량 달성율
+															'#ededee'			// 남은 달성율
+															],
+															borderWidth: 0,
+															scaleBeginAtZero: true,
+														}
+														]
+													},
+													options: {
+														aspectRatio: 1,
+														layout: {
+															padding: {
+																left: 0,
+																right: 0,
+																top: 0,
+																bottom: 0,
+															}
+														},
+														legend: {
+															display: false
+														},
+														tooltips: {
+															enabled: false
+														},
+														responsive: true,
+														cutoutPercentage:65 // 도넛 안쪼 원 굵기
+													}
+												});
+											</script>
+										</section>
+										<section>
+											<div class="tit">2021년</div>
+											<div class="chart">
+												<canvas id="myChart04">2020년 목표중량 달성율 차트</canvas>
+												<div class="perText">
+													<div>56<span>%</span></div>
+												</div>
+											</div>
+											<script>
+												const ctx04 = document.getElementById('myChart04');
+												const myChart04 = new Chart(ctx04, {
+													type: 'doughnut',
+													data: {
+														labels: [
+															'2021년 목표중량 달성율',
+															'남은 달성율',
+														],
+														datasets: [{
+															data: [56, 44],      // 2021년 목표중량 달성율, 남은 달성율
+															backgroundColor: [
+															'#0050cb',			// 2021년 목표중량 달성율
+															'#ededee'			// 남은 달성율
+															],
+															borderWidth: 0,
+															scaleBeginAtZero: true,
+														}
+														]
+													},
+													options: {
+														aspectRatio: 1,
+														layout: {
+															padding: {
+																left: 0,
+																right: 0,
+																top: 0,
+																bottom: 0,
+															}
+														},
+														legend: {
+															display: false
+														},
+														tooltips: {
+															enabled: false
+														},
+														responsive: true,
+														cutoutPercentage:65 // 도넛 안쪼 원 굵기
+													}
+												});
+											</script>
+										</section>
+									</div>
+									<div class="barChart">
+										<canvas id="myChart02" style="width:80rem !important;">목표중량 달성율 차트</canvas>
 									</div>
 									<script>
-										const ctx03 = document.getElementById('myChart03');
-										const myChart03 = new Chart(ctx03, {
-											type: 'doughnut',
+										var ctx = document.getElementById("myChart02");
+										Chart.pluginService.register({
+											afterDraw: function(chart) {
+												if (typeof chart.config.options.lineAt != 'undefined') {
+													var lineAt = chart.config.options.lineAt;
+													var ctxPlugin = chart.chart.ctx;
+													var xAxe = chart.scales[chart.config.options.scales.xAxes[0].id];
+													var yAxe = chart.scales[chart.config.options.scales.yAxes[0].id];
+													
+													// I'm not good at maths
+													// So I couldn't find a way to make it work ...
+													// ... without having the `min` property set to 0
+													if(yAxe.min != 0) return;
+													
+													ctxPlugin.strokeStyle = "#f00";//평균색상
+													ctxPlugin.beginPath();
+													lineAt = (lineAt - yAxe.min) * (100 / yAxe.max);
+													lineAt = (100 - lineAt) / 100 * (yAxe.height) + yAxe.top;
+													ctxPlugin.moveTo(xAxe.left, lineAt);
+													ctxPlugin.lineTo(xAxe.right, lineAt);
+													ctxPlugin.stroke();
+												}
+											}
+										});
+	
+										var myChart = new Chart(ctx, {
+											type: 'bar',
 											data: {
 												labels: [
-													'근무율',
-													'남은 근무율',
+													'20년11월',
+													'20년12월',
+													'21년01월',
+													'21년02월',
+													'21년03월',
+													'21년04월',
+													'21년05월',
+													'21년06월',
+													'21년07월',
+													'21년08월',
+													'21년09월',
+													'21년10월',
 												],
 												datasets: [{
-													data: [90, 10],      // 근무율, 남은 근무율 
+													barPercentage: 0.5,
+													barThickness:40,
+													maxBarThickness:80,
+													minBarLength:2,
+													data: [98, 95, 78, 65, 77, 78, 82, 80, 81, 88, 86, 94,],
 													backgroundColor: [
-													'#0050cb',			// 근무율
-													'#ededee'			// 남은 근무율
+													'rgba(255, 99, 132, 0.2)',
+													'rgba(255, 159, 64, 0.2)',
+													'rgba(255, 205, 86, 0.2)',
+													'rgba(75, 192, 192, 0.2)',
+													'rgba(54, 162, 235, 0.2)',
+													'rgba(153, 102, 255, 0.2)',
+													'rgba(201, 203, 207, 0.2)',
+													'rgba(255, 99, 132, 0.2)',
+													'rgba(255, 159, 64, 0.2)',
+													'rgba(255, 205, 86, 0.2)',
+													'rgba(75, 192, 192, 0.2)',
+													'rgba(54, 162, 235, 0.2)',
 													],
-													borderWidth: 0,
-													scaleBeginAtZero: true,
-												}
-												]
+												}]
 											},
 											options: {
-												aspectRatio: 1,
-												layout: {
-													padding: {
-														left: 0,
-														right: 0,
-														top: 0,
-														bottom: 0,
-													}
-												},
+												lineAt: 80,//평균값
 												legend: {
 													display: false
 												},
 												tooltips: {
 													enabled: false
 												},
-												responsive: true,
-												cutoutPercentage:65 // 도넛 안쪼 원 굵기
+												responsive: false,
+												scales: {
+													xAxes: [{
+														gridLines: {
+															display:false
+														}  
+													}],
+													yAxes: [{
+														ticks: {
+															min: 0,
+															max: 100,
+															stepSize : 10,
+															fontSize : 14,
+														},
+													}]
+												}
 											}
 										});
 									</script>
-									<ul class="listType_01 mt50">
-										<li>
-											<dl>
-												<dt>출근</dt>
-												<dd><span>40</span>/<em>50</em></dd>
-											</dl>
-										</li>
-										<li>
-											<dl>
-												<dt>출근전</dt>
-												<dd><span>5</span>/<em>50</em></dd>
-											</dl>
-										</li>
-										<li>
-											<dl>
-												<dt>퇴근</dt>
-												<dd><span>5</span>/<em>50</em></dd>
-											</dl>
-										</li>
-									</ul>
-								</div> -->
-								<div class="chart">
-									<canvas id="myChart02" style="width:100% !important;">목표중량 달성율 차트</canvas>
 								</div>
-								<script>
-									var ctx = document.getElementById("myChart02");
-									Chart.pluginService.register({
-										afterDraw: function(chart) {
-											if (typeof chart.config.options.lineAt != 'undefined') {
-												var lineAt = chart.config.options.lineAt;
-												var ctxPlugin = chart.chart.ctx;
-												var xAxe = chart.scales[chart.config.options.scales.xAxes[0].id];
-												var yAxe = chart.scales[chart.config.options.scales.yAxes[0].id];
-												
-												// I'm not good at maths
-												// So I couldn't find a way to make it work ...
-												// ... without having the `min` property set to 0
-												if(yAxe.min != 0) return;
-												
-												ctxPlugin.strokeStyle = "#f00";//평균색상
-												ctxPlugin.beginPath();
-												lineAt = (lineAt - yAxe.min) * (100 / yAxe.max);
-												lineAt = (100 - lineAt) / 100 * (yAxe.height) + yAxe.top;
-												ctxPlugin.moveTo(xAxe.left, lineAt);
-												ctxPlugin.lineTo(xAxe.right, lineAt);
-												ctxPlugin.stroke();
-											}
-										}
-									});
-
-									var myChart = new Chart(ctx, {
-										type: 'bar',
-										data: {
-											labels: [
-												'20년11월',
-												'20년12월',
-												'21년01월',
-												'21년02월',
-												'21년03월',
-												'21년04월',
-												'21년05월',
-												'21년06월',
-												'21년07월',
-												'21년08월',
-												'21년09월',
-												'21년10월',
-											],
-											datasets: [{
-												barPercentage: 0.5,
-												barThickness:40,
-												maxBarThickness:80,
-												minBarLength:2,
-												data: [98, 95, 78, 65, 77, 78, 82, 80, 81, 88, 86, 94,],
-												backgroundColor: [
-												'rgba(255, 99, 132, 0.2)',
-												'rgba(255, 159, 64, 0.2)',
-												'rgba(255, 205, 86, 0.2)',
-												'rgba(75, 192, 192, 0.2)',
-												'rgba(54, 162, 235, 0.2)',
-												'rgba(153, 102, 255, 0.2)',
-												'rgba(201, 203, 207, 0.2)',
-												'rgba(255, 99, 132, 0.2)',
-												'rgba(255, 159, 64, 0.2)',
-												'rgba(255, 205, 86, 0.2)',
-												'rgba(75, 192, 192, 0.2)',
-												'rgba(54, 162, 235, 0.2)',
-												],
-											}]
-										},
-										options: {
-											lineAt: 80,//평균값
-											legend: {
-												display: false
-											},
-											tooltips: {
-												enabled: false
-											},
-											responsive: false,
-											scales: {
-												xAxes: [{
-													gridLines: {
-														display:false
-													}  
-												}],
-												yAxes: [{
-													ticks: {
-														min: 0,
-														max: 100,
-														stepSize : 10,
-														fontSize : 14,
-													},
-												}]
-											}
-										}
-									});
-								</script>
 							</div>
 							<!-- //목료중량 달성율 -->
 							
@@ -785,7 +819,7 @@
 	</div>
 </div>
 
-<div class="popupWrap" role="dialog" id="pop4" style="display:block;">
+<div class="popupWrap" role="dialog" id="pop4" style="display:none;">
 	<div class="popupContainer">
 		<div class="popupInner popFoot_none" style="width:100rem;">
 			<div class="popupHeader">

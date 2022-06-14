@@ -455,7 +455,10 @@ input.inputDate::-webkit-calendar-picker-indicator {margin: 0}
 .performanceWrap .tabType04 li:nth-child(3) button.active {background-color:#433d98;}
 .performanceWrap .tabType04 li:nth-child(4) button.active {background-color:#0051cb;}
 .performanceWrap .tabContent {position:absolute;left:0;top:0;height:100%;margin-left:20rem;padding-left:2rem;border-left:solid 1px #e2e2e2;}
-.performanceWrap .tabContent .chart {width:100rem;}
+.performanceWrap .tabContent .graphWrap {display:flex;}
+.performanceWrap .tabContent .graphWrap .main_date_graph {width:15rem;margin:0 2rem;}
+.performanceWrap .tabContent .graphWrap .main_date_graph .tit {text-align:center;padding:2rem 0;}
+.performanceWrap .tabContent .graphWrap .barChart {padding:4rem 3rem;}
 .realTimeWrap strong {display:block;margin-right:0;margin-top:2rem;}
 .realTimeWrap .list_flag_tit_01 {background-color:#433d98}
 .realTimeWrap .list_flag_tit_02 {background-color:#0051cb}
