@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>생육/선별 정보 | 대시보드</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<div class="wrap_daeshboard_box">
+				<div class="boxType_daeshboard">
+					<div class="title daesh_tit_growth"><span>생육데이터</span></div>
+					<div class="boxType1 summary mt20">
+						<dl class="wrap_daesh_data accrue">
+							<dt>
+								<div class="tit"><span class="point">누적</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 천건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+						</dl>
+
+						<dl class="wrap_daesh_data day">
+							<dt>
+								<div class="tit"><span class="point">일 수집</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 건</div>
+							</dd>
+						</dl>
+					</div>
+
+					<h2 class="titH2 mt40">생육 데이터 수집 비중(누적)</h2>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">전체</button></li>
+							<li><button type="button" data-tab-link="tab02">시설</button></li>
+							<li><button type="button" data-tab-link="tab03">노지</button></li>
+						</ul>
+						<!-- 전체 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<div style="height:328px">전체 그래프영역</div>
+						</div>
+						<!-- //전체 -->
+
+						<!-- 시설 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<div style="height:328px">시설 그래프영역</div>
+						</div>
+						<!-- //시설 -->
+
+						<!-- 노지 -->
+						<div class="tabContent" data-tab-cont="tab03">
+							<div style="height:328px">노지 그래프영역</div>							
+						</div>
+						<!-- //노지 -->
+					</div>
+
+					<h2 class="titH2 mt40">생육 데이터 수집 추이</h2>
+					<div class="daesh_search_area2">
+						<span>
+							<select class="select">
+								<option value="" selected="">딸기</option>
+								<option value="">토마토</option>
+								<option value="">파프리카</option>
+							</select>
+						</span>
+						<span><input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17"></span>
+						<span><button type="button" class="btn btnTable"><span class="icon_search2">검색</span></button></span>
+					</div>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">일</button></li>
+							<li><button type="button" data-tab-link="tab02">월</button></li>
+							<li><button type="button" data-tab-link="tab03">연</button></li>
+						</ul>
+						<!-- 일 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<div style="height:328px">일 그래프영역</div>
+						</div>
+						<!-- //일 -->
+
+						<!-- 월 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<div style="height:328px">월 그래프영역</div>
+						</div>
+						<!-- //월 -->
+
+						<!-- 연 -->
+						<div class="tabContent" data-tab-cont="tab03">
+							<div style="height:328px">연 그래프영역</div>							
+						</div>
+						<!-- //연 -->
+					</div>
+
+					<div class="wrapTitle_daesh">
+						<h2 class="titH2">수집이상 농가 리스트</h2>
+						<dl class="daesh_search_area">
+							<dt>품목</dt>
+							<dd>
+								<select class="select">
+									<option value="" selected="">딸기</option>
+									<option value="">토마토</option>
+									<option value="">파프리카</option>
+								</select>
+							</dd>
+						</dl>
+					</div>
+					<table class="table tbType03 tdCenter">
+						<caption></caption>
+						<colgroup>
+							<col width="33.33%">
+							<col width="33.33%">
+							<col width="33.33%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>품목</th>
+								<th>농가명</th>
+								<th>농장위치</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>딸기</th>
+								<td>김지농</td>
+								<td>충청남도 논산시</td>
+							</tr>
+							<tr>
+								<th>딸기</th>
+								<td>박지농</td>
+								<td>충청남도 논산시</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table_pageing">
+						<button type="button" class="btn prev"><span class="blind">이전</span></button>
+						<button type="button" class="btn num active">1</button>
+						<button type="button" class="btn num">2</button>
+						<button type="button" class="btn num">3</button>
+						<button type="button" class="btn num">4</button>
+						<button type="button" class="btn num">5</button>
+						<button type="button" class="btn num">88</button>
+						<button type="button" class="btn num ">888</button>
+						<button type="button" class="btn next"><span class="blind">다음</span></button>
+					</div>
+				</div><!-- //.boxType_daeshboard -->
+
+				<div class="boxType_daeshboard">
+					<div class="title daesh_tit_image"><span>이미지 데이터</span></div>
+					<div class="boxType1 summary mt20">
+						<dl class="wrap_daesh_data accrue">
+							<dt>
+								<div class="tit"><span class="point">누적</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 천건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+						</dl>
+
+						<dl class="wrap_daesh_data day">
+							<dt>
+								<div class="tit"><span class="point">일 수집</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 건</div>
+							</dd>
+						</dl>
+					</div>
+
+					<h2 class="titH2 mt40">이미지 데이터 수집 비중(누적)</h2>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">전체</button></li>
+							<li><button type="button" data-tab-link="tab02">시설</button></li>
+							<li><button type="button" data-tab-link="tab03">노지</button></li>
+						</ul>
+						<!-- 전체 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<div style="height:328px">전체 그래프영역</div>
+						</div>
+						<!-- //전체 -->
+
+						<!-- 시설 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<div style="height:328px">시설 그래프영역</div>
+						</div>
+						<!-- //시설 -->
+
+						<!-- 노지 -->
+						<div class="tabContent" data-tab-cont="tab03">
+							<div style="height:328px">노지 그래프영역</div>							
+						</div>
+						<!-- //노지 -->
+					</div>
+
+					<div class="wrapTitle_daesh">
+						<h2 class="titH2">신규 수집 이미지 데이터</h2>
+						<dl class="daesh_search_area">
+							<dt>품목</dt>
+							<dd>
+								<select class="select">
+									<option value="" selected="">딸기</option>
+									<option value="">토마토</option>
+									<option value="">파프리카</option>
+								</select>
+							</dd>
+						</dl>
+					</div>
+					<ul class="daesh_image_list">
+						<li>
+							<div class="thumb"><img src="../../images/temp/temp_img_stwb.png"></div>
+							<div class="daesh_image_cont">
+								<div class="date">2022-02-15(월) 15:00:00</div>
+								<div class="daesh_image_info">
+									<span>딸기</span>
+									<span>충청남도 논산시</span>
+									<span>김지농</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../images/temp/temp_img_stwb.png"></div>
+							<div class="daesh_image_cont">
+								<div class="date">2022-02-15(월) 15:00:00</div>
+								<div class="daesh_image_info">
+									<span>딸기</span>
+									<span>충청남도 논산시</span>
+									<span>김지농</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../images/temp/temp_img_stwb.png"></div>
+							<div class="daesh_image_cont">
+								<div class="date">2022-02-15(월) 15:00:00</div>
+								<div class="daesh_image_info">
+									<span>딸기</span>
+									<span>충청남도 논산시</span>
+									<span>김지농</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../images/temp/temp_img_stwb.png"></div>
+							<div class="daesh_image_cont">
+								<div class="date">2022-02-15(월) 15:00:00</div>
+								<div class="daesh_image_info">
+									<span>딸기</span>
+									<span>충청남도 논산시</span>
+									<span>김지농</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../images/temp/temp_img_stwb.png"></div>
+							<div class="daesh_image_cont">
+								<div class="date">2022-02-15(월) 15:00:00</div>
+								<div class="daesh_image_info">
+									<span>딸기</span>
+									<span>충청남도 논산시</span>
+									<span>김지농</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../images/temp/temp_img_stwb.png"></div>
+							<div class="daesh_image_cont">
+								<div class="date">2022-02-15(월) 15:00:00</div>
+								<div class="daesh_image_info">
+									<span>딸기</span>
+									<span>충청남도 논산시</span>
+									<span>김지농</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+				</div><!-- //.boxType_daeshboard -->
+
+				<div class="boxType_daeshboard">
+					<div class="title daesh_tit_apc"><span>APC 데이터</span></div>
+					<div class="boxType1 summary mt20">
+						<dl class="wrap_daesh_data accrue">
+							<dt>
+								<div class="tit"><span class="point">누적</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 천건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+						</dl>
+
+						<dl class="wrap_daesh_data day">
+							<dt>
+								<div class="tit"><span class="point">일 수집</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 천건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+						</dl>
+					</div>
+
+					<h2 class="titH2 mt40">APC 데이터 수집 비중(누적) </h2>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">전체</button></li>
+							<li><button type="button" data-tab-link="tab02">시설</button></li>
+							<li><button type="button" data-tab-link="tab03">노지</button></li>
+						</ul>
+						<!-- 전체 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<div style="height:328px">전체 그래프영역</div>
+						</div>
+						<!-- //전체 -->
+
+						<!-- 시설 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<div style="height:328px">시설 그래프영역</div>
+						</div>
+						<!-- //시설 -->
+
+						<!-- 노지 -->
+						<div class="tabContent" data-tab-cont="tab03">
+							<div style="height:328px">노지 그래프영역</div>							
+						</div>
+						<!-- //노지 -->
+					</div>
+
+					<h2 class="titH2 mt40">APC 데이터 수집추이 </h2>
+					<div class="daesh_search_area2">
+						<span>
+							<select class="select">
+								<option value="" selected="">딸기</option>
+								<option value="">토마토</option>
+								<option value="">파프리카</option>
+							</select>
+						</span>
+						<span><input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17"></span>
+						<span><button type="button" class="btn btnTable"><span class="icon_search2">검색</span></button></span>
+					</div>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">일</button></li>
+							<li><button type="button" data-tab-link="tab02">월</button></li>
+							<li><button type="button" data-tab-link="tab03">연</button></li>
+						</ul>
+						<!-- 일 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<div style="height:328px">일 그래프영역</div>
+						</div>
+						<!-- //일 -->
+
+						<!-- 월 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<div style="height:328px">월 그래프영역</div>
+						</div>
+						<!-- //월 -->
+
+						<!-- 연 -->
+						<div class="tabContent" data-tab-cont="tab03">
+							<div style="height:328px">연 그래프영역</div>							
+						</div>
+						<!-- //연 -->
+					</div>
+
+					<div class="wrapTitle_daesh">
+						<h2 class="titH2">수집이상 APC 리스트</h2>
+						<dl class="daesh_search_area">
+							<dt>품목</dt>
+							<dd>
+								<select class="select">
+									<option value="" selected="">딸기</option>
+									<option value="">토마토</option>
+									<option value="">파프리카</option>
+								</select>
+							</dd>
+						</dl>
+					</div>
+					<table class="table tbType03 tdCenter">
+						<caption></caption>
+						<colgroup>
+							<col width="33.33%">
+							<col width="33.33%">
+							<col width="33.33%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>품목</th>
+								<th>APC 명</th>
+								<th>APC 위치</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>딸기</th>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<th>딸기</th>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table_pageing">
+						<button type="button" class="btn prev"><span class="blind">이전</span></button>
+						<button type="button" class="btn num active">1</button>
+						<button type="button" class="btn num">2</button>
+						<button type="button" class="btn num">3</button>
+						<button type="button" class="btn num">4</button>
+						<button type="button" class="btn num">5</button>
+						<button type="button" class="btn num">88</button>
+						<button type="button" class="btn num ">888</button>
+						<button type="button" class="btn next"><span class="blind">다음</span></button>
+					</div>
+				</div><!-- //.boxType_daeshboard -->
+			</div><!-- //.wrap_daeshboard_box -->
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html>

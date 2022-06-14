@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING |방문일정등록</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>컨설팅관리</span><em>일정관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">방문일정 등록</button>
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner">
+			<div class="popupHeader">
+				<h1 class="popTitle">방문일정 등록</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<table class="table tbTypeList mb5">
+					<colgroup>
+						<col width="*">
+						<col width="*">
+						<col width="*">
+						<col width="80">
+						<col width="*">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<tbody>
+						<tr>
+							<th>지역</th>
+							<td>
+								<select class="select">
+									<option value="" selected>전체</option>
+									<option value="">1</option>
+									<option value="">2</option>	
+								</select>
+							</td>
+							<th>품목</th>
+							<td>
+								<select class="select">
+									<option value="" selected>전체</option>
+									<option value="">1</option>
+									<option value="">2</option>	
+								</select>
+							</td>
+							<th>농가</th>
+							<td colspan="2">
+								<div class="flex">
+									<select class="select mr5">
+										<option value="" selected>농가선택</option>
+										<option value="">1</option>
+										<option value="">2</option>	
+									</select>
+									<input type="text" class="inputTxt">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>방문시간</th>
+							<td colspan="6">
+								 <input type="time" name="" class="inputDate"> ~ <input type="time" name="" class="inputDate">
+							</td> 
+						</tr>	
+					</tbody>
+				</table>
+				
+				<textarea class="textarea"></textarea>
+				
+				
+			</div>	
+			<div class="popupFooter">
+				<div class="popup_buttons alignC">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop1')">취소</button>
+					<button type="button" class="btnPop_primary">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html> 

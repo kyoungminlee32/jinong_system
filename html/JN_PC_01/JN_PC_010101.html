@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | Main</title>
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<div class="jsTabWrap">
+				<ul class="jstabMenu tabType01">
+					<li><button type="button" data-tab-link="tab01" class="active">농가 환경형황</button></li>
+					<li><button type="button" data-tab-link="tab02">농가 비교분석</button></li>
+				</ul>
+
+				<!-- 농가 환경현황 -->
+				<div class="tabContent active" data-tab-cont="tab01">
+					<div class="wrap_main_farm_environment">
+						<div class="farm_environment_basic">
+							<div class="boxType1 farm_basic_weather">
+								<div class="wrapTitle">
+									<h2 class="titH2">서초동</h2>
+									<span class="farm_basic_date">2021-02-07 11:16</span>
+								</div>
+								<div class="farm_basic_today">
+									<div class="weather_info">
+										<div class="weather_img"><img src="../../images/common/icon_weather_sunny.png" alt="맑음"></div>
+										<div class="weather_cont">
+											<span class="weather_txt">맑음</span>
+											<span class="weather_value"><strong>27</strong><span class="unit">ºC</span></span>
+										</div>
+									</div>
+									<div class="farm_basic_today_compare">어제보다 <span>2º</span><span class="countUp"></span></div>
+								</div>
+								<ul class="farm_basic_today_list">
+									<li class="rain"><strong>강수확률</strong><span>40%</span></li>
+									<li class="humidity"><strong>습도</strong><span>40%</span></li>
+									<li class="wind"><strong>바람(서풍)</strong><span>2m/s</span></li>
+								</ul>
+							</div><!-- //.farm_basic_weather -->
+
+							<div class="boxType1 farm_basic_grow">
+								<div class="wrapTitle">
+									<h2 class="titH2">생육사진</h2>
+									<div>
+										<span class="farm_basic_date mr20">2021-02-07 11:16</span>
+										<button class="btnDetail"><span class="blind">자세히보기</span></button>
+									</div>
+								</div>
+								<div class="farm_basic_grow_pic">
+									<div class="swiper swiper_gallery">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+										</div>
+										<!-- <div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div> -->
+									</div>
+									<div thumbsSlider="" class="swiper swiper_thumbs">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+											<div class="swiper-slide"><img src="../../images/temp/temp_02.png" /></div>
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+								</div><!-- //.farm_basic_grow_pic -->
+							</div><!-- //.farm_basic_grow -->
+
+							<div class="boxType1 farm_basic_vermin">
+								<div class="wrapTitle">
+									<div class="farmSensorSearch">
+										<span class="formRadio"><input type="radio" class="radio" id="formsel1" name="formsel"><label for="formsel1">지역</label></span>
+										<span class="formRadio"><input type="radio" class="radio" id="formsel2" name="formsel" checked=""><label for="formsel2">품목</label></span>
+										<select class="select">
+											<option value="" selected="">토마토</option>
+											<option value="">품목2</option>
+											<option value="">품목3</option>
+										</select>
+										<button type="button" class="btn_icon_Search"><span class="blind">검색</span></button>
+									</div>
+									<button class="btnDetail"><span class="blind">자세히보기</span></button>
+								</div>
+								<div class="farm_basic_vermin_graph">그래프 영역</div>
+							</div><!-- //.farm_basic_vermin -->
+
+							<div class="boxType1 farm_basic_notice">
+								<div class="wrapTitle">
+									<h2 class="titH2">알림정보</h2>
+									<button class="btnDetail"><span class="blind">자세히보기</span></button>
+								</div>
+								<ul class="farm_basic_notice_list">
+									<li><a href="#none">컨설턴트 : 홍길동 2021.12.26 3시 방문예정</a></li>
+									<li><a href="#none">컨설턴트 : 홍길동 2021.12.26 3시 방문예정</a></li>
+									<li><a href="#none">컨설턴트 : 홍길동 2021.12.26 3시 방문예정</a></li>
+									<li><a href="#none">컨설턴트 : 홍길동 2021.12.26 3시 방문예정</a></li>
+									<li><a href="#none">컨설턴트 : 홍길동 2021.12.26 3시 방문예정</a></li>
+								</ul>
+							</div><!-- //.farm_basic_notice -->
+						</div><!-- //.farm_environment_basic -->
+
+						<div class="farm_environment_cont">
+							<div class="jsTabWrap">
+								<div class="boxType1 farm_environment_search">
+									<ul class="jstabMenu tabType04">
+										<li><button type="button" data-tab-link="tab11" class="active">내부환경</button></li>
+										<li><button type="button" data-tab-link="tab12">외부기상</button></li>
+										<li><button type="button" data-tab-link="tab13">제어</button></li>
+									</ul>
+									<div class="farm_environment_control">
+										<div class="dataReload">
+											<strong>갱신</strong>
+											<span class="radioSwich">
+												<span class="radioSwichInner">
+													<input type="radio" id="dataReload_1" name="dataReload" checked>
+													<label for="dataReload_1">수동</label>
+												</span>
+												<span class="radioSwichInner">
+													<input type="radio" id="dataReload_2" name="dataReload">
+													<label for="dataReload_2">자동</label>
+												</span>
+											</span>
+											<button type="button" class="btnReload"><span class="blind">갱신</span></button>
+										</div>
+										<div class="dataReload">
+											<strong>전환</strong>
+											<span class="radioSwich">
+												<span class="radioSwichInner">
+													<input type="radio" id="dataReload_01" name="dataReload_00" checked>
+													<label for="dataReload_01">수동</label>
+												</span>
+												<span class="radioSwichInner">
+													<input type="radio" id="dataReload_02" name="dataReload_00">
+													<label for="dataReload_02">자동</label>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<!-- 내부환경 -->
+								<div class="tabContent active" data-tab-cont="tab11">
+									<ul class="user_farm_list">
+										<li class="boxType1">
+											<div class="user_farm_list_title">
+												<h2 class="titH2">하우스1</h2>
+												<button class="btnDetail"><span class="blind">자세히보기</span></button>
+											</div>
+											<div class="user_farm_swiper">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>온도</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>습도</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>cO2</dt>
+																<dd><strong>20%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>일사</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>EC</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>PH</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>온도</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>습도</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>cO2</dt>
+																<dd><strong>20%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>일사</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>EC</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>PH</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+													</div>
+													<div class="swiper-button-next2"></div>
+													<div class="swiper-button-prev2"></div>
+
+												</div>
+											</div>
+										</li>
+										<li class="boxType1">
+											<div class="user_farm_list_title">
+												<h2 class="titH2">하우스2</h2>
+												<button class="btnDetail"><span class="blind">자세히보기</span></button>
+											</div>
+											<div class="user_farm_swiper">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>온도</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>습도</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>cO2</dt>
+																<dd><strong>20%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>일사</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>EC</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>PH</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+													</div>
+													<div class="swiper-button-next2"></div>
+													<div class="swiper-button-prev2"></div>
+
+												</div>
+											</div>
+										</li>
+										<li class="boxType1">
+											<div class="user_farm_list_title">
+												<h2 class="titH2">하우스3</h2>
+												<button class="btnDetail"><span class="blind">자세히보기</span></button>
+											</div>
+											<div class="user_farm_swiper">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>온도</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>습도</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>cO2</dt>
+																<dd><strong>20%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>일사</dt>
+																<dd><strong>15º</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>EC</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>PH</dt>
+																<dd><strong>100%</strong></dd>
+															</dl>
+														</div>
+													</div>
+													<div class="swiper-button-next2"></div>
+													<div class="swiper-button-prev2"></div>
+												</div>
+											</div>
+										</li>
+									</ul><!-- //.user_farm_list -->
+									<div class="boxType1 user_farm_subject">
+										<div class="user_farm_list_title">
+											<h2 class="titH2">주제별 데이터</h2>
+											<button class="btnDetail"><span class="blind">자세히보기</span></button>
+										</div>
+										<ul class="user_farm_subject_list">
+											<li>
+												<div class="farm_subject_title"><span class="subject_condensation">결로 발생</span></div>
+												<div class="farm_subject_cont">
+													<div class="swiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스1</span>
+																	<span class="value"><strong>25%</strong></span>d
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스2</span>
+																	<span class="value"><strong>25%</strong></span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스3</span>
+																	<span class="value"><strong>-</strong></span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스4</span>
+																	<span class="value"><strong>25%</strong></span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스5</span>
+																	<span class="value"><strong>25%</strong></span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스6</span>
+																	<span class="value"><strong>-</strong></span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+														</div>
+														<div class="swiper-button-next3"></div>
+														<div class="swiper-button-prev3"></div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="farm_subject_title"><span class="subject_dew">이슬점</span></div>
+												<div class="farm_subject_cont">
+													<div class="swiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스1</span>
+																	<span class="value"><strong>25</strong>º</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스2</span>
+																	<span class="value"><strong>25</strong>º</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스3</span>
+																	<span class="value"><strong>25</strong>º</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스4</span>
+																	<span class="value"><strong>25</strong>º</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스5</span>
+																	<span class="value"><strong>25</strong>º</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스6</span>
+																	<span class="value"><strong>25</strong>º</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+														</div>
+														<div class="swiper-button-next3"></div>
+														<div class="swiper-button-prev3"></div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="farm_subject_title"><span class="subject_moisture">수분부족분</span></div>
+												<div class="farm_subject_cont">
+													<div class="swiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스1</span>
+																	<span class="value"><strong>25</strong>g/m³</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스2</span>
+																	<span class="value"><strong>25</strong>g/m³</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스3</span>
+																	<span class="value"><strong>25</strong>g/m³</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스4</span>
+																	<span class="value"><strong>25</strong>g/m³</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스5</span>
+																	<span class="value"><strong>25</strong>g/m³</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스6</span>
+																	<span class="value"><strong>25</strong>g/m³</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+														</div>
+														<div class="swiper-button-next3"></div>
+														<div class="swiper-button-prev3"></div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="farm_subject_title"><span class="subject_co2">CO2</span></div>
+												<div class="farm_subject_cont">
+													<div class="swiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스1</span>
+																	<span class="value"><strong>25</strong>ppm</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스2</span>
+																	<span class="value"><strong>25</strong>ppm</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스3</span>
+																	<span class="value"><strong>25</strong>ppm</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스4</span>
+																	<span class="value"><strong>25</strong>ppm</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스5</span>
+																	<span class="value"><strong>25</strong>ppm</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="farm_subject_env">
+																	<span class="title">하우스6</span>
+																	<span class="value"><strong>25</strong>ppm</span>
+																	<span class="state normal">정상</span>
+																</div>
+															</div>
+														</div>
+														<div class="swiper-button-next3"></div>
+														<div class="swiper-button-prev3"></div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div><!-- //.user_farm_subject -->
+
+									<div class="boxType1 user_farm_graph">
+										<div class="jsTabWrap">
+											<div class="user_farm_graph_menu">
+												<ul class="jstabMenu tabType04 sizeS">
+													<li><button type="button" data-tab-link="tab21" class="active">일출</button></li>
+													<li><button type="button" data-tab-link="tab22">일몰</button></li>
+													<li><button type="button" data-tab-link="tab23">DIF</button></li>
+													<li><button type="button" data-tab-link="tab24">지상/근권</button></li>
+												</ul>
+												<button class="btnDetail"><span class="blind">자세히보기</span></button>
+											</div>
+											<div class="tabContent active" data-tab-cont="tab21"><div class="user_farm_graph_cont">일출 그래프 영역</div></div>
+											<div class="tabContent" data-tab-cont="tab22"><div class="user_farm_graph_cont">일몰 그래프 영역</div></div>
+											<div class="tabContent" data-tab-cont="tab23"><div class="user_farm_graph_cont">DIF 그래프 영역</div></div>
+											<div class="tabContent" data-tab-cont="tab24"><div class="user_farm_graph_cont">지상/근권 그래프 영역</div></div>
+										</div>
+									</div>
+								</div>
+								<!-- //내부환경 -->
+
+								<!-- 외부기상 -->
+								<div class="tabContent" data-tab-cont="tab12">
+									<div class="boxType1 farm_outer_weather">
+										<div class="thisWeather">
+											<strong class="title">현재날씨</strong>
+											<span class="date">11월 15일(월) 13시</span>
+											<div class="weather_info">
+												<div class="weather_img"><img src="../../images/common/icon_weather_sunny.png" alt="맑음"></div>
+												<div class="weather_cont">
+													<span class="weather_txt">맑음</span>
+													<span class="weather_value"><strong>27</strong><span class="unit">ºC</span></span>
+												</div>
+											</div>
+										</div>
+										<div class="wrap_weather_detail">
+											<strong class="title">기상청 날씨 정보</strong>
+											<div class="jsTabWrap wrap_tabType_weather">
+												<ul class="jstabMenu tabType_weather">
+													<li><button type="button" data-tab-link="weather_tab01" class="active">오늘날씨</button></li>
+													<li><button type="button" data-tab-link="weather_tab02">주간날씨</button></li>
+												</ul>
+												<!-- 현황분석 -->
+												<div class="tabContent active" data-tab-cont="weather_tab01">
+													<div class="jsTabWrap">
+														<ul class="jstabMenu tabType_weather_today">
+															<li class="subject">오늘</li>
+															<li><button type="button" data-tab-link="weather_today_tab01" class="active">온도</button></li>
+															<li><button type="button" data-tab-link="weather_today_tab02">습도</button></li>
+															<li><button type="button" data-tab-link="weather_today_tab03">강수</button></li>
+															<li><button type="button" data-tab-link="weather_today_tab04">바람</button></li>
+														</ul>
+														<div class="tabContent active" data-tab-cont="weather_today_tab01">
+															<ul class="weather_today_list">
+																<li>
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_sunny.png" alt="맑음"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">오후1시</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_cloudy.png" alt="흐림"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">오후5시</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_rain.png" alt="비"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">오후7시</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_snow.png" alt="눈"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">오후9시</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="tabContent" data-tab-cont="weather_today_tab02">
+															<ul class="weather_today_humidity">
+																<li>
+																	<div class="today_humidity_info">
+																		<span class="time">오후 1시</span>
+																		<span class="humidity_value"><strong>10</strong>%</span>
+																	</div>
+																	<div class="today_humidity_graph"><span  style="height:10%"></span></div>
+																</li>
+																<li>
+																	<div class="today_humidity_info">
+																		<span class="time">오후 5시</span>
+																		<span class="humidity_value"><strong>35</strong>%</span>
+																	</div>
+																	<div class="today_humidity_graph"><span  style="height:35%"></span></div>
+																</li>
+																<li>
+																	<div class="today_humidity_info">
+																		<span class="time">오후 7시</span>
+																		<span class="humidity_value"><strong>60</strong>%</span>
+																	</div>
+																	<div class="today_humidity_graph"><span  style="height:60%"></span></div>
+																</li>
+																<li>
+																	<div class="today_humidity_info">
+																		<span class="time">오후 9시</span>
+																		<span class="humidity_value"><strong>48</strong>%</span>
+																	</div>
+																	<div class="today_humidity_graph"><span  style="height:48%"></span></div>
+																</li>
+															</ul>
+														</div>
+														<div class="tabContent" data-tab-cont="weather_today_tab03">
+															<ul class="weather_today_rain">
+																<li>
+																	<span class="time">오후 1시</span>
+																	<span class="rain_per">20%</span>
+																	<span class="rainfall">0mm</span>
+																</li>
+																<li>
+																	<span class="time">오후 5시</span>
+																	<span class="rain_per">20%</span>
+																	<span class="rainfall">0mm</span>
+																</li>
+																<li>
+																	<span class="time">오후 7시</span>
+																	<span class="rain_per">20%</span>
+																	<span class="rainfall">0mm</span>
+																</li>
+																<li>
+																	<span class="time">오후 9시</span>
+																	<span class="rain_per">20%</span>
+																	<span class="rainfall">0mm</span>
+																</li>
+															</ul>
+														</div>
+														<div class="tabContent" data-tab-cont="weather_today_tab04">
+															<ul class="weather_today_wind">
+																<li>
+																	<span class="time">오후 1시</span>
+																	<span class="wind_pos">북서풍</span>
+																	<span class="wind_speed">3m/s</span>
+																</li>
+																<li>
+																	<span class="time">오후 5시</span>
+																	<span class="wind_pos">북서풍</span>
+																	<span class="wind_speed">3m/s</span>
+																</li>
+																<li>
+																	<span class="time">오후 7시</span>
+																	<span class="wind_pos">북서풍</span>
+																	<span class="wind_speed">3m/s</span>
+																</li>
+																<li>
+																	<span class="time">오후 9시</span>
+																	<span class="wind_pos">북서풍</span>
+																	<span class="wind_speed">3m/s</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="tabContent" data-tab-cont="weather_tab02">
+													<div class="weather_slide_week">
+														<div class="swiper">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide ">
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_sunny.png" alt="맑음"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">1일[토]</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span>/<strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_cloudy.png" alt="흐림"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">2일[일]</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span>/<strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_rain.png" alt="비"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">3일[월]</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span>/<strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_snow.png" alt="눈"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">4일[화]</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span>/<strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_sunny.png" alt="맑음"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">5일[수]</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span>/<strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_sunny.png" alt="맑음"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">6일[목]</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span>/<strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div class="weather_info">
+																		<div class="weather_img"><img src="../../images/common/icon_weather_sunny.png" alt="맑음"></div>
+																		<div class="weather_cont">
+																			<span class="weather_txt">7일[금]</span>
+																			<span class="weather_value"><strong>27</strong><span class="unit">º</span>/<strong>27</strong><span class="unit">º</span></span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- //.wrap_weather_detail -->
+									</div><!-- //.farm_outer_weather -->
+
+									<div class="boxType1 farm_weather_forecast">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="forecast_cont">
+														<div class="title">1일후</div>
+														<dl class="cont_rainfall"><dt><span>강수</span></dt><dd>10/15%</dd></dl>
+														<dl class="cont_temperature"><dt><span>기온</span></dt><dd>10/15%</dd></dl>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="forecast_cont">
+														<div class="title">2일후</div>
+														<dl class="cont_rainfall"><dt><span>강수</span></dt><dd>10/15%</dd></dl>
+														<dl class="cont_temperature"><dt><span>기온</span></dt><dd>10/15%</dd></dl>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="forecast_cont">
+														<div class="title">3일후</div>
+														<dl class="cont_rainfall"><dt><span>강수</span></dt><dd>10/15%</dd></dl>
+														<dl class="cont_temperature"><dt><span>기온</span></dt><dd>10/15%</dd></dl>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="forecast_cont">
+														<div class="title">4일후</div>
+														<dl class="cont_rainfall"><dt><span>강수</span></dt><dd>10/15%</dd></dl>
+														<dl class="cont_temperature"><dt><span>기온</span></dt><dd>10/15%</dd></dl>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="forecast_cont">
+														<div class="title">5일후</div>
+														<dl class="cont_rainfall"><dt><span>강수</span></dt><dd>10/15%</dd></dl>
+														<dl class="cont_temperature"><dt><span>기온</span></dt><dd>10/15%</dd></dl>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- //.farm_weather_forecast -->
+
+									<div class="boxType1 farm_weather_graph_wrap">
+										<div class="farm_weather_graph">그래프영역</div>
+									</div>
+								</div>
+								<!-- //외부기상 -->
+
+								<!-- 제어 -->
+								<div class="tabContent" data-tab-cont="tab13">
+									<ul class="user_farm_list">
+										<li class="boxType1">
+											<div class="user_farm_list_title">
+												<h2 class="titH2">하우스1</h2>
+												<button class="btnDetail"><span class="blind">자세히보기</span></button>
+											</div>
+											<div class="user_farm_swiper">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>관수</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>관수</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+													</div>
+													<div class="swiper-button-next2"></div>
+													<div class="swiper-button-prev2"></div>
+
+												</div>
+											</div>
+										</li>
+										<li class="boxType1">
+											<div class="user_farm_list_title">
+												<h2 class="titH2">하우스2</h2>
+												<button class="btnDetail"><span class="blind">자세히보기</span></button>
+											</div>
+											<div class="user_farm_swiper">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>관수</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>관수</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우측창</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>좌천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+														<div class="swiper-slide">
+															<dl class="user_farm_house">
+																<dt>우천장</dt>
+																<dd><span>작동중</span><strong>100%</strong></dd>
+															</dl>
+														</div>
+													</div>
+													<div class="swiper-button-next2"></div>
+													<div class="swiper-button-prev2"></div>
+												</div>
+											</div>
+										</li>
+									</ul><!-- //.user_farm_list -->
+									<div class="boxType1 farm_weather_graph_wrap">
+										<div class="farm_weather_graph">그래프영역</div>
+									</div>
+								</div>
+								<!-- //제어 -->
+							</div><!-- //.jsTabWrap -->
+						</div><!-- //.farm_environment_cont -->
+					</div>
+				</div>
+				<!-- //농가 환경현황 -->
+
+				<!-- 농가 비교분석 -->
+				<div class="tabContent" data-tab-cont="tab02">농가 비교분석</div>
+				<!-- //농가 비교분석 -->
+
+			</div><!-- //.jsTabWrap -->			
+		</div><!-- //.content -->
+
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script>
+	//생육사진 슬라이드
+	var swiper = new Swiper(".farm_basic_grow_pic .swiper_thumbs", {
+		spaceBetween: 4,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+	var swiper2 = new Swiper(".farm_basic_grow_pic .swiper_gallery", {
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+	});
+
+	//사용자 농가 하우스 목록 슬라이드
+	var $swiperWrap = $('.user_farm_swiper');
+	$swiperWrap.each(function(){
+		$swiperWrap = $(this).children('.swiper');
+		var userswiper = new Swiper($swiperWrap, {
+			slidesPerView: "auto",
+			spaceBetween: 10,
+			observer:true,
+			observeParents:true,
+			observeSlideChildren:true,
+			navigation: {
+				nextEl: ".swiper-button-next2",
+				prevEl: ".swiper-button-prev2",
+			}
+		});
+	});
+
+	//주제별 데이터 슬라이드
+	var $swiperWrap2 = $('.farm_subject_cont');
+	$swiperWrap2.each(function(){
+		$swiperWrap2 = $(this).children('.swiper');
+		var userswiper = new Swiper($swiperWrap2, {
+			slidesPerView: "auto",
+			spaceBetween: 0,
+			observer:true,
+			observeParents:true,
+			observeSlideChildren:true,
+			navigation: {
+				nextEl: ".swiper-button-next3",
+				prevEl: ".swiper-button-prev3",
+			}
+		});
+	});
+
+	//주간날씨 슬라이드
+	const envSlide = new Swiper('.weather_slide_week .swiper', {
+		slidesPerView: "auto",
+		spaceBetween: 10,
+		observer:true,
+		observeParents:true,
+		observeSlideChildren:true,
+		pagination: {
+			el: '.env-slide .swiper-pagination',
+		}
+	});
+
+	var forecastswiper = new Swiper('.farm_weather_forecast .swiper', {
+		slidesPerView: "auto",
+		spaceBetween: 27,
+		observer:true,
+		observeParents:true,
+		observeSlideChildren:true,
+	});
+</script>
+</body>
+</html>

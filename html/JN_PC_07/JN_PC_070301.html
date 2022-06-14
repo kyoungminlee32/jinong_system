@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | popup guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>PLS</span><em>병해충정보관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<span><button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">해충</button></span> 
+			<span><button type="button" class="btn btnTable" onclick="popup.open('#pop1-1', this)">병</button></span>
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner" style="width: 800px;">
+			<div class="popupHeader">
+				<h1 class="popTitle">병해충정보관리</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<h2 class="popTitleH2">해충 상세정보</h2>
+				<table class="table tbTypeList" style="table-layout: fixed;">
+					<colgroup>
+						<col width="150">
+						<col width="150">
+						<col width="150">
+						<col width="150">
+						<col width="150">
+					</colgroup>
+					<caption></caption>
+					<tbody>
+						<tr>
+							<th>한글명</th>
+							<td>감자수염진딧물</td>
+							<th>속종명</th>
+							<td>매미목</td>
+							<th rowspan="3"><div class="picture"><img src="../../images/temp/temp_01.jpg"></div></th>
+						</tr>
+						<tr>
+							<th>목/과명</th>
+							<td>진딧물과</td>
+							<th>영문별칭</th>
+							<td>euphorbiae</td>
+						</tr>
+						<tr>
+							<th>품목</th>
+							<td>딸기</td>
+							<th>사용여부</th>
+							<td>
+								<span class="formRadio"><input type="radio" id="tbRadio05" name="tbRadio00"><label for="tbRadio05">사용</label></span>
+								<span class="formRadio"><input type="radio" id="tbRadio06" name="tbRadio00" checked><label for="tbRadio06">사용안함</label></span>
+							</td>
+						</tr>
+						<tr>
+							<th>형태정보</th>
+							<td colspan="4" class="w100">
+								유시충의 몸길이는 2~4mm이다. 머리는 연한 노란색 또는 초록색을 띠고, 눈은 검은빛을 띤 붉은 색이다. 머리에는 이마혹이 뚜렷하며, 머리 뒤쪽은 매끈하고 센털이있다. 뿔관의 밑 부분은 연한 녹색이고 끝반부는 거무스름 하며, 끝조각은 긴원뿔모양으로 약 16개의 센털이 있다.
+							</td>
+						</tr>
+						<tr>
+							<th>생태정보</th>
+							<td colspan="4">
+								발생 최적 조건은 온도 21~26℃, 습도 60~80%이다.
+								무시성충은 2주동안 50마리의 산자(새끼)를 낳는다.
+								십여 세대를 여름 기주식물에서 생활하는데 감자와 가지에서 많이 발생한다.
+								유시충은 5월 하순~6월 상순과 8월 하순에 발생최성기를 보인다.
+								예찰의 경우 감자수염진딧물은 어린잎에 서식하며, 오래된 잎에 서식하는 싸리수염진딧물과 구분할 수 있다.
+								수염진딧물은 안테나가 몸길이보다 길어 쉽게 구분할 수 있다.
+								진딧물의 예찰은 황색수반(노란색 바탕의 물그릇)이나 끈끈이트랩을 이용한다.
+								주로 감자, 가지 등 가지과식물에 피해를 주는 해충이다
+								</td>
+						</tr>
+						<tr>
+							<th>피해정보</th>
+							<td colspan="4">
+								성충과 약충이 기주식물의 잎뒷면에서 흡즙하고, 50여종의 바이러스병을 옮긴다.
+								피해 받은 잎은 기형이 되며, 심하면 식물은 자라지 못한다.
+								또한 감로에 의한 그을음이 생겨 광합성을 저해하며 그을음병을 유발한다
+							</td>
+						</tr>
+						<tr>
+							<th>분포정보</th>
+							<td colspan="4">전세계</td>
+						</tr>
+						<tr>
+							<th>기타</th>
+							<td colspan="4"><textarea class="textarea"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop1')">취소</button>
+					<button type="button" class="btnPop_primary">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popupWrap" role="dialog" id="pop1-1">
+	<div class="popupContainer">
+		<div class="popupInner" style="width: 800px;">
+			<div class="popupHeader">
+				<h1 class="popTitle">병해충정보관리</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1-1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<h2 class="popTitleH2">병 상세정보</h2>
+				<table class="table tbTypeList">
+					<colgroup>
+						<col width="150">
+						<col width="*">
+						<col width="150">
+					</colgroup>
+					<caption></caption>
+					<tbody>
+						<tr>
+							<th>한글명</th>
+							<td>감자수염진딧물</td>
+							<th rowspan="4" ><div class="picture">사진</div></th>
+						</tr>
+						<tr>
+							<th>품목</th>
+							<td>진딧물과</td>
+						</tr>
+						<tr>
+							<th>영문명</th>
+							<td>딸기</td>
+						</tr>
+						<tr>
+							<th>사용여부</th>
+							<td>
+								<span class="formRadio"><input type="radio" id="tbRadio07" name="tbRadio00"><label for="tbRadio07">사용</label></span>
+								<span class="formRadio"><input type="radio" id="tbRadio08" name="tbRadio00" checked><label for="tbRadio08">사용안함</label></span>
+							</td>
+						</tr>
+						<tr>
+							<th>발생환경</th>
+							<td colspan="4" class="w100">
+								유시충의 몸길이는 2~4mm이다. 머리는 연한 노란색 또는 초록색을 띠고, 눈은 검은빛을 띤 붉은 색이다. 머리에는 이마혹이 뚜렷하며, 머리 뒤쪽은 매끈하고 센털이있다. 뿔관의 밑 부분은 연한 녹색이고 끝반부는 거무스름 하며, 끝조각은 긴원뿔모양으로 약 16개의 센털이 있다.
+							</td>
+						</tr>
+						<tr>
+							<th>생태정보</th>
+							<td colspan="2">
+								병원균은 병든 잎에서 병자각으로 월동후, 1차 전염원이 되며, 공기전염 한다.
+								고온성 균으로 7~8월에 강우가 많으면 심하게 발생 한다.
+								보교조생 품종은 이 병에 약하고, 사계성 품종은 강한 편이다.
+							</td>
+						</tr>
+						<tr>
+							<th>증상설명</th>
+							<td colspan="2">
+								잎, 잎자루, 줄기에 발생한다.
+								잎에서는 처음 자갈색의 부정형 병반으로 나타나고, 진전되면 직경 1~2㎝크기의 대형병반으로 확대된다.
+								오래된 병반의 중앙은 회갈색, 주위는 자갈색으로 변화되며, 병반상에는 흑색의 소립점(병자각)이 생긴다.
+								발생이 심한 잎은 말라죽는다.
+								잎자루와 줄기에서는 암갈색의 부정형 병반으로 나타난다.
+							</td>
+						</tr>
+						<tr>
+							<th>방제방법</th>
+							<td colspan="2">
+								- 이식 포복경에 병원균이 감염되지 않도록 관리를 철저히 한다.
+								- 수확후 병든 잔재물을 제거하여 불태운다.
+							</td>
+						</tr>
+						<tr>
+							<th>기타</th>
+							<td colspan="4"><textarea class="textarea"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop1')">취소</button>
+					<button type="button" class="btnPop_primary">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html> 

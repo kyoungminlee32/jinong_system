@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>사용자관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">사용자관리 조회</h3>
+			<div class="tbSearch">
+				<table class="table">
+					<caption>데이터 조회 조건</caption>
+					<colgroup>
+						<col width="100">
+						<col width="500">
+						<col width="100">
+						<col width="500">
+						<col width="100">
+						<col width="500">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>사용자명</th>
+							<td>								
+								<input type="text" class="inputTxt w80" name="">
+							</td>
+							<th>주소</th>
+							<td>
+								<input type="text" class="inputTxt w80" name="">
+							</td>
+							<th>사용여부</th>
+							<td>
+								<select class="select w80">
+									<option value="" selected>전체</option>
+									<option value="">경기도</option>
+									<option value="">충청도</option>
+									<option value="">경상북도</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+
+			<table class="data-table" id="myTable" data-fixed-header="0" data-fixed-body="2">
+				<caption></caption>
+				<thead>
+					<tr>
+						<th>사용자명</th>
+						<th>아이디</th>
+						<th>그룹명</th>
+						<th>주소</th>
+						<th>전화번호</th>
+						<th>휴대폰번호</th>
+						<th>사용여부</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>김영수</td>
+						<td> admin</td>
+						<td> 관리자</td>
+						<td> 충북 괴산군 불정면 탑촌리 402-2</td>
+						<td>043-595-8974</td>
+						<td>010-6848-0012</td>
+						<td>Y</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	
+});
+</script>
+</body>
+</html>

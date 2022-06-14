@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>영농정보 | 대시보드</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<div class="wrap_daeshboard_box">				
+				<div class="boxType_daeshboard">
+					<div class="title daesh_tit_market"><span>시장 유통정보</span></div>
+					<div class="boxType1 summary mt20">
+						<dl class="wrap_daesh_data accrue">
+							<dd class="data_greenhouse_crops">
+								<div class="tit">평균 경락가격</div>
+								<div class="value"><span>37,548</span> 원</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">시장반입물량</div>
+								<div class="value"><span>879</span> 톤</div>
+							</dd>
+							<dd class="market_select">
+								<div>
+									<select class="select w100">
+										<option selected>딸기</option>
+										<option>option 1</option>
+										<option>option 2</option>
+									</select>
+								</div>
+								<div>
+									<select class="select w100">
+										<option selected>서울가락</option>
+										<option>option 1</option>
+										<option>option 2</option>
+									</select>
+								</div>
+							</dd>
+
+						</dl>
+					</div>
+
+					<h2 class="titH2 mt40">시장별 경락가격정보<span class="sub_txt">(전국 6대 공영도매시장)</span></h2>
+					<ul class="jstabMenu tabType02 sizeSS mt15">
+						<li><button type="button" data-tab-link="tab01" class="active">전일</button></li>
+						<li><button type="button" data-tab-link="tab02">3일</button></li>
+						<li><button type="button" data-tab-link="tab03">7일</button></li>
+						<li><button type="button" data-tab-link="tab03">한달</button></li>
+						<li><button type="button" data-tab-link="tab03">1년</button></li>
+					</ul>
+					<p class="alignR mt10">(15kg, 상품기준)</p>
+					<div class="mt20">지도영역</div>
+				</div>
+
+				<div class="container_boxType_daeshboard">
+					<div class="boxType_daeshboard">
+						<div class="title daesh_tit_work"><span>농작업 정보</span></div>
+						<div class="boxType1 summary mt20">
+							<dl class="wrap_daesh_data accrue">
+								<dt>
+									<div class="tit"><span class="point">누적</span> 데이터</div>
+									<div class="value"><span class="point">201,597</span> 천건</div>
+								</dt>
+								<dd class="data_greenhouse_crops">
+									<div class="tit">시설작물</div>
+									<div class="value"><span>37,185</span> 천건</div>
+								</dd>
+								<dd class="data_outdoor_crops">
+									<div class="tit">노지작물</div>
+									<div class="value"><span>37,185</span> 천건</div>
+								</dd>
+							</dl>
+
+							<dl class="wrap_daesh_data day">
+								<dt>
+									<div class="tit"><span class="point">일 등록</span> 데이터</div>
+									<div class="value"><span class="point">201,597</span> 건</div>
+								</dt>
+								<dd class="data_greenhouse_crops">
+									<div class="tit">시설작물</div>
+									<div class="value"><span>37,185</span> 건</div>
+								</dd>
+								<dd class="data_outdoor_crops">
+									<div class="tit">노지작물</div>
+									<div class="value"><span>37,185</span> 건</div>
+								</dd>
+							</dl>
+						</div>
+
+						<h2 class="titH2 mt40">품목별 비중</h2>
+						<div class="mt20">
+							<div style="height: 320px;">그래프영역</div>
+						</div>
+
+						<h2 class="titH2 mt40">데이터 등록추이</h2>
+						<div class="daesh_search_area2">
+							<span>
+								<select class="select">
+									<option selected>최근 1주</option>
+									<option>option 1</option>
+									<option>option 2</option>
+								</select>
+							</span>
+							<span><input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17"></span>
+							<span><button type="button" class="btn btnTable"><span class="icon_search2">검색</span></button></span>
+						</div>
+						<div class="mt20">
+							<div style="height: 320px;">그래프영역</div>
+						</div>
+					</div>
+
+					<div class="boxType_daeshboard mt30">
+						<div class="title daesh_tit_sub"><span>부계정관리</span></div>
+						<ul class="account_admin">
+							<li class="list_flag_08"><span class="tit">승인요청</span><span>257건</span></li>
+							<li class="list_flag_09"><span class="tit">승인대기</span><span>50건</span></li>
+							<li class="list_flag_10"><span class="tit">승인</span><span>250건</span></li>
+							<li class="list_flag_02"><span class="tit">승인거부</span><span>7건</span></li>
+						</ul>
+						<ul class="listType02">
+							<li><span class="list_flag_08">승인요청</span>2022-02-15(월) / 정지농 / 토마토 / 충청남도 논산시 / 승인대기 15일차 </li>
+							<li><span class="list_flag_09">승인대기</span>2022-02-15(월) / 정지농 / 토마토 / 충청남도 논산시 / 승인대기 15일차 </li>
+							<li><span class="list_flag_10">승인</span>2022-02-15(월) / 정지농 / 토마토 / 충청남도 논산시 / 승인대기 15일차 </li>
+							<li><span class="list_flag_02">승인거부</span>2022-02-15(월) / 정지농 / 토마토 / 충청남도 논산시 / 승인대기 15일차 </li>
+							<li><span class="list_flag_08">승인요청</span>2022-02-15(월) / 정지농 / 토마토 / 충청남도 논산시 / 승인대기 15일차 </li>
+						</ul>
+						<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>
+					</div>
+				</div><!-- //.container_boxType_daeshboard -->
+			</div><!-- //.wrap_daeshboard_box -->
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 시설제어</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>시설제어</span><em>시설제어</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">시설제어</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+				<div class="tbSearch">
+					<table class="table">
+						<caption>데이터 조회 조건</caption>
+						<colgroup>
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">	
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>농장선택</th>
+								<td>
+									<span class="btnSet mr15"><input type="text" value="김지농_농가" class="inputTxt"> <button type="button" class="btn btnTable">선택</button></span>
+								</td>
+								<th>구역</th>
+								<td>
+									<select class="select w40">
+										<option value=""selected>전체구역</option>
+										<option value="">옵션1</option>
+										<option value="">옵션2</option>
+									</select>
+								</td>	
+							</tr>
+						</tbody>
+					</table>		
+				</div>
+				<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+			</div>	
+			<h3 class="titH3">농장 환경정보</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle02" class="btn btn_jsToggle">환경정보 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle02">
+				<ul class="farmtoday">
+					<li class="td1">
+						<div class="where">[구역01]</div>
+						<div class="temper1"><em>온도</em><span>20.0</span></div>
+					</li>
+					<li class="td1">
+						<div class="where">[구역01]</div>
+						<div class="temper1"> <em>습도</em><span>85.5%</span></div>
+					</li>
+					<li class="td1">
+						<div class="where">[구역01]</div>
+						<div class="temper1"><em>풍향</em><span>북서</span></div>
+					</li>
+					<li class="td1">
+						<div class="where">[구역01]</div>
+						<div class="temper1"><em>풍속</em><span>0.4m/s</span></div>
+					</li>
+					<li class="td1">
+						<div class="where">[구역01]</div>
+						<div class="temper1"><em>지습</em><span>0.0%</span></div>
+					</li>
+					<li class="td1">
+						<div class="where">[구역01]</div>
+						<div class="temper1"><em>일사(순간)</em></div>
+					</li>
+					<li class="td2">
+						<div class="where">[구역 02]</div>
+						<div class="temper2"><em>온도</em><span> 20.0º</span></div>
+					</li>
+					<li class="td2">
+						<div class="where">[구역 02]</div>
+						<div class="temper2"><em>습도</em><span>85.5%</span></div>
+					</li>
+					<li class="td2">
+						<div class="where">[구역 02]</div>
+						<div class="temper1"><em>일사(순간)</em></div>
+					</li>
+					<li class="td2">
+						<div class="where">[구역 02]</div>
+						<div class="temper2"><em>온도</em><span>20.0º</span></div>
+					</li>
+					<li class="td2">
+						<div class="where">[구역 02]</div>
+						<div class="temper2"><em>습도</em><span> 85.5%</span></div>
+					</li>
+					<li class="td3">
+						<div class="where">[구역 03]</div>
+						<div class="temper3"><em>온도</em><span> 20.0º</span></div>
+					</li>
+					<li class="td3">
+						<div class="where">[구역 03]</div>
+						<div class="temper3"><em>습도</em><span>85.5%</span></div>
+					</li>
+					<li class="td3">
+						<div class="where">[구역 03]</div>
+						<div class="temper3"><em>풍속</em><span> 0.4m/s</span></div>
+					</li>
+					<li class="td3">
+						<div class="where">[구역 03]</div>
+						<div class="temper3"><em>지습</em><span>0.0%</span></div>
+					</li>
+				</ul>
+			</div>	
+    		 
+			<h3 class="titH3 mb0">제어기 목록</h3>
+			<table class="data-table" id="myTable" data-fixed-header="0" >
+				<caption></caption>
+				<thead>
+					<tr>
+						<th>구역명</th>
+						<th data-orderable="false">제어기명</th>
+						<th class="num" >동작모드</th>
+						<th>상태</th>
+						<th>자동</th>
+						<th>구역</th>
+						<th>기준</th>
+					</tr>
+					
+				</thead>
+				<tbody>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 01</td>
+						<td>냉/난방기</td>
+						<td>켜기</td>
+						<td>작동중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 02</td>
+						<td>스크린</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>여는중</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>구역 03</td>
+						<td>천창</td>
+						<td>열기</td>
+						<td>여는중</td>
+						<td>자동</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+	var table = $("#myTable").DataTable({
+		
+	});
+</script>
+
+
+
+</body>
+</html> 

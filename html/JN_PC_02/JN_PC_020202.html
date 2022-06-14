@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 영농환경정보</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>영농환경 분석</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">영농환경 분석</h3>
+    		<div class="jsTabWrap">
+    			<ul class="jstabMenu tabType02">
+    				<li><button type="button" data-tab-link="tab01">환경정보</button></li>
+    				<li><button type="button" data-tab-link="tab02" class="active">주제별분석</button></li>
+    			</ul>
+    			<!-- 환경정보 -->
+    		 	<div class="tabContent" data-tab-cont="tab01">환경정보</div>
+    		 	<!-- //환경정보 -->
+
+    		 	<!-- 주제별분석 -->
+    		 	<div class="tabContent active" data-tab-cont="tab02">
+    		 		<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+    		 		<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+	    		 		<div class="tbSearch">
+				    		<table class="table">
+								<caption>데이터 조회 조건</caption>
+								<colgroup>
+									<col width="100">
+									<col width="500">
+									<col width="100">
+									<col width="500">
+									<col width="100">
+									<col width="500">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>지역</th>
+										<td>
+											<select class="select">
+					    						<option value="" selected>시/도</option>
+					    						<option value="">경기도</option>
+					    						<option value="">충청도</option>
+					    						<option value="">경상북도</option>
+					    					</select>
+					    					<select class="select">
+					    						<option value="" selected>시/군/구</option>
+					    						<option value="">과천시</option>
+					    						<option value="">의정부시</option>
+					    					</select>
+										</td>
+										<th>품목</th>
+										<td>
+											<select class="select">
+					    						<option value="" selected>전체</option>
+					    						<option value="">option 1</option>
+					    						<option value="">option 2</option>
+					    					</select>
+					    				</td>
+										<th>농장정보</th>
+										<td>
+											<div class="btnSet">
+												<input type="text" value="김지농_농가" class="inputTxt">
+												<button type="button" class="btn btnTable">선택</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>날짜선택</th>
+										<td colspan="5"><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+					</div>
+					<div class="anchorListdWrap">
+						<ul class="anchorSubject">
+							<li class="selected"><a href="#none" data-anchor-title="subject01">일출온도</a></li>
+							<li><a href="#none" data-anchor-title="subject02">DIF</a></li>
+							<li><a href="#none" data-anchor-title="subject03">지상/근권</a></li>
+							<li><a href="#none" data-anchor-title="subject04">CO2</a></li>
+							<li><a href="#none" data-anchor-title="subject05">수분부족분</a></li>
+							<li><a href="#none" data-anchor-title="subject06">일몰온도</a></li>
+							<li><a href="#none" data-anchor-title="subject07">결로(오전)</a></li>
+						</ul>
+						<div class="anchorContWrap">
+							<!-- 일출온도 -->
+							<div class="subject_anchorCont" data-anchor-cont="subject01">
+								<div class="tiele_area"><h3>일출온도</h3><span class="subject_anchor_summary">현재 17.4℃</span></div>
+								<div class="subject_anchor_graph">그래프영역</div>
+								<ul class="listType01">
+									<li>일출 <span class="pointC6">2시간 전</span>과 설정하신 시작온도의 편차는 <span class="pointC7">2.76℃</span> 이고, 일출 <span class="pointC6">2시간 후</span>와 설정하신 끝 온도의 편차는 <span class="pointC7">6.54℃</span> 입니다.</li>
+								</ul>
+							</div>
+							<!-- //일출온도 -->
+
+							<!-- DIF -->
+							<div class="subject_anchorCont" data-anchor-cont="subject02">
+								<div class="tiele_area"><h3>DIF</h3><span class="subject_anchor_summary">일일전 DIF 17.4℃</span></div>
+								<div class="subject_anchor_graph">그래프영역</div>
+								<ul class="listType01">
+									<li>지난밤 야간온도 평균도 <span class="pointC6">7.66℃</span>, 현재까지 주간온도 평균은 내부습도 <span class="pointC6">19.26℃(DIF=11.6℃ 상태)</span> 입니다.</li>
+									<li>DIF는 주간온도 평균값과 야간온도 평균값의 편차 입니다.</li>
+								</ul>
+							</div>
+							<!-- //DIF -->
+
+							<!-- 지상/근권 -->
+							<div class="subject_anchorCont" data-anchor-cont="subject03">
+								<div class="tiele_area"><h3>지상/근권</h3><span class="subject_anchor_summary">일출기점 17.4℃ 차이</span></div>
+								<div class="subject_anchor_graph">그래프영역</div>
+								<ul class="listType01">
+									<li><span class="pointC6">일출기점</span> 지상부 온도는 <span class="pointC6">7.1℃</span> 이고, <span class="pointC6">근권부온도</span>는 <span class="pointC6">11.74℃</span>로 <span class="pointC7">4.6℃</span> 차이가 납니다.</li>
+								</ul>
+							</div>
+							<!-- //지상/근권 -->
+
+							<!-- CO2 -->
+							<div class="subject_anchorCont" data-anchor-cont="subject04">
+								<div class="tiele_area"><h3>CO2</h3><span class="subject_anchor_summary">현재 313ppm</span></div>
+								<div class="subject_anchor_graph">그래프영역</div>
+								<ul class="listType01">
+									<li>현재까지의 CO2평균은 <span class="pointC6">621.45ppm</span> 입니다.</li>
+									<li>CO2 기준값은 <span class="pointC6">350ppm~800ppm</span> 입니다.</li>
+								</ul>
+							</div>
+							<!-- //CO2 -->
+
+							<!-- 수분부족분 -->
+							<div class="subject_anchorCont" data-anchor-cont="subject05">
+								<div class="tiele_area"><h3>수분부족분</h3><span class="subject_anchor_summary">현재 7.25g/m²</span></div>
+								<div class="subject_anchor_graph">그래프영역</div>
+								<ul class="listType01">
+									<li>현재 내부온도 <span class="pointC6">25.2℃</span>, 습도 <span class="pointC6">75.9%</span>로 수분부족분은 <span class="pointC6">7.25g/m³</span> 입니다.</li>
+									<li><span class="pointC6">적정한</span> 상태 입니다.</li>
+									<li>수분부족분 기준은 <span class="pointC6">3g/m³</span> 이하는 과습, <span class="pointC6">8g/m³</span> 초과는 건조 입니다.</li>
+								</ul>
+							</div>
+							<!-- //수분부족분 -->
+
+							<!-- 일몰온도 -->
+							<div class="subject_anchorCont" data-anchor-cont="subject06">
+								<div class="tiele_area"><h3>일몰온도</h3><span class="subject_anchor_summary">현재 9.4℃</span></div>
+								<div class="subject_anchor_graph">그래프영역</div>
+								<ul class="listType01">
+									<li>일몰 <span class="pointC6">2시간 전</span>과 설정하신 시작온도의 편차는 <span class="pointC7">3.85℃</span> 이고, 일몰 <span class="pointC6">2시간 후</span>와 설정하신 끝 온도의 편차는 <span class="pointC7">0℃</span> 입니다.</li>
+								</ul>
+							</div>
+							<!-- //일몰온도 -->
+
+							<!-- 결로(오전) -->
+							<div class="subject_anchorCont" data-anchor-cont="subject07">
+								<div class="tiele_area"><h3>결로(오전)</h3><span class="subject_anchor_summary">현재 DPD1.1℃</span></div>
+								<div class="subject_anchor_graph">그래프영역</div>
+								<ul class="listType01">
+									<li>현재 배부온도 <span class="pointC6">25.54℃</span>, 이슬점 <span class="pointC6">22.46℃</span>로 결로는 <span class="pointC6">3.07℃0.</span> 입니다.</li>
+									<li>내부온도와 이슬점 차이가 현재 <span class="pointC7">3.07℃</span>로 결로발생 위험은 낮습니다.</li>
+									<li>결로 기준은 DPD값 기준 <span class="pointC6">2℃</span> 이하는 <span class="pointC7">위험</span>, <span class="pointC6">2℃</span> 초과 <span class="pointC6">3℃</span> 이하 일때는 <span class="pointC7">주의</span> 입니다.</li>
+								</ul>
+							</div>
+							<!-- //결로(오전) -->
+						</div><!-- //.anchorContWrap -->
+					</div><!-- //.anchorListdWrap -->
+    		 	</div>
+    		 	<!-- //주제별분석 -->
+    		 </div>
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html> 

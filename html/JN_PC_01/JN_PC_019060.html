@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>이미지 수집 가공 | 대시보드</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<div class="wrap_daeshboard_box">				
+				<div class="boxType_daeshboard">
+					<div class="title daesh_tit_processed"><span>이미지 데이터 수집/가공</span></div>
+					<!-- summary -->
+					<div class="boxType1 daesh_img_summary mt20">
+						<div class="daesh_img_total">
+							<dl class="wrap_daesh_data accrue">
+								<dt>
+									<div class="tit"><span class="point">누적</span> 데이터</div>
+									<div class="value"><span class="point">201,597</span> 천건</div>
+								</dt>
+								<dd class="data_greenhouse_crops">
+									<div class="tit">시설작물</div>
+									<div class="value"><span>37,185</span> 천건</div>
+								</dd>
+								<dd class="data_outdoor_crops">
+									<div class="tit">노지작물</div>
+									<div class="value"><span>37,185</span> 천건</div>
+								</dd>
+							</dl>
+
+							<dl class="wrap_daesh_data day">
+								<dt>
+									<div class="tit"><span class="point">일 가공</span> 데이터</div>
+									<div class="value"><span class="point">1,597</span> 건</div>
+								</dt>
+								<dd class="data_greenhouse_crops">
+									<div class="tit">시설작물</div>
+									<div class="value"><span>985</span> 건</div>
+								</dd>
+								<dd class="data_outdoor_crops">
+									<div class="tit">노지작물</div>
+									<div class="value"><span>75</span> 건</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="wrap_daesh_img_week">
+							<div class="daesh_img_week">
+								<div class="subject">금주<br> 작업실적</div>
+								<dl class="wrap_daesh_data day">
+									<dt>
+										<div class="tit">수집</div>
+										<div class="value"><span class="point"> 757,150</span> 건</div>
+									</dt>
+									<dd class="data_greenhouse_crops">
+										<div class="tit">시설작물</div>
+										<div class="value"><span>700,000</span> 건</div>
+									</dd>
+									<dd class="data_outdoor_crops">
+										<div class="tit">노지작물</div>
+										<div class="value"><span>700,000</span> 건</div>
+									</dd>
+								</dl>
+								<dl class="wrap_daesh_data day">
+									<dt>
+										<div class="tit">정제/가공</div>
+										<div class="value"><span class="point"> 757,150</span> 건</div>
+									</dt>
+									<dd class="data_greenhouse_crops">
+										<div class="tit">시설작물</div>
+										<div class="value"><span>700,000</span> 건</div>
+									</dd>
+									<dd class="data_outdoor_crops">
+										<div class="tit">노지작물</div>
+										<div class="value"><span>700,000</span> 건</div>
+									</dd>
+								</dl>
+
+								<dl class="wrap_daesh_data day">
+										<div class="tit">검수</div>
+										<div class="value"><span class="point"> 757,150</span> 건</div>
+									</dt>
+									<dd class="data_greenhouse_crops">
+										<div class="tit">시설작물</div>
+										<div class="value"><span>700,000</span> 건</div>
+									</dd>
+									<dd class="data_outdoor_crops">
+										<div class="tit">노지작물</div>
+										<div class="value"><span>700,000</span> 건</div>
+									</dd>
+								</dl>
+							</div>							
+							<ul class="daesh_img_percentage">
+								<li class="img_collection"><strong>수집율</strong><span>191.8%</span></li>
+								<li class="img_processed"><strong>정제/가공율</strong><span>191.8%</span></li>
+								<li class="img_check"><strong>검수율</strong><span>191.8%</span></li>
+							</ul>							
+						</div><!-- //.wrap_daesh_img_week -->
+					</div>
+					<!-- //summary -->
+
+					<div class="wrap_processed_area">
+						<div class="processed_area01">
+							<h2 class="titH2">품목별 수집/가공현황</h2>
+							<div class="jsTabWrap">
+								<ul class="jstabMenu tabType02 sizeS mt20">
+									<li><button type="button" data-tab-link="tab01" class="active">전체</button></li>
+									<li><button type="button" data-tab-link="tab02">시설</button></li>
+									<li><button type="button" data-tab-link="tab03">노지</button></li>
+								</ul>
+								<!-- 전체 -->
+								<div class="tabContent active" data-tab-cont="tab01">
+									<div class="mt20">
+										<div style="height: 320px;">전체 그래프영역</div>
+									</div>
+								</div>
+								<!-- //전체 -->
+
+								<!-- 시설 -->
+								<div class="tabContent" data-tab-cont="tab02">
+									<div class="mt20">
+										<div style="height: 320px;">시설 그래프영역</div>
+									</div>
+								</div>
+								<!-- //시설 -->
+
+								<!-- 노지 -->
+								<div class="tabContent" data-tab-cont="tab03">
+									<div class="mt20">
+										<div style="height: 320px;">노지 그래프영역</div>
+									</div>
+								</div>
+								<!-- //노지 -->
+							</div>
+
+							<div class="wrapTitle_daesh mt30">
+								<h2 class="titH2">유형별 수집/가공 현황</h2>
+								<dl class="daesh_search_area">
+									<dd>
+										<select class="select">
+											<option value="" selected>딸기</option>
+											<option value="">option 1</option>
+											<option value="">option 2</option>
+										</select>
+									</dd>
+								</dl>
+							</div>
+							<div class="jsTabWrap">
+								<ul class="jstabMenu tabType02 sizeS mt20">
+									<li><button type="button" data-tab-link="tab01" class="active">데이터종류</button></li>
+									<li><button type="button" data-tab-link="tab02">병해충</button></li>
+									<li><button type="button" data-tab-link="tab03">찰영부위</button></li>
+									<li><button type="button" data-tab-link="tab04">셍육단계</button></li>
+								</ul>
+								<!-- 데이터종류 -->
+								<div class="tabContent active" data-tab-cont="tab01">
+									<div class="mt20">
+										<div style="height: 320px;">데이터종류 그래프영역</div>
+									</div>
+								</div>
+								<!-- //데이터종류 -->
+
+								<!-- 병해충 -->
+								<div class="tabContent" data-tab-cont="tab02">
+									<div class="mt20">
+										<div style="height: 320px;">병해충 그래프영역</div>
+									</div>
+								</div>
+								<!-- //병해충 -->
+
+								<!-- 찰영부위 -->
+								<div class="tabContent" data-tab-cont="tab03">
+									<div class="mt20">
+										<div style="height: 320px;">찰영부위 그래프영역</div>
+									</div>
+								</div>
+								<!-- //찰영부위 -->
+
+								<!-- 셍육단계 -->
+								<div class="tabContent" data-tab-cont="tab04">
+									<div class="mt20">
+										<div style="height: 320px;">셍육단계 그래프영역</div>
+									</div>
+								</div>
+								<!-- //셍육단계 -->
+							</div>
+						</div><!-- //.processed_area01 -->
+
+						<div class="processed_area02">
+							<div class="wrapTitle_daesh mt0">
+								<h2 class="titH2">데이터 수집/가공 추이</h2>
+								<div class="daesh_search_area2 mt0">
+									<span>
+										<select class="select">
+											<option value="" selected="">전체</option>
+											<option value="">option 1</option>
+											<option value="">option 2</option>
+										</select>
+									</span>
+									<span><input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17"></span>
+									<span><button type="button" class="btn btnTable"><span class="icon_search2">검색</span></button></span>
+								</div>
+							</div>
+
+							<div class="jsTabWrap">
+								<ul class="jstabMenu tabType02 sizeS mt20">
+									<li><button type="button" data-tab-link="tab01" class="active">전체</button></li>
+									<li><button type="button" data-tab-link="tab02">시설</button></li>
+									<li><button type="button" data-tab-link="tab03">노지</button></li>
+								</ul>
+								<!-- 전체 -->
+								<div class="tabContent active" data-tab-cont="tab01">
+									<div class="mt20">
+										<div style="height: 320px;">전체 그래프영역</div>
+									</div>
+								</div>
+								<!-- //전체 -->
+
+								<!-- 시설 -->
+								<div class="tabContent" data-tab-cont="tab02">
+									<div class="mt20">
+										<div style="height: 320px;">시설 그래프영역</div>
+									</div>
+								</div>
+								<!-- //시설 -->
+
+								<!-- 노지 -->
+								<div class="tabContent" data-tab-cont="tab03">
+									<div class="mt20">
+										<div style="height: 320px;">노지 그래프영역</div>
+									</div>
+								</div>
+								<!-- //노지 -->
+							</div>
+
+							<h2 class="titH2">데이터 작업현황</h2>
+							<div class="jsTabWrap">
+								<ul class="jstabMenu tabType02 sizeS mt20 mb20">
+									<li><button type="button" data-tab-link="tab01" class="active">전체</button></li>
+									<li><button type="button" data-tab-link="tab02">시설</button></li>
+									<li><button type="button" data-tab-link="tab03">노지</button></li>
+								</ul>
+								<!-- 전체 -->
+								<div class="tabContent active" data-tab-cont="tab01">
+									<div class="processed_area02_row">
+										<div class="area02_row_area1">
+											<ul class="account_admin mt0">
+												<li class="list_flag_08"><span class="tit">작업배정</span><span>257건</span></li>
+												<li class="list_flag_09"><span class="tit">검수증</span><span>50건</span></li>
+												<li class="list_flag_10"><span class="tit">검수완료</span><span>250건</span></li>
+												<li class="list_flag_11"><span class="tit">완료율</span><span>99.5%</span></li>
+											</ul>
+											<div class="jsTabWrap">
+												<ul class="jstabMenu tabType02 sizeS mt20">
+													<li><button type="button" data-tab-link="tab01" class="active">작업자</button></li>
+													<li><button type="button" data-tab-link="tab02">작업그룹</button></li>
+													<li><button type="button" data-tab-link="tab03">품목</button></li>
+												</ul>
+												<!-- 작업자 -->
+												<div class="tabContent active" data-tab-cont="tab01">
+													<table class="table tbType03 tdCenter">
+														<caption></caption>
+														<colgroup>
+															<col width="*">
+														</colgroup>
+														<thead>
+															<tr>
+																<th>구분</th>
+																<th>작업할당</th>
+																<th>검수중</th>
+																<th>검수완료</th>
+																<th>완료율</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th>유지연</th>
+																<td>1,200</td>
+																<td>-</td>
+																<td>1,200</td>
+																<td>100.0%</td>
+															</tr>
+															<tr>
+																<th>유지연</th>
+																<td>1,200</td>
+																<td>-</td>
+																<td>1,200</td>
+																<td>100.0%</td>
+															</tr>
+															<tr>
+																<th>유지연</th>
+																<td>1,200</td>
+																<td>-</td>
+																<td>1,200</td>
+																<td>100.0%</td>
+															</tr>
+															<tr>
+																<th>유지연</th>
+																<td>1,200</td>
+																<td>-</td>
+																<td>1,200</td>
+																<td>100.0%</td>
+															</tr>
+															<tr>
+																<th>유지연</th>
+																<td>1,200</td>
+																<td>-</td>
+																<td>1,200</td>
+																<td>100.0%</td>
+															</tr>
+															<tr>
+																<th>유지연</th>
+																<td>1,200</td>
+																<td>-</td>
+																<td>1,200</td>
+																<td>100.0%</td>
+															</tr>
+														</tbody>
+													</table>
+													<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>
+												</div>
+												<!-- //작업자 -->
+
+												<!-- 작업그룹 -->
+												<div class="tabContent" data-tab-cont="tab02">
+													<div class="mt20">
+														<div style="height: 320px;">시설 그래프영역</div>
+													</div>
+												</div>
+												<!-- //작업그룹 -->
+
+												<!-- 품목 -->
+												<div class="tabContent" data-tab-cont="tab03">
+													<div class="mt20">
+														<div style="height: 320px;">노지 그래프영역</div>
+													</div>
+												</div>
+												<!-- //품목 -->
+											</div>
+										</div>
+										<div class="area02_row_area2">
+											<ul class="listType02">
+												<li><span class="list_flag_08">작업배정</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+												<li><span class="list_flag_08">작업배정</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+												<li><span class="list_flag_08">작업배정</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+												<li><span class="list_flag_09">검주중</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+												<li><span class="list_flag_09">검주중</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+												<li><span class="list_flag_09">검주중</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+												<li><span class="list_flag_10">검수완료</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+												<li><span class="list_flag_10">검수완료</span>2022-02-15(월) / 15:00:00 / 유지연</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- //전체 -->
+
+								<!-- 시설 -->
+								<div class="tabContent" data-tab-cont="tab02">
+									<div class="processed_area02_row">
+										<div class="area02_row_area1">시설 작업배정 현황</div>
+										<div class="area02_row_area2">시설 작업 진행 현황</div>
+									</div>
+								</div>
+								<!-- //시설 -->
+
+								<!-- 노지 -->
+								<div class="tabContent" data-tab-cont="tab03">
+									<div class="processed_area02_row">
+										<div class="area02_row_area1">노지 작업배정 현황</div>
+										<div class="area02_row_area2">노지 작업 진행 현황</div>
+									</div>
+								</div>
+								<!-- //노지 -->
+							</div>							
+
+						</div><!-- //.processed_area02 -->
+					</div><!-- //.wrap_processed_area -->					
+				</div>
+			</div><!-- //.wrap_daeshboard_box -->
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html>

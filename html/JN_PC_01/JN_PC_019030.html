@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>시설제어 | 대시보드</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<div class="wrap_daeshboard_box">
+				<div class="boxType_daeshboard">
+					<div class="title daesh_tit_facilities"><span>시설제어 현황</span></div>
+					<div class="boxType1 summary mt20">
+						<dl class="wrap_daesh_data accrue">
+							<dt>
+								<div class="tit"><span class="point">누적</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 천건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+						</dl>
+
+						<dl class="wrap_daesh_data day">
+							<dt>
+								<div class="tit"><span class="point">일 수집</span> 데이터</div>
+								<div class="value"><span class="point">201,597</span> 천건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>37,185</span> 천건</div>
+							</dd>
+						</dl>
+					</div>
+
+					<h2 class="titH2 mt40">제어데이터 수집현황</h2>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">품목별</button></li>
+							<li><button type="button" data-tab-link="tab02">제어기별</button></li>
+						</ul>
+						<!-- 품목별 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<table class="table tbType03 tdCenter">
+								<caption>품목별 데이터 수집현황</caption>
+								<colgroup>
+									<col width="33.33%">
+									<col width="33.33%">
+									<col width="33.33%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>수집농가 수</th>
+										<th>일 누적수집 데이터</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>딸기</th>
+										<td>158</td>
+										<td>278,486</td>
+									</tr>
+									<tr>
+										<th>토마토</th>
+										<td>87</td>
+										<td>157,568</td>
+									</tr>
+									<tr>
+										<th>파프리카</th>
+										<td>27</td>
+										<td>153,598</td>
+									</tr>
+									<tr>
+										<th>포도</th>
+										<td>15</td>
+										<td>45,868</td>
+									</tr>
+									<tr>
+										<th>양파</th>
+										<td>35</td>
+										<td>1,568</td>
+									</tr>
+									<tr>
+										<th>배추</th>
+										<td>15</td>
+										<td>2,259</td>
+									</tr>
+									<tr>
+										<th>오이</th>
+										<td>35</td>
+										<td>12,548</td>
+									</tr>
+									<tr>
+										<th>당근</th>
+										<td>12</td>
+										<td>15,565</td>
+									</tr>
+									<tr>
+										<th>사과</th>
+										<td>8</td>
+										<td>13,598</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //품목별 -->
+
+						<!-- 제어기별 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<table class="table tbType03 tdCenter">
+								<caption>제어기기별 데이터 수집현황</caption>
+								<colgroup>
+									<col width="33.33%">
+									<col width="33.33%">
+									<col width="33.33%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>수집농가 수</th>
+										<th>일 누적수집 데이터</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>딸기</th>
+										<td>8</td>
+										<td>8,486</td>
+									</tr>
+									<tr>
+										<th>토마토</th>
+										<td>87</td>
+										<td>157,568</td>
+									</tr>
+									<tr>
+										<th>파프리카</th>
+										<td>27</td>
+										<td>153,598</td>
+									</tr>
+									<tr>
+										<th>포도</th>
+										<td>15</td>
+										<td>45,868</td>
+									</tr>
+									<tr>
+										<th>양파</th>
+										<td>35</td>
+										<td>1,568</td>
+									</tr>
+									<tr>
+										<th>배추</th>
+										<td>15</td>
+										<td>2,259</td>
+									</tr>
+									<tr>
+										<th>오이</th>
+										<td>35</td>
+										<td>12,548</td>
+									</tr>
+									<tr>
+										<th>당근</th>
+										<td>12</td>
+										<td>15,565</td>
+									</tr>
+									<tr>
+										<th>사과</th>
+										<td>8</td>
+										<td>13,598</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //제어기별 -->
+					</div>
+
+					<h2 class="titH2 mt40">제어감지</h2>
+					<div class="Wrap_sensing">
+						<div class="data_greenhouse_crops">
+							<div class="tit">시설작물</div>
+							<div class="value"><span>37,185</span> 천건</div>
+						</div>
+						<div class="data_outdoor_crops">
+							<div class="tit">노지작물</div>
+							<div class="value"><span>37,185</span> 천건</div>
+						</div>
+					</div>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt30">
+							<li><button type="button" data-tab-link="tab01" class="active">시설</button></li>
+							<li><button type="button" data-tab-link="tab02">노지</button></li>
+						</ul>
+						<!-- 시설 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<ul class="listType02">
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시 </li>
+							</ul>
+							<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>
+						</div>
+						<!-- //시설 -->
+
+						<!-- 노지 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<ul class="listType02">
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_01">제어감지</span>2022-02-15(월) / 15:00:00 / 스크린 / 여는 중 / 정지농 / 토마토 / 충청남도 논산시 </li>
+							</ul>
+							<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>
+						</div>
+						<!-- //노지 -->
+					</div>
+				</div><!-- //.boxType_daeshboard -->
+
+				<div class="boxType_daeshboard">
+					<div class="title daesh_tit_critical"><span>이상값/임계값 관리</span></div>
+					<div class="boxType1 summary mt20">
+						<dl class="wrap_daesh_data accrue">
+							<dt>
+								<div class="tit"><span class="point">이상값</span> 발생</div>
+								<div class="value"><span class="point">25</span> 건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>15</span> 건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>10</span> 건</div>
+							</dd>
+						</dl>
+
+						<dl class="wrap_daesh_data day">
+							<dt>
+								<div class="tit"><span class="point">임계값</span> 주의</div>
+								<div class="value"><span class="point">48</span> 건</div>
+							</dt>
+							<dd class="data_greenhouse_crops">
+								<div class="tit">시설작물</div>
+								<div class="value"><span>32</span> 건</div>
+							</dd>
+							<dd class="data_outdoor_crops">
+								<div class="tit">노지작물</div>
+								<div class="value"><span>10</span> 건</div>
+							</dd>
+						</dl>
+					</div>
+
+					<h2 class="titH2 mt40">이상값 발생 농가</h2>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">시설</button></li>
+							<li><button type="button" data-tab-link="tab02">노지</button></li>
+						</ul>
+						<!-- 시설 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<ul class="listType02">
+								<li><span class="list_flag_caution"><span>주의</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_caution"><span>주의</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_caution"><span>주의</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_warning"><span>경고</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_warning"><span>경고</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+							</ul>
+							<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>
+						</div>
+						<!-- //시설 -->
+
+						<!-- 노지 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<ul class="listType02">
+								<li><span class="list_flag_caution"><span>주의</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_warning"><span>경고</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_caution"><span>주의</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_warning"><span>경고</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_caution"><span>주의</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>								
+							</ul>
+							<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>					
+						</div>
+						<!-- //노지 -->
+					</div>
+
+					<h2 class="titH2 mt40">임계값 도달 주의농가</h2>
+					<div class="jsTabWrap">
+						<ul class="jstabMenu tabType02 sizeS mt15">
+							<li><button type="button" data-tab-link="tab01" class="active">시설</button></li>
+							<li><button type="button" data-tab-link="tab02">노지</button></li>
+						</ul>
+						<!-- 시설 -->
+						<div class="tabContent active" data-tab-cont="tab01">
+							<ul class="listType02">
+								<li><span class="list_flag_02"><span>최대값 초과</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_03"><span>최대값 근접</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_02"><span>최대값 초과</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_03"><span>최대값 근접</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_02"><span>최대값 초과</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+							</ul>
+							<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>
+						</div>
+						<!-- //시설 -->
+
+						<!-- 노지 -->
+						<div class="tabContent" data-tab-cont="tab02">
+							<ul class="listType02">
+								<li><span class="list_flag_02"><span>최대값 초과</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_03"><span>최대값 근접</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_02"><span>최대값 초과</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시</li>
+								<li><span class="list_flag_03"><span>최대값 근접</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+								<li><span class="list_flag_02"><span>최대값 초과</span></span>022-02-15(월) / 15:00:00 / 정지농 / 토마토 / 충청남도 논산시 </li>
+							</ul>
+							<div class="wrap_more_area"><button type="button" class="btn"><span>펼쳐보기</span></button></div>					
+						</div>
+						<!-- //노지 -->
+					</div>
+				</div><!-- //.boxType_daeshboard -->
+			</div><!-- //.wrap_daeshboard_box -->
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html>

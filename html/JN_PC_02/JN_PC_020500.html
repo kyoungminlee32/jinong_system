@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 농장별통신이력조회</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+			<div class="firstsub">
+				<h3 class="titH3">농장별통신이력조회</h3>
+				<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle001" class="btn btn_jsToggle">대시보드 <span>닫기</span></button></div>
+				<div class="jsToggleCont" data-jstoggle-cont="toggle001">
+					<ul class="subfarmpresent">
+						<li class="boxType1">
+							<strong class="title">실시간 농가 현황</strong>
+							<div class="mt10">그래프영역</div>
+						</li>
+						<li class="boxType1">
+							<strong class="title">오늘 이상 상황(장비상태이상 + 제어 실패)</strong>
+							<div class="mt10">그래프영역</div>
+						</li>
+						<li class="boxType1">
+							<strong class="title">이번달 이상 상황(장비상태이상 + 제어 실패)</strong>
+							<div class="mt10">그래프영역</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="secondsub">
+				<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+				<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+					<div class="tbSearch">
+						<table class="table">
+							<caption>데이터 조회 조건</caption>
+							<colgroup>
+								<col width="100">
+								<col width="500">
+								<col width="100">
+								<col width="500">
+								<col width="100">
+								<col width="500">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>지역</th>
+									<td>
+										<select class="select">
+											<option value="" selected>시/도</option>
+											<option value="">경기도</option>
+											<option value="">충청도</option>
+											<option value="">경상북도</option>
+										</select>
+										<select class="select">
+											<option value="" selected>시/군/구</option>
+											<option value="">과천시</option>
+											<option value="">의정부시</option>
+										</select>
+									</td>
+									<th>품목</th>
+									<td>
+										<select class="select w40">
+											<option value="" selected>전체</option>
+											<option value="">option 1</option>
+											<option value="">option 2</option>
+										</select>
+									</td>
+									<th>농장정보</th>
+									<td>
+										<div class="btnSet">
+											<input type="text" value="김지농_농가" class="inputTxt w70">
+											<button type="button" class="btn btnTable">선택</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>이상상황구분</th>
+									<td>
+										<span class="formCheckBox"><input type="checkbox" id="tbSearch11"><label for="tbSearch11">통신이상</label></span>
+										<span class="formCheckBox"><input type="checkbox" id="tbSearch12" checked><label for="tbSearch12">장비이상</label></span>
+										<span class="formCheckBox"><input type="checkbox" id="tbSearch13"><label for="tbSearch13">제어이상</label></span>
+									</td>
+									<th>기간선택</th>
+									<td>
+										<input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17">
+									</td>
+									<th>장비</th>
+									<td>
+										<div class="btnSet">
+											<input type="text" value="김지농_장비" class="inputTxt w70">
+											<button type="button" class="btn btnTable">선택</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+				</div>
+			</div>
+			<div class="jsTabWrap data">
+    			<ul class="jstabMenu tabType02">
+    				<li><button type="button" data-tab-link="tab001" class="active"><span class="eventlog">이벤트 로그</span></button></li>
+    				<li><button type="button" data-tab-link="tab002"><span class="farmver">농가 별</span></button></li>
+    				<li><button type="button" data-tab-link="tab003"><span class="timever">시간대 별</span></button></li>
+    				<li><button type="button" data-tab-link="tab004"><span class="locationver">지역 별</span></button></li>
+    			</ul>
+
+    			<!-- 이벤트 로그 -->
+    			<div class="tabContent active" data-tab-cont="tab001">
+					<div class="thirdsub">
+						<table class="data-table" id="myTable" data-fixed-header="0" >
+							<caption></caption>
+							<thead>
+								<tr>
+									<th>지역</th>	
+									<th>품목</th>
+									<th>이벤트일시</th>
+									<th>농장명</th>	
+									<th>장비구분</th>
+									<th>장비명</th>
+									<th>이상구분</th>	
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>포도</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>노드</td>
+									<td>센서노드</td>
+									<td>통신이상</td>
+									<td>-</td>
+								</tr>	
+								<tr>
+									<td>경기도 안양시</td>
+									<td>토마토</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>온도센서</td>
+									<td>온도1</td>
+									<td>장비이상</td>
+									<td>ERROR</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>딸기</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>제어이상</td>
+									<td>BUSY</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>딸기</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>통신이상</td>
+									<td>FAIL_TIMEOUT</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>배추</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>노드</td>
+									<td>센서노드</td>
+									<td>장비이상</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>양파</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>온도센서</td>
+									<td>온도1</td>
+									<td>제어이상</td>
+									<td>ERROR</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>포도</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>통신이상</td>
+									<td>BUSY</td>
+								</tr>	
+								<tr>
+									<td>경기도 안양시</td>
+									<td>포도</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>노드</td>
+									<td>센서노드</td>
+									<td>통신이상</td>
+									<td>-</td>
+								</tr>	
+								<tr>
+									<td>경기도 안양시</td>
+									<td>토마토</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>온도센서</td>
+									<td>온도1</td>
+									<td>장비이상</td>
+									<td>ERROR</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>딸기</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>제어이상</td>
+									<td>BUSY</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>딸기</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>통신이상</td>
+									<td>FAIL_TIMEOUT</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>배추</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>노드</td>
+									<td>센서노드</td>
+									<td>장비이상</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>양파</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>온도센서</td>
+									<td>온도1</td>
+									<td>제어이상</td>
+									<td>ERROR</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>포도</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>통신이상</td>
+									<td>BUSY</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>포도</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>노드</td>
+									<td>센서노드</td>
+									<td>통신이상</td>
+									<td>-</td>
+								</tr>	
+								<tr>
+									<td>경기도 안양시</td>
+									<td>토마토</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>온도센서</td>
+									<td>온도1</td>
+									<td>장비이상</td>
+									<td>ERROR</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>딸기</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>제어이상</td>
+									<td>BUSY</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>딸기</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>통신이상</td>
+									<td>FAIL_TIMEOUT</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>배추</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>노드</td>
+									<td>센서노드</td>
+									<td>장비이상</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>양파</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>온도센서</td>
+									<td>온도1</td>
+									<td>제어이상</td>
+									<td>ERROR</td>
+								</tr>
+								<tr>
+									<td>경기도 안양시</td>
+									<td>포도</td>
+									<td>2021-11-09 00:00:00</td>
+									<td>김지농_농가</td>
+									<td>천창</td>
+									<td>천창</td>
+									<td>통신이상</td>
+									<td>BUSY</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+    			</div>
+    			<!-- //이벤트 로그 -->
+
+    			<!-- 농가 별 -->
+    			<div class="tabContent" data-tab-cont="tab002">농가 별</div>
+    			<!-- //농가 별 -->
+
+    			<!-- 시간대 별 -->
+    			<div class="tabContent" data-tab-cont="tab003">시간대 별</div>
+    			<!-- 시간대 별 -->
+
+    			<!-- 지역 별 -->
+    			<div class="tabContent" data-tab-cont="tab004">지역 별</div>
+    			<!-- 지역 별 -->
+    		</div>	
+			
+			
+
+    		    		
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+	var table = $("#myTable").DataTable({
+		
+	});
+</script>
+
+
+
+</body>
+</html> 

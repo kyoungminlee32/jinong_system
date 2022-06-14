@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING |방제약제Profile관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>PLS</span><em>A/S관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>	
+    	<div class="content">
+    		<h3 class="titH3">A/S관리</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+    			<div class="tbSearch">
+	    			<table class="table">
+						<caption>데이터 조회 조건</caption>
+						<colgroup>
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>지역</th>
+								<td>
+									<select class="select w40">
+										<option selected>시/도</option>
+										<option value="">서울시</option>
+										<option value="">경기도</option>
+										<option value="">강원도</option>
+										<option value="">전라도</option>
+										<option value="">경상도</option>
+									</select>
+									<select class="select w40">
+										<option value=""selected>시/군/구</option>
+									</select>
+								</td>
+								<th>품목</th>
+								<td>
+									<select class="select w80">
+										<option value="" selected>전체</option>
+										<option value="" >1</option>
+										<option value="" >2</option>
+									</select>
+								</td>
+								<th>기간선택</th>
+								<td colspan="2">
+									<input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17">
+								</td>	
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+			</div>
+			
+			<table class="data-table" id="myTable" data-fixed-header="0">
+				<caption></caption>
+				<thead>
+					<tr>
+						<th>장애접수일자</th>
+						<th>지역</th>
+						<th>농가명</th>
+						<th>품목</th>
+						<th>장애발생유형</th>
+						<th>장애내용</th>	
+						<th>사진</th>	
+						<th>처리상태</th>	
+						<th>처리일자</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>시스템</td>
+						<td>시스템 에러</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>기타</td>
+						<td>알수없는 장애</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+					<tr>
+						<td>2022-01-12</td>
+						<td>충남</td>
+						<td>김지농 농가</td>
+						<td>딸기</td>
+						<td>장비</td>
+						<td>장비 고장</td>
+						<td><div class="wrap_pic" style="width:100px"><img src="../../images/temp/temp_02.png" alt=""></div></td>
+						<td>처리중</td>
+						<td>2022-01-12</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btnAreaR">
+				<button type="button" class="btn btn-primary point">장애등록</button>
+			</div>	    		
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	
+});
+
+
+
+</script>
+
+
+
+</body>
+</html> 

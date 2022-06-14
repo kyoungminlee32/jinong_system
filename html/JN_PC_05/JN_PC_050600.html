@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 촬영시간 관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>시설제어</span><em>촬영시간 관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">촬영시간 관리</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+				<div class="tbSearch">
+					<table class="table">
+						<caption>데이터 조회 조건</caption>
+						<colgroup>
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+							
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>지역</th>
+								<td>
+									<select class="select">
+										<option value="" selected>시/도</option>
+										<option value="">경기도</option>
+										<option value="">충청도</option>
+										<option value="">경상북도</option>
+									</select>
+									<select class="select">
+										<option value="" selected>시/군/구</option>
+										<option value="">과천시</option>
+										<option value="">의정부시</option>
+									</select>
+								</td>
+								<th>품목</th>
+								<td>
+									<select class="select w40">
+										<option value="" selected>전체</option>
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+									</select>
+								</td>
+								<th>농가명</th>
+								<td>
+									<div class="btnSet">
+										<input type="text" value="5.농가" class="inputTxt w70">
+										<button type="button" class="btn btnTable">선택</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+			</div>
+			<table class="data-table" id="myTable" data-fixed-header="0" >
+				<caption></caption>
+				<thead>
+					<tr>
+						<th>지역</th>
+						<th>품목</th>
+						<th>농가명</th>
+						<th>구역명</th>
+						<th>장비명</th>
+						<th>촬영시간 1</th>	
+						<th>촬영시간 2</th>	
+						<th>촬영시간 3</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>딸기</td>
+						<td>김지농 농장</td>
+						<td>김지농_농장구역</td>
+						<td>한화테크윈</td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+						<td><input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"> : <input type="text" class="inputTxt sizeS"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="btnAreaR">
+				<button type="button" class="btn btn-primary">설정값 수정</button>
+			</div>		
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+	var table = $("#myTable").DataTable({
+		
+	});
+</script>
+
+
+
+</body>
+</html> 

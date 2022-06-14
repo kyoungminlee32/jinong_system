@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 영농정보 조회</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>영농환경 분석</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">영농정보 조회</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+				<div class="tbSearch">
+					<table class="table">
+						<caption>데이터 조회 조건</caption>
+						<colgroup>
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+							
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>지역</th>
+								<td>
+									<select class="select" >
+										<option value="" selected>시/도</option>
+										<option value="">경기도</option>
+										<option value="">충청도</option>
+										<option value="">경상북도</option>
+									</select>
+									<select class="select">
+										<option value="" selected>시/군/구</option>
+										<option value="">과천시</option>
+										<option value="">의정부시</option>
+									</select>
+								</td>
+								<th>품목</th>
+								<td>
+									<select class="select w40">
+										<option value="" selected>전체</option>
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+									</select>
+								</td>
+								<th>농장정보</th>
+								<td>
+									<div class="btnSet">
+										<input type="text" value="김지농_농가" class="inputTxt w70">
+										<button type="button" class="btn btnTable">선택</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>기간선택</th>
+								<td>
+									<input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17">
+								</td>
+								<th>영농작업</th>
+								<td>
+									<select class="select w40">
+										<option value="" selected>작업 선택</option>
+										<option value="" >종자준비</option>
+										<option value="" >파종</option>
+										<option value="" >정식포소독</option>
+										<option value="" >정식</option>
+										<option value="" >활착</option>
+										<option value="" >착과준비</option>
+										<option value="" >착과</option>
+										<option value="" >과비대성숙</option>
+										<option value="" >수확</option>
+										<option value="" >추가유인</option>
+										<option value="" >병해충방제</option>
+										<option value="" >비료작업</option>
+										<option value="" >관수작업</option>
+										<option value="" >적뇌</option>
+										<option value="" >적과</option>
+										<option value="" >염지</option>
+										<option value="" >눈따기</option>
+										<option value="" >전정</option>
+										<option value="" >기타</option>
+									</select>
+									
+								</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+			<div class="excel_btn_area">
+				<button class="excelBtn-download"><em>엑셀</em> <span>다운로드</span></button>
+			</div>
+
+			<table class="data-table" id="myTable" data-fixed-header="0">
+				<caption></caption>
+				<thead>
+					<tr>
+						<th rowspan="2">지역</th>
+						<th rowspan="2">작성일자</th>
+						<th rowspan="2">품목</th>
+						<th rowspan="2">농장명</th>
+						<th rowspan="2">영농 작업명</th>
+						<th rowspan="2">재해 및 장해명</th>
+						<th colspan="2">인건비</th>	
+						<th rowspan="2">메모</th>
+					</tr>
+					<tr>
+						<th class="borderL">남자작업인원수</th>	
+						<th>여자작업인원수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>	
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>	
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>	
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>파프리카</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>딸기</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시ww</td>
+						<td>2021-05-20</td>
+						<td>토마토</td>
+						<td>김지농 농가</td>
+						<td>종자준비</td>
+						<td>재해 및 장해내용 출력</td>
+						<td>10</td>
+						<td>10</td>
+						<td>메모 내용 출력</td>
+						</tr>
+					
+					
+				</tbody>
+			</table>
+
+    		    		
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<script type="text/javascript">
+	var table = $("#myTable").DataTable({
+		
+	});
+</script>
+
+
+
+</body>
+</html> 

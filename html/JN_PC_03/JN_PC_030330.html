@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>조사원할당</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>조사항목기준관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">조사원할당</h3>
+			<div class="tbSearch">
+				<table class="table">
+					<caption>데이터 조회 조건</caption>
+					<colgroup>
+						<col width="100">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>조사계획명</th>
+							<td>
+								<select class="select">
+									<option value="" selected>2022_콩_생육조사</option>
+									<option value="">2021</option>
+									<option value="">2020</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+
+			
+			<div class="wrap_division_area1 mt40">
+				<div class="division_left">
+					<h4 class="titH4">조사원 목록</h4>
+					<table class="table tbTypeList cellSelect mt20">
+						<colgroup>
+							<col width="*">
+						</colgroup>
+						<caption></caption>
+						<thead>
+							<tr>
+								<th>조사자명</th>
+								<th>아이디</th>
+								<th>휴대번호</th>
+								<th>조사필지</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>김준일</td>
+								<td>kji1234</td>
+								<td class="alignC">010-4568-1234</td>
+								<td>10 필지</td>
+							</tr>
+							<tr>
+								<td>성기훈</td>
+								<td>kji1234</td>
+								<td class="alignC">010-4568-1234</td>
+								<td>10 필지</td>
+							</tr>
+							<tr>
+								<td>김영수</td>
+								<td>kji1234</td>
+								<td class="alignC">010-4568-1234</td>
+								<td>10 필지</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="division_right">
+					<div class="wrapTitle">
+						<h4 class="titH4 mb0">조사대상 필지목록</h4>
+						<button class="excelBtn-download"><span>조사원할당 엑셀 다운로드</span></button>
+					</div>
+					<table class="table tbTypeList mt5">
+						<colgroup>
+							<col width="80">
+							<col width="150">
+							<col width="*">
+						</colgroup>
+						<caption></caption>
+						<thead>
+							<tr>
+								<th>선택</th>
+								<th>필지명</th>					
+								<th>주소</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="alignC"><input type="checkbox" class="inputChek" name=""></td>
+								<td>탑촌리 615-1</td>
+								<td> 충북 괴산군 불정면 탑촌리 615-1</td>
+							</tr>
+							<tr>
+								<td class="alignC"><input type="checkbox" class="inputChek" name=""></td>
+								<td>탑촌리 615-1</td>
+								<td> 충북 괴산군 불정면 탑촌리 615-1</td>
+							</tr>
+							<tr>
+								<td class="alignC"><input type="checkbox" class="inputChek" name=""></td>
+								<td>탑촌리 615-1</td>
+								<td> 충북 괴산군 불정면 탑촌리 615-1</td>
+							</tr>
+							<tr>
+								<td class="alignC"><input type="checkbox" class="inputChek" name=""></td>
+								<td>탑촌리 615-1</td>
+								<td> 충북 괴산군 불정면 탑촌리 615-1</td>
+							</tr>
+							<tr>
+								<td class="alignC"><input type="checkbox" class="inputChek" name=""></td>
+								<td>탑촌리 615-1</td>
+								<td> 충북 괴산군 불정면 탑촌리 615-1</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="btnAreaC">
+				<button type="button" class="btn btnType01">저장</button>
+			</div>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+	$('.cellSelect tbody tr').click(function(){
+		var $this = $(this);
+		$this.closest('tbody').find('tr').removeClass('trSelectd');
+		$this.addClass('trSelectd');
+
+	});
+
+</script>
+
+
+</body>
+</html>

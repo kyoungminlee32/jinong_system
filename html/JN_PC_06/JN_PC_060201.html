@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 컨설팅관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>컨설팅관리</span><em>컨설팅관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">컨설팅관리</h3>
+    		<!-- 탭 영역 시작 -->
+    		<div class="jsTabWrap">
+    			<ul class="jstabMenu tabType02">
+    				<li><button type="button" data-tab-link="tab01">캘린더</button></li>
+    				<li><button type="button" data-tab-link="tab02" class="active">목록</button></li>
+    			</ul>
+    			<!-- 탭 목록 시작 -->
+    		 		<div class="tabContent active" data-tab-cont="tab02">
+						<div class="coninputbefore mt30">
+							<h3 class="titH3">김지농 농가 정식 18주차 컨설팅 정보</h3>
+							<button type="button" class="btn btn-primary point">대조군 설정</button>
+						</div>
+						<div class="jsTabWrap mt15">
+							<ul class="jstabMenu tabType01">
+								<li><button type="button" data-tab-link="tab01" class="active">컨설팅 입력</button></li>
+								<li><button type="button" data-tab-link="tab02">영농정보</button></li>
+							</ul>
+							<!-- 컨설팅 입력 -->
+							<div class="tabContent active" data-tab-cont="tab01">
+								<div class="wrapTitle widthData pb10 mt30">
+									<h3 class="titH3">온실환경 요약</h3>
+									<span>
+										<button type="button" class="btn btn-primary point">대조군 비교</button> 
+									</span>
+								</div>	
+
+								<!-- <div class="coninputbefore widthData pb10 mt20">
+									<h3 class="titH3">온실환경 요약</h3>
+									<button type="button" class="btn btn-primary point">대조군 비교</button> 
+								</div>	 -->
+								<table class="data-table" id="myTable" data-fixed-header="0">
+									<caption></caption>
+									<thead>
+										<tr>
+											<th rowspan="2">수집일자</th>
+											<th colspan="3">온도 (℃)</th>
+											<th colspan="3"> 지온 (℃)</th>
+											<th colspan="3">상대습도 (%)</th>
+											<th colspan="3">이산화탄소 농도 (ppm)</th>
+											<th rowspan="2">누적일사량 MJ/m²</th>
+										</tr>
+										<tr>
+											<th>최소</th>
+											<th>평균</th>
+											<th>최대</th>
+											<th>최소</th>
+											<th>평균</th>
+											<th>최대</th>
+											<th>최소</th>
+											<th>평균</th>
+											<th>최대</th>
+											<th>최소</th>
+											<th>평균</th>
+											<th>최대</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+										<tr>
+											<td>2022-01-06</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>9.30</td>
+											<td>11.20</td>
+											<td>20.30</td>
+											<td>68.30</td>
+											<td>90.24</td>
+											<td>95.40</td>
+											<td>423.20</td>
+											<td>2450.20</td>
+											<td>6480.20</td>
+											<td>9.82</td>
+										</tr>
+									</tbody>
+								</table>
+								<textarea class="textarea mt15" placeholder="등록하실 메모가 있으시면 입력해주세요"></textarea>
+								<span class="filebox large">
+									<input type="file" id="ex_file">
+									<label for="ex_file">
+										<span class="cliptext"></span>
+										<span class="file_del"></span>
+									</label>
+								</span>
+								<div class="btnAreaC">
+									<button type="button" class="btn btnType01">등록</button>	
+								</div>
+								<h3 class="titH3">온도관리</h3>
+								<div class="warp_graph">
+									그래프영역 <br><br><br><br><br><br><br><br><br><br>
+								</div>
+								<textarea class="textarea mt15" placeholder="등록하실 메모가 있으시면 입력해주세요"></textarea>
+								<span class="filebox large">
+									<input type="file" id="ex_file1">
+									<label for="ex_file1">
+										<span class="cliptext"></span>
+										<span class="file_del"></span>
+									</label>
+								</span>
+								<div class="btnAreaC">
+									<button type="button" class="btn btnType01">등록</button>
+								</div>
+								<h3 class="titH3">수분 부족분 관리</h3>
+								<div class="warp_graph">
+									그래프영역 <br><br><br><br><br><br><br><br><br><br>
+								</div>
+								<textarea class="textarea mt15" placeholder="등록하실 메모가 있으시면 입력해주세요"></textarea>
+								<span class="filebox large">
+									<input type="file" id="ex_file2">
+									<label for="ex_file2">
+										<span class="cliptext"></span>
+										<span class="file_del"></span>
+									</label>
+								</span>
+								<div class="btnAreaC">
+									<button type="button" class="btn btnType01">등록</button>
+								</div>
+								<h3 class="titH3">일사량 / CO2 관리</h3>
+								<div class="warp_graph">
+									그래프영역 <br><br><br><br><br><br><br><br><br><br>
+								</div>
+								<textarea class="textarea mt15" placeholder="등록하실 메모가 있으시면 입력해주세요"></textarea>
+								<span class="filebox large">
+									<input type="file" id="ex_file3">
+									<label for="ex_file3">
+										<span class="cliptext"></span>
+										<span class="file_del"></span>
+									</label>
+								</span>
+								<div class="btnAreaC">
+									<button type="button" class="btn btnType01">등록</button>
+								</div>
+								<h3 class="titH3">병해충 발생 예측 관리</h3>
+								<div class="warp_graph">
+									그래프영역 <br><br><br><br><br><br><br><br><br><br>
+								</div>
+								<textarea class="textarea mt15" placeholder="등록하실 메모가 있으시면 입력해주세요"></textarea>
+								<span class="filebox large">
+									<input type="file" id="ex_file4">
+									<label for="ex_file4">
+										<span class="cliptext"></span>
+										<span class="file_del"></span>
+									</label>
+								</span>
+								<div class="btnAreaC">
+									<button type="button" class="btn btnType01">등록</button>
+								</div>
+								<h3 class="titH3">컨설팅 총평</h3>
+								<textarea class="textarea mt15" placeholder="컨설팅 총평을 입력해주세요"></textarea>
+								<div class="btnAreaC">
+									<button type="button" class="btn btnType01">컨설팅 완료</button>	
+								</div>
+							</div>
+							<!-- //컨설팅 입력 -->
+						
+							<!-- 영농정보 -->
+							<div class="tabContent" data-tab-cont="tab02">영농정보</div>
+							<!-- //영농정보 -->	
+						</div>
+    		 		</div>
+    		 	<!-- //탭 목록 끝 -->
+    		 	<div class="tabContent" data-tab-cont="tab01">캘린더</div>
+    		</div>
+    		<!-- //탭 영역 끝 -->
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	
+});
+
+$('input[type=file]').on('change',function(){
+			if(window.FileReader){
+			  var filename = $(this)[0].files[0].name;
+			} else {
+			  var filename = $(this).val().split('/').pop().split('\\').pop();
+			}
+			$(this).siblings('label').text(filename);
+			if ($(this).val().length > 0 ) {
+				console.log('11');
+				$(this).closest('.filebox').append('<button class="file_del" type="button"><sapn class="blind">삭제</span></button>');
+				$(this).closest('.filebox').addClass('file_text');
+			}else{
+				$(this).closest('.filebox').removeClass('file_text');
+			}
+		});
+
+	  $(document).on('click', '.file_del', function(e) {
+	  		$(this).siblings('input[type=file]').val('');
+			$(this).siblings('label').text('');
+			$(this).remove()
+	  })
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | popup 개인정보 수정</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">Popup Guide</h3>
+
+			<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">popup(개인정보수정)</button>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner" style="width:850px">
+			<div class="popupHeader">
+				<h1 class="popTitle">개인정보수정</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<h3 class="joinTitH3">기본 정보</h3>
+				<table class="table tbTypeJoin">
+					<colgroup>
+						<col width="110" />
+						<col width="320" />
+						<col width="130" />
+						<col width="240" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>사용자구분</th>
+							<td>
+								<span class="join_input"><input type="text" class="inputTxt wNormal"  disabled value="관리자"></span>
+							</td>
+							<th>아이디</th>
+							<td>
+								<span class="join_input"><input type="text" class="inputTxt wNormal" placeholder="아이디를 입력해주세요" disabled value="sysadmin"></span>
+							</td>
+						</tr>
+						<tr>
+							<th>비밀번호</th>
+							<td><input type="password" class="inputTxt wNormal" placeholder="비밀번호를 입력해주세요." name=""></td>
+							<th>비밀번호 확인</th>
+							<td><input type="password" class="inputTxt wNormal" placeholder="비밀번호를 한번 더 입력해주세요." name=""></td>
+						</tr>
+						<tr>
+							<th>이름</th>
+							<td><input type="text" class="inputTxt wNormal" placeholder="고객님의 이름을 입력해주세요" disabled value="김지농"  name=""></td>
+							<th>휴대폰</th>
+							<td>
+								<div class="wrap_phone">
+									<input type="text" class="inputTxt" name=""><span class="daesh">-</span>
+									<input type="text" class="inputTxt" name=""><span class="daesh">-</span>
+									<input type="text" class="inputTxt" name="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td colspan="3">
+								<div class="join_IB">
+									<span class="join_input"><input type="text" class="inputTxt w100" disabled ></span>
+									<span class="join_btn"><button type="button" class="btn">주소검색</button></span>
+								</div>
+								<div class="join_address_detail">
+									<span><input type="text" class="inputTxt w100" disabled name=""></span>
+									<span><input type="text" class="inputTxt w100" name=""></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td colspan="3">
+								<div class="join_email">
+									<span class="join_email_id"><input type="text" class="inputTxt wNormal"></span>
+									<span class="join_email_daesh">@</span>
+									<span class="join_email_domain"><input type="text" class="inputTxt wNormal"></span>
+									<span class="join_email_select">
+										<select class="select w100">
+											<option selected>직접입력</option>
+											<option>naver.com</option>
+											<option>hanmail.net</option>
+											<option>daum.net</option>
+											<option>nate.com</option>
+											<option>gmail.com</option>
+											<option>hotmail.com</option>
+										</select>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- //.popupContent -->
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop1')">취소</button>
+					<button type="button" class="btnPop_primary">수정</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html> 

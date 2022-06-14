@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | popup 방제약제추천</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">방제약제추천</h3>
+    		<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">popup(방제약제추천)</button>
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner popFoot_none">
+			<div class="popupHeader">
+				<h1 class="popTitle">방제약제추천</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<div class="jsStepWrap">
+					<ol class="stepType01">
+						<li class="active"><span class="stepNum">1</span><span class="stepLabel">방제이력 확인</span></li>
+						<li><span class="stepNum">2</span><span class="stepLabel">방제대상 설정</span></li>
+						<li><span class="stepNum">3</span><span class="stepLabel">농작업 일정</span></li>
+					</ol>
+					<div class="wrap_stepContents">
+						<!-- 방제이력 확인 -->
+						<div class="stepContents active">
+							<h2 class="popTitleH2">병해충 방제이력 확인</h2>
+							<table class="table tbTypeList">
+								<colgroup>
+									<col width="140">
+									<col width="241">
+									<col width="*">
+								</colgroup>
+								<caption></caption>
+								<thead>
+									<tr>
+										<th>날짜</th>
+										<th>병해충</th>
+										<th>약제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="date" name="" class="inputDate w100" value="2022-01-17"></td>
+										<td>
+											<div class="wrap_prevention_form">
+												<div class="prevention_radio">
+													<span class="formRadio"><input type="radio" id="tbRadio01" name="tbRadio00" checked><label for="tbRadio01">병</label></span>
+													<span class="formRadio"><input type="radio" id="tbRadio02" name="tbRadio00"><label for="tbRadio02">해충</label></span>
+												</div>
+												<div class="prevention_select">
+													<select class="select w100">
+							    						<option value="" selected>선택</option>
+							    						<option value="">option 1</option>
+							    						<option value="">option 1</option>
+							    					</select>
+							    				</div>
+							    			</div>
+										</td>
+										<td>
+											<div class="wrap_prevention_form">
+												<div class="prevention_radio">
+													<span class="formRadio"><input type="radio" id="tbRadio11" name="tbRadio10" checked><label for="tbRadio11">살균제</label></span>
+													<span class="formRadio"><input type="radio" id="tbRadio12" name="tbRadio10"><label for="tbRadio12">살충제</label></span>
+												</div>
+												<div class="prevention_select">
+													<select class="select w100">
+							    						<option value="" selected>선택</option>
+							    						<option value="">option 1option 1option 1</option>
+							    						<option value="">option 1</option>
+							    					</select>
+							    				</div>
+							    			</div>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="date" name="" class="inputDate w100" value="2022-01-17"></td>
+										<td>
+											<div class="wrap_prevention_form">
+												<div class="prevention_radio">
+													<span class="formRadio"><input type="radio" id="tbRadio21" name="tbRadio20" checked><label for="tbRadio21">병</label></span>
+													<span class="formRadio"><input type="radio" id="tbRadio22" name="tbRadio20"><label for="tbRadio22">해충</label></span>
+												</div>
+												<div class="prevention_select">
+													<select class="select w100">
+							    						<option value="" selected>선택</option>
+							    						<option value="">option 1</option>
+							    						<option value="">option 1</option>
+							    					</select>
+							    				</div>
+							    			</div>
+										</td>
+										<td>
+											<div class="wrap_prevention_form">
+												<div class="prevention_radio">
+													<span class="formRadio"><input type="radio" id="tbRadio31" name="tbRadio30" checked><label for="tbRadio31">살균제</label></span>
+													<span class="formRadio"><input type="radio" id="tbRadio32" name="tbRadio30"><label for="tbRadio32">살충제</label></span>
+												</div>
+												<div class="prevention_select">
+													<select class="select w100">
+							    						<option value="" selected>선택</option>
+							    						<option value="">option 1option 1option 1</option>
+							    						<option value="">option 1</option>
+							    					</select>
+							    				</div>
+							    			</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="btnAreaR mt5"><button type="button" class="btn btn-primary">누락된 방제이력 추가하기</button></div>
+							<div class="btnAreaC"><button type="button" class="btnPop_primary jsbtn-next">다음</button></div>
+						</div>
+						<!-- //방제이력 확인 -->
+
+						<!-- 방제대상 설정 -->
+						<div class="stepContents">
+							<h2 class="popTitleH2">병해 발생예측</h2>
+							<table class="table tbTypeList tdCenter">
+								<colgroup>
+									<col width="33%">
+									<col width="33%">
+									<col width="34%">
+								</colgroup>
+								<caption></caption>
+								<thead>
+									<tr>
+										<th>병해충명</th>
+										<th>발생위험도</th>
+										<th>약제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>곰팡이병</td>
+										<td>위험</td>
+										<td>가벤다 수화제</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h2 class="popTitleH2 mt20">병해충 발생조사</h2>
+							<table class="table tbTypeList">
+								<colgroup>
+									<col width="*">
+									<col width="185">
+									<col width="185">
+									<col width="30">
+								</colgroup>
+								<caption></caption>
+								<thead>
+									<tr>
+										<th>병해충명</th>
+										<th>발생단계</th>
+										<th>방제시급성</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="wrap_prevention_form">
+												<div class="prevention_radio">
+													<span class="formRadio"><input type="radio" id="tbRadio01" name="tbRadio00" checked><label for="tbRadio01">병</label></span>
+													<span class="formRadio"><input type="radio" id="tbRadio02" name="tbRadio00"><label for="tbRadio02">해충</label></span>
+												</div>
+												<div class="prevention_select">
+													<select class="select w100">
+							    						<option value="" selected>선택</option>
+							    						<option value="">option 1</option>
+							    						<option value="">option 1</option>
+							    					</select>
+							    				</div>
+							    			</div>
+										</td>
+										<td>
+											<select class="select w100">
+					    						<option value="" selected>선택</option>
+					    						<option value="">option 1option 1option 1</option>
+					    						<option value="">option 1</option>
+					    					</select>
+										</td>
+										<td>
+											<select class="select w100">
+					    						<option value="" selected>선택</option>
+					    						<option value="">option 1option 1option 1</option>
+					    						<option value="">option 1</option>
+					    					</select>
+										</td>
+										<td class="alignC"><button type="button" class="btn-del"><span class="blind">삭제</span></button></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="wrap_prevention_form">
+												<div class="prevention_radio">
+													<span class="formRadio"><input type="radio" id="tbRadio21" name="tbRadio20" checked><label for="tbRadio21">병</label></span>
+													<span class="formRadio"><input type="radio" id="tbRadio22" name="tbRadio20"><label for="tbRadio22">해충</label></span>
+												</div>
+												<div class="prevention_select">
+													<select class="select w100">
+							    						<option value="" selected>선택</option>
+							    						<option value="">option 1</option>
+							    						<option value="">option 1</option>
+							    					</select>
+							    				</div>
+							    			</div>
+										</td>
+										<td>
+											<select class="select w100">
+					    						<option value="" selected>선택</option>
+					    						<option value="">option 1option 1option 1</option>
+					    						<option value="">option 1</option>
+					    					</select>
+										</td>
+										<td>
+											<select class="select w100">
+					    						<option value="" selected>선택</option>
+					    						<option value="">option 1option 1option 1</option>
+					    						<option value="">option 1</option>
+					    					</select>
+										</td>
+										<td class="alignC"><button type="button" class="btn-del"><span class="blind">삭제</span></button></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="btnAreaR mt5"><button type="button" class="btn btn-primary">방제대상 병해충 추가하기</button></div>
+							<div class="btnAreaC">
+								<button type="button" class="btnPop_cancel jsbtn-prev">이전</button>
+								<button type="button" class="btnPop_primary jsbtn-next">다음</button>
+							</div>
+						</div>
+						<!-- //방제대상 설정 -->
+
+						<!-- 농작업 일정 -->
+						<div class="stepContents">
+							<h2 class="popTitleH2">농작업 일정 체크</h2>
+							<table class="table tbTypeList">
+								<colgroup>
+									<col width="85">
+									<col width="254">
+									<col width="85">
+									<col width="254">
+								</colgroup>
+								<caption></caption>
+								<tbody>
+									<tr>
+										<th>방제예정일</th>
+										<td colspan="3"><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+									</tr>
+									<tr>
+										<td colspan="4" class="alignC">1개월 이내 아래 농작업 계획이 없을 경우 해당없음을 체크하세요</td>
+									</tr>
+									<tr>
+										<th>수확일자</th>
+										<td>
+											<input type="date" name="" class="inputDate" value="2022-01-17">
+											<span class="formCheckBox ml10"><input type="checkbox" id="check01" ><label for="check01">해당없음</label></span>
+										</td>
+										<th>벌넣기</th>
+										<td>
+											<input type="date" name="" class="inputDate" value="2022-01-17">
+											<span class="formCheckBox ml10"><input type="checkbox" id="check02" ><label for="check02">해당없음</label></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="btnAreaR">
+								<button type="button" class="btnPop_cancel jsbtn-prev">이전</button>
+								<button type="button" class="btnPop_primary">완료</button>
+							</div>
+						</div>
+						<!-- //농작업 일정 -->
+					</div>
+				</div><!-- //.jsStepWrap -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+$('.jsStepWrap').each(function(){
+	var $this = $(this);
+	var $step_list = $(this).find('.stepType01').children('li');
+	var $step_cont = $(this).find('.wrap_stepContents').children('.stepContents');
+	//console.log($step_list,$step_cont)
+	$('.jsbtn-next').click(function(){
+		var $thisStep = $(this).closest('.stepContents').index() + 1;
+		$step_list.removeClass('active');
+		$step_cont.removeClass('active');
+		$step_list.eq($thisStep).addClass('active');
+		$step_cont.eq($thisStep).addClass('active');
+	});
+
+	$('.jsbtn-prev').click(function(){
+		var $thisStep = $(this).closest('.stepContents').index() - 1;
+		$step_list.removeClass('active');
+		$step_cont.removeClass('active');
+		$step_list.eq($thisStep).addClass('active');
+		$step_cont.eq($thisStep).addClass('active');
+	});
+});
+
+</script>
+
+
+</body>
+</html> 

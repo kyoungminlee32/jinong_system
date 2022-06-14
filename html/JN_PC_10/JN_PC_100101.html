@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 농장관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>농장관리</span><em>농장관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">농장관리</h3>
+    		<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">작기관리</button>
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner" style="width: 1300px;">
+			<div class="popupHeader">
+				<h1 class="popTitle">작기관리</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<div class="alignR mb5">
+					<button type="button" class="btn btn-primary"><span class="icon_add">작기추가</span></button>
+				</div>
+				
+				<table class="table tbTypeList" >
+					<colgroup>
+						<col width="20">
+						<col width="90">
+						<col width="300">
+						<col width="100">
+						<col width="100">
+						<col width="100">
+						<col width="100">
+						<col width="100">
+						<col width="*">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th>작기적용</th>
+							<th>품목</th>
+							<th>작기기간</th>
+							<th>수출국가</th>
+							<th>배지유형</th>
+							<th>배지종류</th>
+							<th>자가퇴비여부</th>
+							<th>종묘확보방법</th>
+							<th>수확시작일</th>
+							<th>수확종료일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="alignC"><span class="formRadio alignC"><input type="radio" id="tbRadio01" name="tbRadio00"><label for="tbRadio01"></label></span></td>
+							<td>
+								<select class="select">
+									<option value="">선택</option>
+									<option value="">선택</option>
+								</select>
+							</td>
+							<td class="alignC">											
+								<input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17">
+							</td>
+							<td><input type="text" class="inputTxt w100"></td>
+							<td><input type="text" class="inputTxt w100"></td>
+							<td><input type="text" class="inputTxt w100"></td>
+							<td><input type="text" class="inputTxt w100"></td>
+							<td><input type="text" class="inputTxt w100"></td>
+							<td>
+								<input type="date" name="" class="inputDate" value="2022-01-17"> 
+							</td>
+							<td>
+								<input type="date" name="" class="inputDate" value="2022-01-17"> 
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop1')">취소</button>
+					<button type="button" class="btnPop_primary">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html> 

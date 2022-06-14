@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | popup guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">Popup Guide</h3>
+			<div class="htmlGuide">
+				<strong>- Popup </strong>
+				<p>넓이  : 기본 넓이는 700px(넓이 조정은 .popupInner 에 인라은 스타일로 지정 </p>
+<textarea>ex) <div class="popupInner" style="900px"> </textarea>    			
+				<p>최대 넓이 1200px</p>
+				<p>높이 : 기본 높이는 .popupContent 기준 200px </p>
+				<p>최대 높이 : 브라우저 높이 - 100px</p>
+				<p>팝업 하단 버튼이 없는 경우 높이 맟주기 위해 ".popupInner"에 ".popFoot_none" 클래스 추가</p>
+<textarea>ex) <div class="popupInner popFoot_none"> </textarea>    			    			
+				
+			</div>
+			<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">popup(기본)</button>
+			<button type="button" class="btn btnTable" onclick="popup.open('#pop2', this)">popup(기본 넓이 아닌 경우 400px)</button>
+			<button type="button" class="btn btnTable" onclick="popup.open('#pop3', this)">popup(하단버튼 없는 경우)</button>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner">
+			<div class="popupHeader">
+				<h1 class="popTitle">FormOS 장비연계</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<h2 class="popTitleH2">센서</h2>
+				<table class="table tbTypeList">
+					<colgroup>
+						<col width="*">
+						<col width="*">
+						<col width="*">
+						<col width="80">
+						<col width="*">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th><span class="formCheckBox"><input type="checkbox" id="checkbox001" name=""><label for="checkbox001"></label></span></th>
+							<th>장비 ID</th>
+							<th>Link ID</th>
+							<th>GW ID</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>temperature-sensor</td>
+						</tr>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>soil-moisture-sensor</td>
+						</tr>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>tensiometer</td>
+						</tr>
+					</tbody>
+				</table>
+				
+
+				<h2 class="popTitleH2">구동기</h2>
+				<table class="table tbTypeList tdCenter">
+					<colgroup>
+						<col width="100">
+						<col width="150">
+						<col width="100">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th>장비 ID</th>
+							<th>Link ID</th>
+							<th>GW ID</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>temperature-sensor</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>soil-moisture-sensor</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>tensiometer</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop1')">취소</button>
+					<button type="button" class="btnPop_primary">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="popupWrap" role="dialog" id="pop2">
+	<div class="popupContainer">
+		<div class="popupInner" style="width:400px">
+			<div class="popupHeader">
+				<h1 class="popTitle">FormOS 장비연계</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop2')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<h2 class="popTitleH2">센서</h2>
+				<table class="table tbTypeList">
+					<colgroup>
+						<col width="*">
+						<col width="*">
+						<col width="*">
+						<col width="80">
+						<col width="*">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th><span class="formCheckBox"><input type="checkbox" id="checkbox001" name=""><label for="checkbox001"></label></span></th>
+							<th>장비 ID</th>
+							<th>Link ID</th>
+							<th>GW ID</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>temperature-sensor</td>
+						</tr>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>soil-moisture-sensor</td>
+						</tr>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>tensiometer</td>
+						</tr>
+					</tbody>
+				</table>
+				
+
+				<h2 class="popTitleH2">구동기</h2>
+				<table class="table tbTypeList tdCenter">
+					<colgroup>
+						<col width="100">
+						<col width="150">
+						<col width="100">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th>장비 ID</th>
+							<th>Link ID</th>
+							<th>GW ID</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>temperature-sensor</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>soil-moisture-sensor</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>tensiometer</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop2')">취소</button>
+					<button type="button" class="btnPop_primary">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popupWrap" role="dialog" id="pop3">
+	<div class="popupContainer">
+		<div class="popupInner popFoot_none">
+			<div class="popupHeader">
+				<h1 class="popTitle">FormOS 장비연계</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop3')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<h2 class="popTitleH2">센서</h2>
+				<table class="table tbTypeList">
+					<colgroup>
+						<col width="*">
+						<col width="*">
+						<col width="*">
+						<col width="80">
+						<col width="*">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th><span class="formCheckBox"><input type="checkbox" id="checkbox001" name=""><label for="checkbox001"></label></span></th>
+							<th>장비 ID</th>
+							<th>Link ID</th>
+							<th>GW ID</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>temperature-sensor</td>
+						</tr>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>soil-moisture-sensor</td>
+						</tr>
+						<tr>
+							<td class="alignC"><span class="formCheckBox"><input type="checkbox" id="checkbox002" name=""><label for="checkbox002"></label></span></td>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>tensiometer</td>
+						</tr>
+					</tbody>
+				</table>
+				
+
+				<h2 class="popTitleH2">구동기</h2>
+				<table class="table tbTypeList tdCenter">
+					<colgroup>
+						<col width="100">
+						<col width="150">
+						<col width="100">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th>장비 ID</th>
+							<th>Link ID</th>
+							<th>GW ID</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>temperature-sensor</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>soil-moisture-sensor</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td>a5e6-0f71-fe0b</td>
+							<td>IT-TEST</td>
+							<td>tensiometer</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- <div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop2')">취소</button>
+					<button type="button" class="btnPop_primary">확인</button>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html> 

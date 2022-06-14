@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | sub</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<link rel="stylesheet" type="text/css" href="../../css/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="../../js/jquery-1.11.3.min.js"></script>
+	<script src="../../js/jquery.dataTables.js"></script>
+	<script src="../../js/dataTables.pageLoadMore.min.js"></script>
+	<script src="../../js/swiper-bundle.min.js"></script>
+	<script src="../../js/ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<div class="subNavi_inner">
+				<ul class="subNaviList">
+					<li class="subMenu-dash active"><a href="#none"><span>대시보드</span></a>
+						<ul class="subNaviList_dep2">
+							<li class="active"><a href="#none">대시보드</a></li>
+							<li><a href="#none">농장산책_웹</a></li>
+							<li><a href="#none">농장산택_컨설턴트</a></li>
+							<li><a href="#none">사이트맵</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-data"><a href="#none"><span>데이터조회</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">수집데이터 조회</a></li>
+							<li><a href="#none">영농환경 분석</a></li>
+							<li><a href="#none">병해충이력 조회</a></li>
+							<li><a href="#none">데이터 수집률 조회</a></li>
+							<li><a href="#none">농장별 통신이력 조회</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-grow"><a href="#none"><span>생육/선별정보</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">생육조사기준정보</a></li>
+							<li><a href="#none">생육조사정보조회</a></li>
+							<li><a href="#none">생육조사(컬티랩스)조회</a></li>
+							<li><a href="#none">생육조사정보등록</a></li>
+							<li><a href="#none">생육사진정보조회</a></li>
+							<li><a href="#none">선별정보조회</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-facilities"><a href="#none"><span>시설제어</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">시설제어</a></li>
+							<li><a href="#none">임계값설정</a></li>
+							<li><a href="#none">이상값관리</a></li>
+							<li><a href="#none">기준장비관리</a></li>
+							<li><a href="#none">설치장비관리</a></li>
+							<li><a href="#none">촬영시간관리</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-pls"><a href="#none"><span>PLS</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">병충해발생예측</a></li>
+							<li><a href="#none">방제약제추천</a></li>
+							<li><a href="#none">병해충정보관리</a></li>
+							<li><a href="#none">병해충별방제약제관리</a></li>
+							<li><a href="#none">방제약제교차저항성관리</a></li>
+							<li><a href="#none">PLS기준정보설정</a></li>
+							<li><a href="#none">방제약제Profile관리</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-consulting"><a href="#none"><span>컨설팅관리</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">일정관리</a></li>
+							<li><a href="#none">컨설팅입력</a></li>
+							<li><a href="#none">컨설팅조회</a></li>
+							<li><a href="#none">A/S관리</a></li>
+							<li><a href="#none">데이터컨설팅</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-images"><a href="#none"><span>이미지수집가공</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">이미지관리</a></li>
+							<li><a href="#none">작업관리</a></li>
+							<li><a href="#none">검수관리</a></li>
+							<li><a href="#none">데이터조회</a></li>
+							<li><a href="#none">통계</a></li>
+						</ul>
+					</li>
+					<!-- 202-02-21 추가 -->
+					<li class="subMenu-sms"><a href="#none"><span>문자발송관리</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">하위메뉴1</a></li>
+							<li><a href="#none">하위메뉴2</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-farm"><a href="#none"><span>농장관리</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">하위메뉴1</a></li>
+							<li><a href="#none">하위메뉴2</a></li>
+						</ul>
+					</li>
+					<!-- //202-02-21 추가 -->
+					<li class="subMenu-info"><a href="#none"><span>영농정보</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">유통정보</a></li>
+							<li><a href="#none">영농정보조회</a></li>
+							<li><a href="#none">컨설팅관리</a></li>
+							<li><a href="#none">부계정관리</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-user"><a href="#none"><span>사용자관리</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">사용자관리</a></li>
+							<li><a href="#none">그룹관리</a></li>
+							<li><a href="#none">그룹별사용자관리</a></li>
+							<li><a href="#none">그룹별메뉴권한관리</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-system"><a href="#none"><span>시스템관리</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">공지사항관리</a></li>
+							<li><a href="#none">메뉴관리</a></li>
+							<li><a href="#none">프로그램정보</a></li>
+							<li><a href="#none">코드정보</a></li>
+							<li><a href="#none">품목정보</a></li>
+						</ul>
+					</li>
+					<li class="subMenu-control"><a href="#none"><span>통합관제관리</span></a>
+						<ul class="subNaviList_dep2">
+							<li><a href="#none">기관관리</a></li>
+							<li><a href="#none">URL관리</a></li>
+							<li><a href="#none">기관별메뉴관리</a></li>
+							<li><a href="#none">기관별/그룹별메뉴권한관리</a></li>
+							<li><a href="#none">기관별/그룹별사용자관리</a></li>
+							<li><a href="#none">기관별코드관리</a></li>
+							<li><a href="#none">기준코드관리</a></li>
+							<li><a href="#none">로그인화면관리</a></li>
+							<li><a href="#none">기관별화면관리</a></li>
+							<li><a href="#none">기관별그룹관리</a></li>
+							<li><a href="#none">기관별사용자관리</a></li>
+							<li><a href="#none">기관별품목관리</a></li>
+							<li><a href="#none">기준프로그램관리</a></li>
+							<li><a href="#none">기준품목관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<h3 class="titH3">수집데이터 조회</h3>
+			<!-- 탭 영역 시작 -->
+			<div class="htmlGuide">
+				<strong>- 탭영역 </strong>
+				<p>data-tab-link 의 값과 data-tab-cont 값을 일치 시켜야함 </p>
+				<p>ex) data-tab-link="<em>tab01</em>" data-tab-cont="<em>tab01</em>"</p>
+				<strong>- 토글영역</strong>
+				<p>data-jstoggle-link 의 값과 data-jstoggle-cont 값을 일치 시켜야함</p>
+				<p>ex) data-jstoggle-link="<em>toggle01</em>" data-jstoggle-cont="<em>toggle01</em>"</p>
+			</div>
+			<div class="jsTabWrap">
+				<ul class="jstabMenu tabType02">
+					<li><button type="button" data-tab-link="tab01" class="active">농장별</button></li>
+					<li><button type="button" data-tab-link="tab02">센서별</button></li>
+					<li><button type="button" data-tab-link="tab03">제어정보</button></li>
+				</ul>
+				<!-- 탭 농장별 시작 -->
+				<div class="tabContent active" data-tab-cont="tab01">
+					<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+					<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+						<div class="tbSearch">
+							<table class="table">
+								<caption>데이터 조회 조건</caption>
+								<colgroup>
+									<col width="*">
+									<!-- <col width="100">
+									<col width="*">
+									<col width="100">
+									<col width="*">
+									<col width="100">
+									<col width="*"> -->
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>지역</th>
+										<td>
+											<select class="select">
+												<option value="" selected>시/도</option>
+												<option value="">경기도</option>
+												<option value="">충청도</option>
+												<option value="">경상북도</option>
+											</select>
+											<select class="select">
+												<option value="" selected>시/군/구</option>
+												<option value="">과천시</option>
+												<option value="">의정부시</option>
+											</select>
+										</td>
+										<th>품목</th>
+										<td>
+											<select class="select">
+												<option value="" selected>전체</option>
+												<option value="">option 1</option>
+												<option value="">option 2</option>
+											</select>
+										</td>
+										<th>농장정보</th>
+										<td>
+											<div class="btnSet">
+												<input type="text" value="김지농_농가" class="inputTxt">
+												<button type="button" class="btn btnTable">선택</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>농가구역</th>
+										<td>
+											<span class="formCheckBox"><input type="checkbox" id="tbSearch01" disabled><label for="tbSearch01">전체</label></span>
+											<span class="formCheckBox"><input type="checkbox" id="tbSearch02" disabled checked><label for="tbSearch02">농가 1구역</label></span>
+											<span class="formCheckBox"><input type="checkbox" id="tbSearch03"><label for="tbSearch03">농가 2구역</label></span>
+										</td>
+										<th>기간선택</th>
+										<td>
+											<input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17">
+										</td>
+										<th>집계주기</th>
+										<td colspan="2">
+											<span class="formRadio"><input type="radio" id="tbRadio01" name="tbRadio00"><label for="tbRadio01">10분</label></span>
+											<span class="formRadio"><input type="radio" id="tbRadio02" name="tbRadio00" checked><label for="tbRadio02">1시간</label></span>
+											<span class="formRadio"><input type="radio" id="tbRadio03" name="tbRadio00"><label for="tbRadio03">1일</label></span>
+										</td>
+									</tr>
+									<tr>
+										<th>환경정보</th>
+										<td colspan="3">
+											<span class="btnSet mr15"><input type="text" value="5 센서" class="inputTxt"> <button type="button" class="btn btnTable">선택</button></span>
+											<span class="formCheckBox"><input type="checkbox" id="tbSearch11"><label for="tbSearch11">평균</label></span>
+											<span class="formCheckBox"><input type="checkbox" id="tbSearch12" checked><label for="tbSearch12">최고</label></span>
+											<span class="formCheckBox"><input type="checkbox" id="tbSearch13"><label for="tbSearch13">최저</label></span>
+										</td>
+										<th>시간대</th>
+										<td>
+											<span class="btnSet">
+												<span class="wrapRangeSet">
+													<select class="select">
+														<option value="" selected>08</option>
+														<option value="">09</option>
+														<option value="">10</option>
+													</select>
+													<span class="daesh">~</span>
+													<select class="select">
+														<option value="" selected>08</option>
+														<option value="">09</option>
+														<option value="">10</option>
+													</select>
+												</span>
+												<span class="wrapRangeSet">
+													<select class="select">
+														<option value="" selected>08</option>
+														<option value="">09</option>
+														<option value="">10</option>
+													</select>
+													<span class="daesh">~</span>
+													<select class="select">
+														<option value="" selected>08</option>
+														<option value="">09</option>
+														<option value="">10</option>
+													</select>
+												</span>
+												<button type="button" class="btn btnTable"><span class="icon_add">추가</span></button>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+					</div>
+
+					<!-- 그래프 영역 시작 -->
+					<div class="jsToggleLlink"><button type="button" data-jstoggle-link="toggle02" class="btn btn_jsToggle">그래프 <span>닫기</span></button></div>
+					<div class="jsToggleCont" data-jstoggle-cont="toggle02">
+						<div class="warp_graph">
+							그래프영역 <br><br><br><br><br><br><br><br><br><br>
+						</div>
+					</div>
+					<!-- //그래프 영역 끝 -->
+
+
+					<div class="htmlGuide">
+
+						<p>데이터 테이블의 경우 dataTables 사용 (<a href="https://datatables.net/" target="_blank">dataTables.net 참조</a>)</p>
+						<p></p>
+
+						<strong>영역고정</strong>
+						<p>API에서 제공하는 영역고정을 사용 할 경우 상단, 좌측, 두가지 동시고정 및 스크롤 이벤트로 데이터 불러오기가 지원되지 않아 us.js 에 따로 적용 하여 사용</p>
+						<p>- 상단고정은 기본으로 설정함</p>
+						<p>- 좌측고정 : data-fixed-body="2" 0부터 시작해서 고정하고 싶은 수 작성</p>
+						<p>- 좌측고정을 사용하지않을 경우 data-fixed-body 삭제 </p> 
+					</div>
+
+					<div class="excel_btn_area">
+						<button class="excelBtn-upload"><em>엑셀</em> <span>업로드</span></button>
+						<button class="excelBtn-download"><em>엑셀</em> <span>다운로드</span></button>
+					</div>
+
+					<table class="data-table" id="myTable" data-fixed-header="0" data-fixed-body="2">
+						<caption></caption>
+						<thead>
+							<!-- <tr>
+								<th rowspan="2">지역</th>
+								<th rowspan="2">품목</th>
+								<th rowspan="2">농장 구역명</th>
+								<th rowspan="2">측정일시</th>
+								<th colspan="2">온도</th>
+								<th rowspan="2">내부온도 최저</th>
+								<th rowspan="2">내부 습도 최고</th>
+								<th rowspan="2">내부 CO2 평균</th>
+								<th rowspan="2">내부 CO2 최고</th>
+								<th rowspan="2">내부 CO2 최저</th>
+							</tr>
+							<tr>
+								<th class="thBorderL">내부온도 평균</th>
+								<th>내부온도 최고</th>
+							</tr> -->
+							<tr>
+								<th>지역</th>
+								<th>품목</th>
+								<th>농장 구역명</th>
+								<th>측정일시</th>
+								<th>내부온도 평균</th>
+								<th>내부온도 최고</th>
+								<th>내부온도 최저</th>
+								<th>내부 습도 최고</th>
+								<th>내부 CO2 평균</th>
+								<th>내부 CO2 최고</th>
+								<th>내부 CO2 최저</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>경기도 안양시ww</td>
+								<td>포도rr</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시ww</td>
+								<td>포도rr</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+							<tr>
+								<td>경기도 안양시</td>
+								<td>포도</td>
+								<td>김지농_농가 1구역</td>
+								<td>2021-10-25 15:00:00</td>
+								<td>00.01</td>
+								<td>00.02</td>
+								<td>00.03</td>
+								<td>00.04</td>
+								<td>00.05</td>
+								<td>00.06</td>
+								<td>00.07</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //탭 농장별 끝 -->
+				<div class="tabContent" data-tab-cont="tab02">센서별</div>
+				<div class="tabContent" data-tab-cont="tab03">제어정보</div>
+			</div>
+			<!-- //탭 영역 끝 -->
+
+			<h3 class="titH3">버튼영역</h3>
+			<div class="btnAreaL">
+				<button type="button" class="btn btn-primary">버튼명</button>
+				<button type="button" class="btn btn-primary point">버튼명</button>
+			</div>
+			<div class="btnAreaC">
+				<button type="button" class="btn btnType02">초기화</button>
+				<button type="button" class="btn btnType01">저장</button>
+				<button type="button" class="btn btnType01"><span class="icon_search">검색</span></button>
+			</div>
+			<div class="btnAreaR">
+				<button type="button" class="btn btn-primary"><span class="icon_add">추가</span></button>
+				<button type="button" class="btn btn-primary"><span class="icon_del">삭제</span></button>
+			</div>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	ordering:true,
+	columnDefs: [
+			{ orderable: true, targets: [0,1] },
+			{ orderable: false, targets: '_all' }
+		],
+	"order": []
+});
+</script>
+
+
+
+</body>
+</html> 

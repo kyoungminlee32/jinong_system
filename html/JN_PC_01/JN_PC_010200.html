@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | Main(지도보기)</title>
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<div class="jsTabWrap">
+				<ul class="jstabMenu tabType01">
+					<li><button type="button" data-tab-link="tab01"><span class="icon_report">현황분석</span></button></li>
+					<li><button type="button" data-tab-link="tab02" class="active"><span class="icon_map">지도보기</span></button></li>
+					<li><button type="button" data-tab-link="tab03"><span class="icon_compa">비교분석</span></button></li>
+				</ul>
+
+
+				<!-- 현황분석 -->				
+				<div class="tabContent" data-tab-cont="tab01">현황분석</div>
+				<!-- //현황분석 -->
+
+				<!-- 지도보기 -->
+				<div class="tabContent active" data-tab-cont="tab02">
+					<div class="boxType1 searchArea">
+						<dl class="farmLocation">
+							<dt>농장위치</dt>
+							<dd>
+								<select class="select">
+									<option value="" selected>경기도</option>
+									<option value="">충청도</option>
+									<option value="">경상북도</option>
+								</select>
+								<select class="select">
+									<option value="" selected>시흥시</option>
+									<option value="">과천시</option>
+									<option value="">의정부시</option>
+								</select>
+								<input type="date" name="" class="inputDate" value="2022-01-17">
+								<button type="button" class="btn btnSearch"><span>검색</span></button>
+							</dd>
+						</dl>
+						<div class="dataReload">
+							<strong>갱신</strong>
+							<span class="radioSwich">
+								<span class="radioSwichInner">
+									<input type="radio" id="dataReload_1" name="dataReload" checked>
+									<label for="dataReload_1">수동</label>
+								</span>
+								<span class="radioSwichInner">
+									<input type="radio" id="dataReload_2" name="dataReload">
+									<label for="dataReload_2">자동</label>
+								</span>
+							</span>
+							<button type="button" class="btnReload"><span class="blind">갱신</span></button>
+						</div>
+					</div>
+
+					<div class="wrapTitle mt40">
+						<h2 class="titH2">농가 현황 <span>[20021.11.3 10:22 am]</span></h2>
+					</div>
+					<div class="mainFarmInfo">
+						<div class="boxType1">
+							<ul class="mainFarmInfoList">
+								<li>
+									<span>전체농가</span>
+									<strong>456</strong>
+									<em><span class="countUp">00</span></em>
+								</li>
+								<li>
+									<span>시설농가</span>
+									<strong>123</strong>
+									<em><span class="countUp">00</span></em>
+								</li>
+								<li>
+									<span>노지농가</span>
+									<strong>89</strong>
+									<em><span class="countDown">00</span></em>
+								</li>
+							</ul>
+						</div>
+						<div class="boxType1">
+							<ul class="mainFarmInfoList">
+								<li>
+									<span>농작물 품목수</span>
+									<strong>13</strong>
+									<em><span class="countDown">00</span></em>
+								</li>
+								<li>
+									<span>설치 장비수</span>
+									<strong>1,230</strong>
+									<em><span class="countUp">00</span></em>
+								</li>
+								<li>
+									<span>총 제어건수</span>
+									<strong>890</strong>
+									<em><span class="countDown">00</span></em>
+								</li>
+							</ul>
+						</div>
+						<div class="boxType1">
+							<ul class="mainFarmInfoList2">
+								<li>
+									<strong class="title">임계값</strong>
+								 	<div class="">
+								 		<div><span class="countUp2">높음</span><strong>10</strong></div>
+								 		<div><span class="countDown2">낮음</span><strong>10</strong></div>
+								 	</div>
+								</li>
+								<li>
+									<strong class="title">이상값</strong>
+									<div>
+										<div><span class="mainValue-primary">안전</span><span><strong>300</strong>건</span></div>
+										<div><span class="mainValue-warning">주의</span><span><strong>70</strong>건</span><span class="countUp small">00</span></div>
+										<div><span class="mainValue-danger">경고</span><span><strong>30</strong>건</span><span class="countDown small">00</span></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="wrap_main_map">
+						<div class="main_map_select">
+							<div class="boxType1">
+								<strong class="main_fram_total">전체  : 300 농가</strong>
+								<div class="jsTabWrap">
+									<ul class="jstabMenu tabType02">
+										<li><button type="button" data-tab-link="tab11" class="active">시설농가</button></li>
+										<li><button type="button" data-tab-link="tab12">노지농가</button></li>
+									</ul>
+									<!-- 시설농가 -->
+									<div class="tabContent active" data-tab-cont="tab11">
+										<div class="main_map_crops">
+											<span>딸기[10]</span><span>토마토[10]</span><span>파프리카[5]</span><span>포도[5]</span><span>양파[5]</span><span>배추[5]</span><span>당근[5]</span><span>오이[5]</span>
+										</div>
+									</div>
+									<!-- //시설농가 -->
+
+									<!-- 노지농가 -->
+									<div class="tabContent" data-tab-cont="tab12">
+										<div class="main_map_crops">
+											<span>딸기[5]</span><span>토마토[1]</span><span>파프리카[5]</span><span>포도[3]</span><span>양파[5]</span><span>배추[5]</span><span>당근[5]</span><span>오이[5]</span>
+										</div>
+									</div>
+									<!-- //노지농가 -->
+								</div>
+								<div class="mt10"><button type="button" class="btn btn-goback"><span>뒤로 가기</span></button></div>
+								<div class="wrap_map_area_list">
+									<ul class="map_area_list">
+										<li><button type="button" class="btn active"><span>서울특별시</span></button></li>
+										<li><button type="button" class="btn"><span>부산광역시</span></button></li>
+										<li><button type="button" class="btn"><span>대구광역시</span></button></li>
+										<li><button type="button" class="btn"><span>인천광역시</span></button></li>
+										<li><button type="button" class="btn"><span>광주광역시</span></button></li>
+										<li><button type="button" class="btn"><span>대전광역시</span></button></li>
+										<li><button type="button" class="btn"><span>울산광역시</span></button></li>
+										<li><button type="button" class="btn"><span>세종특별자치시</span></button></li>
+										<li><button type="button" class="btn"><span>경기도</span></button></li>
+										<li><button type="button" class="btn"><span>강원도</span></button></li>
+										<li><button type="button" class="btn"><span>충청북도</span></button></li>
+										<li><button type="button" class="btn"><span>충청남도</span></button></li>
+										<li><button type="button" class="btn"><span>경상북도</span></button></li>
+										<li><button type="button" class="btn"><span>경상남도</span></button></li>
+										<li><button type="button" class="btn"><span>전라북도</span></button></li>
+										<li><button type="button" class="btn"><span>전라남도</span></button></li>
+										<li><button type="button" class="btn"><span>제주특별자치도</span></button></li>
+									</ul>
+								</div>
+
+								<div class="wrap_main_farm_crops">
+									<ul class="main_farm_crops">
+										<li>
+											<div class="title"><strong>김지농 농가</strong><span class="img_crops"><img src="../../images/common/icon_fruits_strawberry.png"></span></div>
+											<p class="main_farm_crops_para">김지농 농가에 오신것을 환영합니다.</p>
+											<ul class="main_farm_crops_info">
+												<li><strong>주소 : </strong><span>경기도 가평군 가평로 12길 126</span></li>
+												<li><strong>전화번호 : </strong><span>031-1234-5678</span></li>
+												<li><strong>환경장비 구성 : </strong><span>온/습도, EC, PH,</span></li>
+												<li>
+													<div><strong>센서 상태 : </strong><span class="txt-color-primary">정상</span></div>
+													<div><strong>임계값 : </strong><span class="txt-color-primary">정상</span></div>
+													<div><strong>이상값 : </strong><span class="txt-color-safety">안전</span></div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="title"><strong>김지농 농가</strong><span class="img_crops"><img src="../../images/common/icon_fruits_strawberry.png"></span></div>
+											<p class="main_farm_crops_para">김지농 농가에 오신것을 환영합니다.</p>
+											<ul class="main_farm_crops_info">
+												<li><strong>주소 : </strong><span>경기도 가평군 가평로 12길 126</span></li>
+												<li><strong>전화번호 : </strong><span>031-1234-5678</span></li>
+												<li><strong>환경장비 구성 : </strong><span>온/습도, EC, PH,</span></li>
+												<li>
+													<div><strong>센서 상태 : </strong><span class="txt-color-primary">정상</span></div>
+													<div><strong>임계값 : </strong><span class="txt-color-primary">정상</span></div>
+													<div><strong>이상값 : </strong><span class="txt-color-warning">주의</span></div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="title"><strong>김지농 농가</strong><span class="img_crops"><img src="../../images/common/icon_fruits_strawberry.png"></span></div>
+											<p class="main_farm_crops_para">김지농 농가에 오신것을 환영합니다.</p>
+											<ul class="main_farm_crops_info">
+												<li><strong>주소 : </strong><span>경기도 가평군 가평로 12길 126</span></li>
+												<li><strong>전화번호 : </strong><span>031-1234-5678</span></li>
+												<li><strong>환경장비 구성 : </strong><span>온/습도, EC, PH,</span></li>
+												<li>
+													<div><strong>센서 상태 : </strong><span class="txt-color-primary">정상</span></div>
+													<div><strong>임계값 : </strong><span class="txt-color-primary">정상</span></div>
+													<div><strong>이상값 : </strong><span class="txt-color-danger">경고</span></div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div><!-- //.main_map_select -->
+						<div class="main_map_area">지도영역</div>
+					</div><!-- //.wrap_main_map -->
+
+
+				</div>
+				<!-- //지도보기 -->
+
+				<!-- 비교분석 -->
+				<div class="tabContent" data-tab-cont="tab03">비교분석</div>
+				<!-- 비교분석 -->
+			</div>
+
+			
+			
+		</div><!-- //.content -->
+
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<script>
+	const envSlide = new Swiper('.weather_slide_week .swiper', {
+		slidesPerView: "auto",
+		spaceBetween: 10,
+		observer:true,
+		observeParents:true,
+		observeSlideChildren:true,
+		pagination: {
+			el: '.env-slide .swiper-pagination',
+		}
+	});
+</script>
+</body>
+</html> 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING |대조군 설정</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>컨설팅관리</span><em>컨설팅관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">컨설팅관리</h3>
+			
+			<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">대조군 설정</button>
+			
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner" style="width:642px">
+			<div class="popupHeader">
+				<div class="popTitle">
+					<h1 class="popTitle">대조군 설정</h1>
+				</div>
+				<div class="popClose">
+					<button class="btn_pop_close" onclick="popup.close('#pop1', this)"></button>
+				</div>
+			</div>
+			<div class="popupContent">
+				<h3 class="titH3 mt0">조회기간</h3>
+				<div class="wrap_compare_range">
+					<span class="formRadio"><input type="radio" id="tbRadio01" name="tbRadio00" checked><label for="tbRadio01">동일주차</label></span>
+					<span class="formRadio"><input type="radio" id="tbRadio02" name="tbRadio00"><label for="tbRadio02">이전주차</label></span>
+					<span class="formRadio"><input type="radio" id="tbRadio03" name="tbRadio00"><label for="tbRadio03">전년동기</label></span>
+				</div>
+
+				<h3 class="titH3">조회대상</h3>
+				<div class="wrap_compare_range">
+					<span class="formRadio"><input type="radio" id="tbRadio11" name="tbRadio10" checked><label for="tbRadio11">전년평균</label></span>
+					<span class="formRadio"><input type="radio" id="tbRadio12" name="tbRadio10"><label for="tbRadio12">지역평균</label></span>
+					<span class="formRadio"><input type="radio" id="tbRadio13" name="tbRadio10"><label for="tbRadio13">온실선택</label></span>
+				</div>
+
+				<!-- 지역평균 시작 -->
+				<div class="wrap_compare_list">
+					<ul class="compare_list">
+						<li><button type="button" class="btn_compare active">전체</button></li>
+						<li><button type="button" class="btn_compare">강원</button></li>
+						<li><button type="button" class="btn_compare">경기</button></li>
+						<li><button type="button" class="btn_compare">경남</button></li>
+						<li><button type="button" class="btn_compare">경북</button></li>
+						<li><button type="button" class="btn_compare">광주</button></li>
+						<li><button type="button" class="btn_compare">대구</button></li>
+						<li><button type="button" class="btn_compare">대전</button></li>
+						<li><button type="button" class="btn_compare">부산</button></li>
+						<li><button type="button" class="btn_compare">서울</button></li>
+						<li><button type="button" class="btn_compare">세종</button></li>
+						<li><button type="button" class="btn_compare">인천</button></li>
+						<li><button type="button" class="btn_compare">전남</button></li>
+						<li><button type="button" class="btn_compare">전북</button></li>
+						<li><button type="button" class="btn_compare">충남</button></li>
+						<li><button type="button" class="btn_compare">충북</button></li>
+					</ul>
+
+					<ul class="compare_list">
+						<li><button type="button" class="btn_compare active">전체</button></li>
+						<li><button type="button" class="btn_compare">ㄱ</button></li>
+						<li><button type="button" class="btn_compare">ㄴ</button></li>
+						<li><button type="button" class="btn_compare">ㄷ</button></li>
+						<li><button type="button" class="btn_compare">ㄹ</button></li>
+						<li><button type="button" class="btn_compare">ㅁ</button></li>
+						<li><button type="button" class="btn_compare">ㅂ</button></li>
+						<li><button type="button" class="btn_compare">ㅅ</button></li>
+						<li><button type="button" class="btn_compare">ㅇ</button></li>
+						<li><button type="button" class="btn_compare">ㅈ</button></li>
+						<li><button type="button" class="btn_compare">ㅊ</button></li>
+						<li><button type="button" class="btn_compare">ㅋ</button></li>
+						<li><button type="button" class="btn_compare">ㅌ</button></li>
+						<li><button type="button" class="btn_compare">ㅍ</button></li>
+						<li><button type="button" class="btn_compare">ㅎ</button></li>
+					</ul>
+
+					<div class="mt15">
+						<select class="select w50">
+							<option selected>농가 선택(10)</option>
+							<option>option 1</option>
+							<option>option 2</option>
+							<option>option 3</option>
+						</select>
+					</div>
+				</div>
+				<!-- //지역평균 끝 -->
+
+			</div>
+
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_primary" onclick="popup.close('#pop1')">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('.btn_compare').click(function(){
+		var $this = $(this);
+		$this.closest('.compare_list').find('.btn_compare').removeClass('active');
+		$this.addClass('active');
+	});
+</script>
+
+
+
+</body>
+</html> 

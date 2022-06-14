@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | popup ID/PW 찾기</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">Popup Guide</h3>
+
+			<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">popup(ID/PW 찾기)</button>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner popFoot_none" style="width:600px">
+			<div class="popupHeader">
+				<h1 class="popTitle">ID/PW 찾기</h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<div class="jsTabWrap">
+					<ul class="jstabMenu tabType02">
+						<li><button type="button" data-tab-link="tab_pop01" class="active">아이디</button></li>
+						<li><button type="button" data-tab-link="tab_pop02">비밀번호</button></li>
+					</ul>
+					<!-- 탭 아이디 찾기 -->
+					<div class="tabContent active" data-tab-cont="tab_pop01">
+						<div class="wrap_find_idpw">
+							<div class="find_idpw_para">
+								<strong>ID를 잊으셨나요?</strong>
+								<p>회원가입 시 등록된 정보가 일치할 경우 인증번호가 발송되며, 인증 후 ID 확인이 가능합니다.</p>
+							</div>
+							<ul class="find_idpw_box">
+								<li><input type="text" class="inputTxt wNormal" placeholder="이름을 입력해주세요" name=""></li>
+								<li class="phone_num"><input type="text" class="inputTxt wNormal" placeholder="휴대폰번호를 입력해주세요(-없이 입력)" name=""><button type="button" class="btn btn-primary">인증번호 받기</button></li>
+								<li class="sign_number">
+									<input type="text" class="input_sign_number" placeholder="인증번호를 입력해 주세요" name="">
+									<span class="sign_timer">03:00</span>
+								</li>
+							</ul>
+							<div class="btnAreaC"><button type="button" class="btn btn-primary point">ID 찾기</button></div>	    		 			
+						</div>
+					</div>
+					<!-- //탭 아이디 찾기 -->
+
+					<!-- 탭 비밀번호 찾기 -->
+					<div class="tabContent" data-tab-cont="tab_pop02">
+						<div class="wrap_find_idpw">
+							<div class="find_idpw_para">
+								<strong>PW를 잊으셨나요?</strong>
+								<p>회원가입 시 등록된 정보가 일치할 경우 인증번호가 발송되며, 인증 후 임시 PW가 발급됩니다.</p>
+							</div>
+							<ul class="find_idpw_box">
+								<li><input type="text" class="inputTxt wNormal" placeholder="이름을 입력해주세요" name=""></li>
+								<li><input type="text" class="inputTxt wNormal" placeholder="아이디를 입력해주세요" name=""></li>
+								<li class="phone_num"><input type="text" class="inputTxt wNormal" placeholder="휴대폰번호를 입력해주세요(-없이 입력)" name=""><button type="button" class="btn btn-primary">인증번호 받기</button></li>
+								<li class="sign_number">
+									<input type="text" class="input_sign_number" placeholder="인증번호를 입력해 주세요" name="">
+									<span class="sign_timer">03:00</span>
+								</li>
+							</ul>
+							<div class="btnAreaC"><button type="button" class="btn btn-primary point">PW 찾기</button></div>	    		 			
+						</div>
+					</div>
+					<!-- //탭 비밀번호 찾기 -->
+				 </div>
+			</div><!-- //.popupContent -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html> 

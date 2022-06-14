@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | Main</title>
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>데이터조회</span><em>수집데이터 조회</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<div class="jsTabWrap">
+    			<ul class="jstabMenu tabType01">
+    				<li><button type="button" data-tab-link="tab01">농가 환경형황</button></li>
+    				<li><button type="button" data-tab-link="tab02" class="active">농가 비교분석</button></li>
+    			</ul>
+
+    			<!-- 농가 환경현황 -->
+    			<div class="tabContent " data-tab-cont="tab01">농가 환경현황</div>
+    			<!-- //농가 환경현황 -->
+
+    			<!-- 농가 비교분석 -->
+    			<div class="tabContent active" data-tab-cont="tab02">
+		    		<div class="wrapTitle mt40">
+		    			<h2 class="titH2">내 농장 편차 [10월 25일, 44주차]</h2>
+		    			<dl class="main_synch">
+		    				<dt>정식 시점 동기화</dt>
+		    				<dd>
+			    				<span class="formRadio"><input type="radio" id="deRadio01" name="deRadio00" checked><label for="deRadio01">정식일 기준</label></span>
+								<span class="formRadio"><input type="radio" id="deRadio02" name="deRadio00"><label for="deRadio02">현재날짜 기준</label></span>
+			    			</dd>
+		    			</dl>
+		    		</div>
+
+		    		<ul class="btn_deviation_area">
+		    			<li><button type="button" class="btn btn_devi active">정식 주차</button></li>
+		    			<li><button type="button" class="btn btn_devi">평균온도</button></li>
+		    			<li><button type="button" class="btn btn_devi">DIF</button></li>
+		    			<li><button type="button" class="btn btn_devi">평균습도</button></li>
+		    			<li><button type="button" class="btn btn_devi">평균일사량</button></li>
+		    			<li><button type="button" class="btn btn_devi">병해충 발생</button></li>
+		    			<li><button type="button" class="btn btn_devi">약제 방제</button></li>
+		    			<li><button type="button" class="btn btn_devi">측창 제어</button></li>
+		    			<li><button type="button" class="btn btn_devi">전창 제어</button></li>
+		    			<li><button type="button" class="btn btn_devi">스크린 제어</button></li>
+		    		</ul>
+		    		<ul class="deviation_list">
+		    			<li>
+		    				<div class="deviation_box myFram">
+		    					<span class="title">내 농장</span>
+		    					<span class="week"><strong>36</strong>주차</span>
+		    					<span class=" ">(9/1)</span>
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div class="deviation_box area_average">
+		    					<span class="title">안양 평균</span>
+		    					<span class="week"><strong>36</strong>주차</span>
+		    					<span class="date text_up">+2일</span>
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">전북평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_down.png" alt="내림"></div>
+		    				</div>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">전남평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_up.png" alt="오름"></div>
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">경북평균</span>
+			    					<span><strong>36.5</strong><span class="date text_down">(-6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_down.png" alt="내림"></div>
+		    				</div>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">경남평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp.png" alt="동일"></div>
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">충북평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_up.png" alt="오름"></div>
+		    				</div>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">충남평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_up.png" alt="오름"></div>
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">경기평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_up.png" alt="오름"></div>
+		    				</div>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">강원평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_up.png" alt="오름"></div>
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">제주평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_up.png" alt="오름"></div>
+		    				</div>
+		    				<div class="deviation_area">
+		    					<div class="deviation_area_cont">
+			    					<span class="title">전국평균</span>
+			    					<span><strong>36.5</strong><span class="date text_up">(+6일)</span></span>
+			    				</div>
+			    				<div class="deviation_area_icon"><img src="../../images/common/icon_temp_up.png" alt="오름"></div>
+		    				</div>
+		    			</li>
+		    		</ul>
+
+		    		<div class="wrap_main_guide">
+		    			<div class="contain_main_guide">
+		    				<div class="boxType1 main_guide_group">
+		    					<div class="wrapTitle">
+		    						<h2 class="titH2">그룹 내 분포</h2>
+		    						<div>
+		    							<select class="select">
+				    						<option value="" selected>최근1주</option>
+				    						<option value="">최근 1달</option>
+				    					</select>
+				    					<input type="date" name="" class="inputDate" value="2022-01-17"> ~ 
+				    					<input type="date" name="" class="inputDate" value="2022-01-17">
+				    					<button type="button" class="btn btnSearch"><span>검색</span></button>
+		    						</div>
+		    					</div>
+		    					<div class="mt35">그래프영역</div>
+		    				</div>
+		    				<ul class="main_guide_de">
+		    					<li>
+		    						<div class="boxType1">
+		    							<div class="wrapTitle">
+		    								<h2 class="titH2">작년 작기 대비</h2>
+		    								<button class="btnDetail"><span class="blind">자세히보기</span></button>
+		    							</div>
+		    							<ul class="guide_de_list">
+		    								<li class="myFram">
+		    									<span class="title">내 농장</span>
+		    									<a href="#none">
+		    										<span class="week"><strong>36</strong>주차</span>
+		    										<span class="date text_up">(9/1)</span>
+		    									</a>
+		    								</li>
+		    								<li class="area_average">
+		    									<span class="title">안양 평균</span>
+		    									<a href="#none">
+		    										<span class="week"><strong>36.2h</strong>주차</span>
+		    										<span class="date text_up">+2일</span>
+		    									</a>
+		    								</li>
+		    							</ul>
+		    						</div>
+		    					</li>
+		    					<li>
+		    						<div class="boxType1">
+		    							<div class="wrapTitle">
+		    								<h2 class="titH2">평년 작기 대비</h2>
+		    								<button class="btnDetail"><span class="blind">자세히보기</span></button>
+		    							</div>
+		    							<ul class="guide_de_list">
+		    								<li class="myFram">
+		    									<span class="title">내 농장</span>
+		    									<a href="#none">
+		    										<span class="week"><strong>36</strong>주차</span>
+		    										<span class="date text_up">(9/1)</span>
+		    									</a>
+		    								</li>
+		    								<li class="area_average">
+		    									<span class="title">안양 평균</span>
+		    									<a href="#none">
+		    										<span class="week"><strong>36.2</strong>주차</span>
+		    										<span class="date text_up">+2일</span>
+		    									</a>
+		    								</li>
+		    							</ul>
+		    						</div>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    			<div class="boxType1 main_guideline">
+		    				<h2 class="titH2">딸기 재배 가이드라인</h2>
+		    				<div class="jsTabWrap">
+				    			<ul class="jstabMenu tabType03">
+				    				<li><button type="button" data-tab-link="tab11" class="active">일반 가이드</button></li>
+				    				<li><button type="button" data-tab-link="tab12">지역 기준</button></li>
+				    				<li><button type="button" data-tab-link="tab13">컨설턴트 추천</button></li>
+				    			</ul>
+
+				    			<!-- 일반가이드 -->
+				    			<div class="tabContent active" data-tab-cont="tab11">
+				    				<ul class="main_guideline_list">
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 온도 관리</dt>
+				    							<dd>일 평균 온도 : 18 ‘C</dd>
+				    							<dd>주야간 온도차(DIF) : 4 ~ 6 ‘C</dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 습도 관리</dt>
+				    							<dd>일 평균 습도 : 60~ 85 %</dd>
+				    							<dd>야간 평균 습도 : 80~88%</dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 목표 누적일사량</dt>
+				    							<dd>일 평균 : 1,400 J/cm2/day 이상 </dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>생육 단계를 고려한 약제 방제 가이드</dt>
+				    							<dd>잿빛곰팡이, 점박이응애 주 1회</dd>
+				    							<dd>판매량 기준 상위 3 종 : A, B, C 제품</dd>
+				    						</dl>
+				    					</li>
+				    				</ul>
+				    			</div>
+				    			<!-- //일반가이드 -->
+				    			<div class="tabContent" data-tab-cont="tab12">
+				    				<ul class="main_guideline_list">
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 온도 관리</dt>
+				    							<dd>일 평균 온도 : 18 ‘C</dd>
+				    							<dd>주야간 온도차(DIF) : 4 ~ 6 ‘C</dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 습도 관리</dt>
+				    							<dd>일 평균 습도 : 60~ 85 %</dd>
+				    							<dd>야간 평균 습도 : 80~88%</dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 목표 누적일사량</dt>
+				    							<dd>일 평균 : 1,400 J/cm2/day 이상 </dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>생육 단계를 고려한 약제 방제 가이드</dt>
+				    							<dd>잿빛곰팡이, 점박이응애 주 1회</dd>
+				    							<dd>판매량 기준 상위 3 종 : A, B, C 제품</dd>
+				    						</dl>
+				    					</li>
+				    				</ul>
+				    			</div>
+				    			<div class="tabContent" data-tab-cont="tab13">
+				    				<ul class="main_guideline_list">
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 온도 관리</dt>
+				    							<dd>일 평균 온도 : 18 ‘C</dd>
+				    							<dd>주야간 온도차(DIF) : 4 ~ 6 ‘C</dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 습도 관리</dt>
+				    							<dd>일 평균 습도 : 60~ 85 %</dd>
+				    							<dd>야간 평균 습도 : 80~88%</dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>정식 후 8주차 목표 누적일사량</dt>
+				    							<dd>일 평균 : 1,400 J/cm2/day 이상 </dd>
+				    						</dl>
+				    					</li>
+				    					<li>
+				    						<dl>
+				    							<dt>생육 단계를 고려한 약제 방제 가이드</dt>
+				    							<dd>잿빛곰팡이, 점박이응애 주 1회</dd>
+				    							<dd>판매량 기준 상위 3 종 : A, B, C 제품</dd>
+				    						</dl>
+				    					</li>
+				    				</ul>
+				    			</div>
+				    		</div>
+		    			</div>
+		    		</div>
+    			</div>
+    			<!-- //농가 비교분석 -->
+
+    		</div><!-- //.jsTabWrap -->    		
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script>
+  //생육사진 슬라이드
+  var swiper = new Swiper(".farm_basic_grow_pic .swiper_thumbs", {
+    spaceBetween: 4,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".farm_basic_grow_pic .swiper_gallery", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
+  //사용자 농가 하우스 목록 슬라이드
+  var $swiperWrap = $('.user_farm_swiper');
+  $swiperWrap.each(function(){
+  	$swiperWrap = $(this).children('.swiper');
+  	var userswiper = new Swiper($swiperWrap, {
+  		slidesPerView: "auto",
+	    spaceBetween: 10,
+	    observer:true,
+	    observeParents:true,
+	    observeSlideChildren:true,
+	 	navigation: {
+	      nextEl: ".swiper-button-next2",
+	      prevEl: ".swiper-button-prev2",
+	    }
+	  });
+  });
+
+  //주제별 데이터 슬라이드
+  var $swiperWrap2 = $('.farm_subject_cont');
+  $swiperWrap2.each(function(){
+  	$swiperWrap2 = $(this).children('.swiper');
+  	var userswiper = new Swiper($swiperWrap2, {
+  		slidesPerView: "auto",
+	    spaceBetween: 0,
+	    observer:true,
+	    observeParents:true,
+	    observeSlideChildren:true,
+	 	navigation: {
+	      nextEl: ".swiper-button-next3",
+	      prevEl: ".swiper-button-prev3",
+	    }
+	  });
+  });
+
+  //주간날씨 슬라이드
+  const envSlide = new Swiper('.weather_slide_week .swiper', {
+    	slidesPerView: "auto",
+        spaceBetween: 10,
+        observer:true,
+        observeParents:true,
+        observeSlideChildren:true,
+        pagination: {
+            el: '.env-slide .swiper-pagination',
+        }
+    });
+
+  var forecastswiper = new Swiper('.farm_weather_forecast .swiper', {
+    	slidesPerView: "auto",
+        spaceBetween: 27,
+        observer:true,
+        observeParents:true,
+        observeSlideChildren:true,
+    });
+  
+</script>
+</body>
+</html> 

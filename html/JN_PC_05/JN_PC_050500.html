@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 설치장비관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>시설제어</span><em>설치장비관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">설치장비관리</h3>
+    		<h4 class="titH4">농장정보</h4>
+    		<div class="wrap_scroll_x">
+				<table class="table tbTypeList tdCenter tbFixed">
+					<tbody>
+						<tr>
+							<th>농장명</th>
+							<td><input type="text" class="inputTxt alignC" disabled value="김지농 농가"></td>
+							<th>주소</th>
+							<td>경기 안양시 동안구 시민대로 123번길 12</td>
+							<th>구역</th>
+							<td>
+								<select class="select">
+									<option value="" selected>김지농 농가 구역 01</option>
+									<option value="">김지농 농가 구역 02</option>
+									<option value="">김지농 농가 구역 03</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="wrapTitleR">
+					<h4 class="titH4 mt5">설치장비정보</h4>
+					<div class="innerwrapTitleR">
+						<button type="button" class="btn btnTable mr5"><span class="icon_add">장비추가</span></button>
+						<button type="button" class="btn btnTable">FormOS 장비연계</button>		
+					</div>
+				</div>
+				<div class="wraptable">
+							<table class="table tbTypeList tdCenter tbFixed mt5">
+								<colgroup>
+									<!-- <col width="124">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">	 -->
+								</colgroup>
+								<caption></caption>
+								<tbody>
+									<tr>
+										<th>장비분류</th>
+										<th>식별번호(OID)</th>
+										<th>장비명</th>
+										<th>설치일자</th>
+										<th>운영상태</th>
+										<th>장비상태</th>
+										<th>사용여부</th>	
+										<th>재설정</th>	
+									</tr>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="센서노드"></td>
+										<td><input type="text" class="inputTxt alignC" value="3"></td>
+										<td><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+										<td><input type="text" class="inputTxt alignC" value="FarmOS복합노드"></td>
+										<td>
+											<select class="select">
+												<option value="">운영</option>
+												<option value="">운영</option>
+												<option value="">운영</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="">정상</option>
+												<option value="">정상</option>
+												<option value="">정상</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="">사용</option>
+												<option value="">사용</option>
+												<option value="">사용</option>
+											</select>
+										</td>
+										<td><button type="button" class="btn btn-primary">재설정</button></td>	
+									</tr>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="센서노드"></td>
+										<td><input type="text" class="inputTxt alignC" value="3"></td>
+										<td><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+										<td><input type="text" class="inputTxt alignC" value="FarmOS복합노드"></td>
+										<td>
+											<select class="select">
+												<option value="">운영</option>
+												<option value="">운영</option>
+												<option value="">운영</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="">정상</option>
+												<option value="">정상</option>
+												<option value="">정상</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="">사용</option>
+												<option value="">사용</option>
+												<option value="">사용</option>
+											</select>
+										</td>
+										<td><button type="button" class="btn btn-primary">재설정</button></td>	
+									</tr>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="센서노드"></td>
+										<td><input type="text" class="inputTxt alignC" value="3"></td>
+										<td><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+										<td><input type="text" class="inputTxt alignC" value="FarmOS복합노드"></td>
+										<td>
+											<select class="select">
+												<option value="">운영</option>
+												<option value="">운영</option>
+												<option value="">운영</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="">정상</option>
+												<option value="">정상</option>
+												<option value="">정상</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="">사용</option>
+												<option value="">사용</option>
+												<option value="">사용</option>
+											</select>
+										</td>
+										<td><button type="button" class="btn btn-primary">재설정</button></td>	
+									</tr>
+								</tbody>
+
+							</table>
+				</div>
+				<div class="wrapTitleR-2">
+							<h4 class="titH4 mr5 mt10">설치장비 세부정보(센서, 구동기) / 장비연계ID:</h4>
+							<input type="text" class="inputTxt">
+				</div>
+				<div class="wraptable-2">
+							<table class="table tbTypeList tdCenter ">
+								<colgroup>
+									<!-- <col width="124">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">
+									<col width="65">	 -->
+								</colgroup>
+								<caption></caption>
+								<tbody>
+									<tr>
+										<th>채널번호(LID)</th>
+										<th>채널명</th>
+										<th>장비명</th>
+										<th>설치일자</th>
+										<th>구역수</th>
+										<th>창문방향</th>
+										<th>창문위치</th>	
+										<th>구역설정</th>	
+										<th>제어설정</th>	
+										<th>최소값</th>	
+										<th>최대값</th>	
+										<th>단위</th>	
+										<th>장비상태</th>	
+										<th>사용여부</th>	
+										<th>설치위치</th>	
+									</tr>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="3_3"></td>
+										<td><input type="text" class="inputTxt alignC" value="내부온도센서"></td>
+										<td><input type="text" class="inputTxt alignC" value="온도"></td>
+										<td><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+										<td><input type="text" class="inputTxt alignC" value="1"></td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td>
+											<select class="select">
+												<option value="" selected>사용</option>
+												<option value="" >미사용</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>내부</option>
+												<option value="">외부</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="3_3"></td>
+										<td><input type="text" class="inputTxt alignC" value="내부온도센서"></td>
+										<td><input type="text" class="inputTxt alignC" value="온도"></td>
+										<td><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+										<td><input type="text" class="inputTxt alignC" value="1"></td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td>
+											<select class="select">
+												<option value="" selected>사용</option>
+												<option value="" >미사용</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>내부</option>
+												<option value="">외부</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="3_3"></td>
+										<td><input type="text" class="inputTxt alignC" value="내부온도센서"></td>
+										<td><input type="text" class="inputTxt alignC" value="온도"></td>
+										<td><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+										<td><input type="text" class="inputTxt alignC" value="1"></td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td>
+											<select class="select">
+												<option value="" selected>사용</option>
+												<option value="" >미사용</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>내부</option>
+												<option value="">외부</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="3_3"></td>
+										<td><input type="text" class="inputTxt alignC" value="내부온도센서"></td>
+										<td><input type="text" class="inputTxt alignC" value="온도"></td>
+										<td><input type="date" name="" class="inputDate" value="2022-01-17"></td>
+										<td><input type="text" class="inputTxt alignC" value="1"></td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>선택</option>
+												<option value="">선택</option>
+												<option value="">선택</option>
+											</select>
+										</td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><button type="button" class="btn btnTable">설정</button></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td><input type="text" class="inputTxt alignC" value=""></td>
+										<td>
+											<select class="select">
+												<option value="" selected>사용</option>
+												<option value="" >미사용</option>
+											</select>
+										</td>
+										<td>
+											<select class="select">
+												<option value="" selected>내부</option>
+												<option value="">외부</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+
+							</table>
+				</div>
+	    				
+					
+			<div class="btnAreaC mt70">
+				<button type="button" class="btn btnType01">저장</button>
+			</div>
+
+    			
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html> 

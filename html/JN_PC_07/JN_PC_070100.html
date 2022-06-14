@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 병해발생예측</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>PLS</span><em>병해발생예측</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">병해발생예측</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+				<div class="tbSearch">
+					<table class="table">
+						<caption>데이터 조회 조건</caption>
+						<colgroup>
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>농장명</th>
+								<td>
+									<div class="btnSet">
+										<input type="text" value="김지농_농가" class="inputTxt w70">
+										<button type="button" class="btn btnTable">선택</button>
+									</div>
+								</td>
+								<th>적용작물</th>
+								<td>
+									<select class="select w40">
+										<option value="" selected>선택</option>
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+									</select>
+								</td>	
+								<th>기간선택</th>
+								<td>
+									<input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+			</div>
+			<div class="warp_graph">
+				그래프영역 <br><br><br><br><br><br><br><br><br><br>
+			</div>	    		
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+	var table = $("#myTable").DataTable({
+		
+	});
+</script>
+
+
+
+</body>
+</html> 

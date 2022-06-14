@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | Main</title>
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+</head>
+<style>
+	
+</style>
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>대시보드</span><em>대시보드</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<!-- 현황분석 -->
+			<div class="wrapTitle">
+				<h2 class="titH2">대시보드</h2>
+			</div>
+			<div class="mainBasicInfo">
+				<div class="boxType1 widthType2">
+					<div class="wrapTitle">
+						<h2 class="titH2">근무현황</h2>
+						<button class="btnDetail" onclick="popup.open('#pop1', this)"><span class="blind">자세히보기</span></button>
+					</div>
+					<div class="main_date_graph">
+						<div class="chart">
+							<canvas id="myChart01">근무현황 차트</canvas>
+							<div class="perText">
+								<div>90<span>%</span></div>
+								<span class="txt">근무율</span>
+							</div>
+						</div>
+						<script>
+							const ctx01 = document.getElementById('myChart01');
+							const myChart01 = new Chart(ctx01, {
+								type: 'doughnut',
+								data: {
+									labels: [
+										'근무율',
+										'남은 근무율',
+									],
+									datasets: [{
+										data: [90, 10],      // 근무율, 남은 근무율 
+										backgroundColor: [
+										'#0050cb',			// 근무율
+										'#ededee'			// 남은 근무율
+										],
+										borderWidth: 0,
+										scaleBeginAtZero: true,
+									}
+									]
+								},
+								options: {
+									aspectRatio: 1,
+									layout: {
+										padding: {
+											left: 0,
+											right: 0,
+											top: 0,
+											bottom: 0,
+										}
+									},
+									legend: {
+										display: false
+									},
+									tooltips: {
+										enabled: false
+									},
+									responsive: true,
+									cutoutPercentage:65 // 도넛 안쪼 원 굵기
+								}
+							});
+						</script>
+						<ul class="listType_01 mt50">
+							<li>
+								<dl>
+									<dt>출근</dt>
+									<dd><span>40</span>/<em>50</em></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>출근전</dt>
+									<dd><span>5</span>/<em>50</em></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>퇴근</dt>
+									<dd><span>5</span>/<em>50</em></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="boxType1 widthType6">
+					<div class="wrapTitle">
+						<h2 class="titH2">작업 현황</h2>
+						<button class="btnDetail" onclick="popup.open('#pop2', this)"><span class="blind">자세히보기</span></button>
+					</div>
+					<div class="wrapProgress">
+						<ul class="consulting_progress listType02">
+							<li>
+								<span class="list_flag_01">전체</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 80%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">80</span>%</span>
+							</li>
+							<li>
+								<span class="list_flag_02">상도</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 72%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">72</span>%</span>
+							</li>
+							<li>
+								<span class="list_flag_03">답십리</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 35%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">35</span>%</span>
+							</li>
+							<li>
+								<span class="list_flag_04">충정로</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 38%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">38</span>%</span>
+							</li>
+						</ul>
+						<div class="listWrap">
+							<ul class="listType02">
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+							</ul>
+						</div>							
+					</div>
+				</div>
+				<div class="boxType1 widthType2">
+					<div class="wrapTitle">
+						<h2 class="titH2">도래작업 알림</h2>
+						<button class="btnDetail" onclick="popup.open('#pop3', this)"><span class="blind">자세히보기</span></button>
+					</div>
+					<div class="alermWrap">
+						<strong class="list_flag_tit_01">작업도래</strong>
+						<ul class="listType02">
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+						</ul>
+						<strong class="list_flag_tit_02">작업누락</strong>
+						<ul class="listType02">
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mainBasicInfo">
+				<div class="boxType1 widthType2">
+					<div class="wrapTitle">
+						<h2 class="titH2">원/부자재 재고현황</h2>
+						<!-- <button class="btnDetail"><span class="blind">자세히보기</span></button> -->
+					</div>
+					<div class="stockWrap">
+						<ul>
+							<li class="list_01">
+								<dl>
+									<dt>종자(ea)</dt>
+									<dd>
+										<div>
+											<span>이자벨</span>
+											<em>680</em>
+										</div>
+										<div>
+											<span>버터헤드</span>
+											<em>0</em>
+										</div>
+										<div>
+											<span>카이피라</span>
+											<em>400</em>
+										</div>
+										<div>
+											<span>바질</span>
+											<em>320</em>
+										</div>
+										<div>
+											<span>etc</span>
+											<em>500</em>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="list_02">
+								<dl>
+									<dt>스펀지(ea)</dt>
+									<dd>
+										<div>
+											<span>300홀</span>
+											<em>180</em>
+										</div>
+										<div>
+											<span>160홀</span>
+											<em>28</em>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="list_03">
+								<dl>
+									<dt>수확비닐(ea)</dt>
+									<dd>
+										<div>
+											<span>수확비닐</span>
+											<em>780</em>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="list_04">
+								<dl>
+									<dt>양액(ㅣ)</dt>
+									<dd>
+										<div>
+											<span>질산칼슘(4수염)</span>
+											<em>120</em>
+										</div>
+										<div>
+											<span>질산칼륨</span>
+											<em>360</em>
+										</div>
+										<div>
+											<span>황상마그네슘</span>
+											<em>480</em>
+										</div>
+										<div>
+											<span>인산암모늄</span>
+											<em>120</em>
+										</div>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="boxType1 widthType8">
+					<div class="wrapTitle">
+						<h2 class="titH2">성과관리</h2>
+						<button class="btnDetail" onclick="popup.open('#pop4', this)"><span class="blind">자세히보기</span></button>
+					</div>
+					<div class="performanceWrap">
+						<div class="jsTabWrap">
+							<ul class="jstabMenu tabType04">
+								<li><button type="button" data-tab-link="tab01" class="active"><span class="icon_report">목료중량 달성율</span></button></li>
+								<li><button type="button" data-tab-link="tab02"><span class="icon_map">생산계획 달성율</span></button></li>
+								<li><button type="button" data-tab-link="tab03"><span class="icon_compa">메출추세</span></button></li>
+								<li><button type="button" data-tab-link="tab04"><span class="icon_compa">제조원가 추세</span></button></li>
+							</ul>
+							
+							<!-- 목료중량 달성율 -->
+							<div class="tabContent active" data-tab-cont="tab01">
+								<!-- <div class="main_date_graph">
+									<div class="chart" style="width:20rem">
+										<canvas id="myChart03">근무현황 차트</canvas>
+										<div class="perText">
+											<div>90<span>%</span></div>
+											<span class="txt">근무율</span>
+										</div>
+									</div>
+									<script>
+										const ctx03 = document.getElementById('myChart03');
+										const myChart03 = new Chart(ctx03, {
+											type: 'doughnut',
+											data: {
+												labels: [
+													'근무율',
+													'남은 근무율',
+												],
+												datasets: [{
+													data: [90, 10],      // 근무율, 남은 근무율 
+													backgroundColor: [
+													'#0050cb',			// 근무율
+													'#ededee'			// 남은 근무율
+													],
+													borderWidth: 0,
+													scaleBeginAtZero: true,
+												}
+												]
+											},
+											options: {
+												aspectRatio: 1,
+												layout: {
+													padding: {
+														left: 0,
+														right: 0,
+														top: 0,
+														bottom: 0,
+													}
+												},
+												legend: {
+													display: false
+												},
+												tooltips: {
+													enabled: false
+												},
+												responsive: true,
+												cutoutPercentage:65 // 도넛 안쪼 원 굵기
+											}
+										});
+									</script>
+									<ul class="listType_01 mt50">
+										<li>
+											<dl>
+												<dt>출근</dt>
+												<dd><span>40</span>/<em>50</em></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>출근전</dt>
+												<dd><span>5</span>/<em>50</em></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>퇴근</dt>
+												<dd><span>5</span>/<em>50</em></dd>
+											</dl>
+										</li>
+									</ul>
+								</div> -->
+								<div class="chart">
+									<canvas id="myChart02" style="width:100% !important;">목표중량 달성율 차트</canvas>
+								</div>
+								<script>
+									var ctx = document.getElementById("myChart02");
+									Chart.pluginService.register({
+										afterDraw: function(chart) {
+											if (typeof chart.config.options.lineAt != 'undefined') {
+												var lineAt = chart.config.options.lineAt;
+												var ctxPlugin = chart.chart.ctx;
+												var xAxe = chart.scales[chart.config.options.scales.xAxes[0].id];
+												var yAxe = chart.scales[chart.config.options.scales.yAxes[0].id];
+												
+												// I'm not good at maths
+												// So I couldn't find a way to make it work ...
+												// ... without having the `min` property set to 0
+												if(yAxe.min != 0) return;
+												
+												ctxPlugin.strokeStyle = "#f00";//평균색상
+												ctxPlugin.beginPath();
+												lineAt = (lineAt - yAxe.min) * (100 / yAxe.max);
+												lineAt = (100 - lineAt) / 100 * (yAxe.height) + yAxe.top;
+												ctxPlugin.moveTo(xAxe.left, lineAt);
+												ctxPlugin.lineTo(xAxe.right, lineAt);
+												ctxPlugin.stroke();
+											}
+										}
+									});
+
+									var myChart = new Chart(ctx, {
+										type: 'bar',
+										data: {
+											labels: [
+												'20년11월',
+												'20년12월',
+												'21년01월',
+												'21년02월',
+												'21년03월',
+												'21년04월',
+												'21년05월',
+												'21년06월',
+												'21년07월',
+												'21년08월',
+												'21년09월',
+												'21년10월',
+											],
+											datasets: [{
+												barPercentage: 0.5,
+												barThickness:40,
+												maxBarThickness:80,
+												minBarLength:2,
+												data: [98, 95, 78, 65, 77, 78, 82, 80, 81, 88, 86, 94,],
+												backgroundColor: [
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												'rgba(153, 102, 255, 0.2)',
+												'rgba(201, 203, 207, 0.2)',
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												],
+											}]
+										},
+										options: {
+											lineAt: 80,//평균값
+											legend: {
+												display: false
+											},
+											tooltips: {
+												enabled: false
+											},
+											responsive: false,
+											scales: {
+												xAxes: [{
+													gridLines: {
+														display:false
+													}  
+												}],
+												yAxes: [{
+													ticks: {
+														min: 0,
+														max: 100,
+														stepSize : 10,
+														fontSize : 14,
+													},
+												}]
+											}
+										}
+									});
+								</script>
+							</div>
+							<!-- //목료중량 달성율 -->
+							
+							<!-- 생산계획 달성율 -->
+							<div class="tabContent" data-tab-cont="tab02">생산계획 달성율</div>
+							<!-- //생산계획 달성율 -->
+
+							<!-- 메출추세 -->
+							<div class="tabContent" data-tab-cont="tab03">메출추세</div>
+							<!-- //메출추세 -->
+			
+							<!-- 제조원가 추세 -->
+							<div class="tabContent" data-tab-cont="tab04">제조원가 추세</div>
+							<!-- 제조원가 추세 -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //현황분석 -->
+		</div><!-- //.content -->
+
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner popFoot_none">
+			<div class="popupHeader">
+				<h1 class="popTitle"></h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop1')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<div class="mainBasicInfo">
+					<div class="boxType1 widthType5">
+						<div class="wrapTitle">
+							<h2 class="titH2">근무현황</h2>
+						</div>
+						<div class="main_date_graph">
+							<div class="chart">
+								<canvas id="PopMyChart01">근무현황 차트</canvas>
+								<div class="perText">
+									<div>90<span>%</span></div>
+									<span class="txt">근무율</span>
+								</div>
+							</div>
+							<script>
+								const Popctx01 = document.getElementById('PopMyChart01');
+								const PopMyChart01 = new Chart(Popctx01, {
+									type: 'doughnut',
+									data: {
+										labels: [
+											'근무율',
+											'남은 근무율',
+										],
+										datasets: [{
+											data: [90, 10],      // 근무율, 남은 근무율 
+											backgroundColor: [
+											'#0050cb',			// 근무율
+											'#ededee'			// 남은 근무율
+											],
+											borderWidth: 0,
+											scaleBeginAtZero: true,
+										}
+										]
+									},
+									options: {
+										aspectRatio: 1,
+										layout: {
+											padding: {
+												left: 0,
+												right: 0,
+												top: 0,
+												bottom: 0,
+											}
+										},
+										legend: {
+											display: false
+										},
+										tooltips: {
+											enabled: false
+										},
+										responsive: true,
+										cutoutPercentage:65 // 도넛 안쪼 원 굵기
+									}
+								});
+							</script>
+							<ul class="listType_01 mt50">
+								<li>
+									<dl>
+										<dt>출근</dt>
+										<dd><span>40</span>/<em>50</em></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>출근전</dt>
+										<dd><span>5</span>/<em>50</em></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>퇴근</dt>
+										<dd><span>5</span>/<em>50</em></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="boxType1 widthType5">
+						<div class="wrapTitle_daesh">
+							<h2 class="titH2">실시간 기록</h2>
+							<dl class="daesh_search_area">
+								<dt>생산시설</dt>
+								<dd>
+									<select class="select">
+										<option value="" selected>전체</option>
+										<option value="상도점" selected>상도점</option>
+										<option value="충정로점">충정로점</option>
+										<option value="답십리점">답십리점</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+						<div class="realTimeWrap">
+							<strong class="list_flag_tit_01">관리직</strong>
+							<ul>
+								<li>
+									<div class="profile">
+										<span><img src="../../images/common/img_profile.png" alt="" /></span>
+										<div class="name">홍길동</div>
+										<div class="level">차장</div>
+									</div>
+									<div class="workTime work_in">
+										<div class="status">근무</div>
+										<div class="time">오후 04:06</div>
+									</div>	
+								</li>
+								<li>
+									<div class="profile">
+										<span><img src="../../images/common/img_profile.png" alt="" /></span>
+										<div class="name">홍길동</div>
+										<div class="level">차장</div>
+									</div>
+									<div class="workTime work_ready">
+										<div class="status">출근</div>
+										<div class="time">오후 04:06</div>
+									</div>	
+								</li>
+								<li>
+									<div class="profile">
+										<span><img src="../../images/common/img_profile.png" alt="" /></span>
+										<div class="name">홍길동</div>
+										<div class="level">차장</div>
+									</div>
+									<div class="workTime work_out">
+										<div class="status">퇴근</div>
+										<div class="time">오후 04:06</div>
+									</div>	
+								</li>
+							</ul>
+							<strong class="list_flag_tit_02">생산직</strong>
+							<ul>
+								<li>
+									<div class="profile">
+										<span><img src="../../images/common/img_profile.png" alt="" /></span>
+										<div class="name">홍길동</div>
+										<div class="level">차장</div>
+									</div>
+									<div class="workTime work_in">
+										<div class="status">근무</div>
+										<div class="time">오후 04:06</div>
+									</div>	
+								</li>
+								<li>
+									<div class="profile">
+										<span><img src="../../images/common/img_profile.png" alt="" /></span>
+										<div class="name">홍길동</div>
+										<div class="level">차장</div>
+									</div>
+									<div class="workTime work_ready">
+										<div class="status">출근</div>
+										<div class="time">오후 04:06</div>
+									</div>	
+								</li>
+								<li>
+									<div class="profile">
+										<span><img src="../../images/common/img_profile.png" alt="" /></span>
+										<div class="name">홍길동</div>
+										<div class="level">차장</div>
+									</div>
+									<div class="workTime work_out">
+										<div class="status">퇴근</div>
+										<div class="time">오후 04:06</div>
+									</div>	
+								</li>
+							</ul>			
+						</div>
+					</div>
+				</div>
+			</div><!-- //.popupContent -->
+		</div>
+	</div>
+</div>
+
+<div class="popupWrap" role="dialog" id="pop2">
+	<div class="popupContainer">
+		<div class="popupInner popFoot_none">
+			<div class="popupHeader">
+				<h1 class="popTitle"></h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop2')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<div class="wrapProgress">
+					<div class="boxType1 widthType5">
+						<div class="wrapTitle">
+							<h2 class="titH2">작업현황</h2>
+						</div>
+						<ul class="consulting_progress listType02">
+							<li>
+								<span class="list_flag_01">전체</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 80%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">80</span>%</span>
+							</li>
+							<li>
+								<span class="list_flag_02">상도</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 72%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">72</span>%</span>
+							</li>
+							<li>
+								<span class="list_flag_03">답십리</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 35%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">35</span>%</span>
+							</li>
+							<li>
+								<span class="list_flag_04">충정로</span>
+								<span class="consulting_progress_bar"><span class="bar" style="width: 38%;"></span></span>
+								<span class="consulting_progress_sum"><span class="num">38</span>%</span>
+							</li>
+						</ul>
+					</div>
+					<div class="boxType1 widthType5">
+						<div class="wrapTitle_daesh">
+							<h2 class="titH2">실시간 기록</h2>
+							<dl class="daesh_search_area">
+								<dt>생산시설</dt>
+								<dd>
+									<select class="select">
+										<option value="" selected>전체</option>
+										<option value="상도점">상도점</option>
+										<option value="충정로점">충정로점</option>
+										<option value="답십리점">답십리점</option>
+									</select>
+								</dd>
+								<dt>작업구분</dt>
+								<dd>
+									<select class="select">
+										<option value="">전체</option>
+										<option value="정기작업" selected>정기작업</option>
+										<option value="누락작업">누락작업</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+						<div class="listWrap">
+							<ul class="listType02">
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_01">완료</em><span>(상도)카이피라/이식/-3days</span></li>
+								<li><em class="list_flag_02">완료전</em><span>(상도)카이피라/이식/-3days</span></li>
+							</ul>
+						</div>	
+					</div>							
+				</div>
+			</div><!-- //.popupContent -->
+		</div>
+	</div>
+</div>
+
+<div class="popupWrap" role="dialog" id="pop3">
+	<div class="popupContainer">
+		<div class="popupInner popFoot_none" style="width:600px">
+			<div class="popupHeader">
+				<h1 class="popTitle"></h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop3')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<div class="wrapTitle_daesh">
+					<h2 class="titH2">도래작업 알림</h2>
+					<dl class="daesh_search_area">
+						<dt>생산시설</dt>
+						<dd>
+							<select class="select">
+								<option value="" selected>전체</option>
+								<option value="상도점">상도점</option>
+								<option value="충정로점">충정로점</option>
+								<option value="답십리점">답십리점</option>
+							</select>
+						</dd>
+						<dt>작업구분</dt>
+						<dd>
+							<select class="select">
+								<option value="">전체</option>
+								<option value="정기작업">정기작업</option>
+								<option value="누락작업" selected>누락작업</option>
+							</select>
+						</dd>
+					</dl>
+				</div>
+				<div class="wrapProgress">
+					<div class="alermWrap">
+						<!-- <strong class="list_flag_tit_01">작업도래</strong>
+						<ul class="listType02">
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+						</ul>
+						<strong class="list_flag_tit_02">작업누락</strong> -->
+						<ul class="listType02">
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+							<li><span>(상도)카이피라/이식/-3days</span></li>
+						</ul>
+					</div>					
+				</div>
+			</div><!-- //.popupContent -->
+		</div>
+	</div>
+</div>
+
+<div class="popupWrap" role="dialog" id="pop4" style="display:block;">
+	<div class="popupContainer">
+		<div class="popupInner popFoot_none" style="width:100rem;">
+			<div class="popupHeader">
+				<h1 class="popTitle"></h1>
+				<span class="popClose"><button type="button" class="btn_pop_close" onclick="popup.close('#pop4')"><span class="blind">닫기</span></button></span>
+			</div>
+			<div class="popupContent">
+				<div class="wrapProgress">
+					<div class="">
+						<div class="wrapTitle_daesh">
+							<h2 class="titH2">성과관리</h2>
+							<dl class="daesh_search_area">
+								<dt>성과관리구분</dt>
+								<dd>
+									<select class="select">
+										<option value="" selected>목표증량</option>
+										<option value="상도점">상도점</option>
+										<option value="충정로점">충정로점</option>
+										<option value="답십리점">답십리점</option>
+									</select>
+								</dd>
+								<dt>생산시설</dt>
+								<dd>
+									<select class="select">
+										<option value="" selected>전체</option>
+										<option value="상도점">상도점</option>
+										<option value="충정로점">충정로점</option>
+										<option value="답십리점">답십리점</option>
+									</select>
+								</dd>
+								<dt>품목</dt>
+								<dd>
+									<select class="select">
+										<option value="" selected>전체</option>
+										<option value="카이피라">카이피라</option>
+										<option value="이자벨">이자벨</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+						<dl class="graphWrap">
+							<dt class="tabTitle"><button type="button"><span>전체</span></button></dt>
+							<dd class="graph_box">
+								<div class="chart">
+									<canvas id="PopChart01" style="width:75rem !important;height:20rem">목표중량 달성율 차트</canvas>
+								</div>
+								<script>
+									var ctx = document.getElementById("PopChart01");
+									Chart.pluginService.register({
+										afterDraw: function(chart) {
+											if (typeof chart.config.options.lineAt != 'undefined') {
+												var lineAt = chart.config.options.lineAt;
+												var ctxPlugin = chart.chart.ctx;
+												var xAxe = chart.scales[chart.config.options.scales.xAxes[0].id];
+												var yAxe = chart.scales[chart.config.options.scales.yAxes[0].id];
+												
+												// I'm not good at maths
+												// So I couldn't find a way to make it work ...
+												// ... without having the `min` property set to 0
+												if(yAxe.min != 0) return;
+												
+												ctxPlugin.strokeStyle = "#f00";//평균색상
+												ctxPlugin.beginPath();
+												lineAt = (lineAt - yAxe.min) * (100 / yAxe.max);
+												lineAt = (100 - lineAt) / 100 * (yAxe.height) + yAxe.top;
+												ctxPlugin.moveTo(xAxe.left, lineAt);
+												ctxPlugin.lineTo(xAxe.right, lineAt);
+												ctxPlugin.stroke();
+											}
+										}
+									});
+
+									var myChart = new Chart(ctx, {
+										type: 'bar',
+										data: {
+											labels: [
+												'20년11월',
+												'20년12월',
+												'21년01월',
+												'21년02월',
+												'21년03월',
+												'21년04월',
+												'21년05월',
+												'21년06월',
+												'21년07월',
+												'21년08월',
+												'21년09월',
+												'21년10월',
+											],
+											datasets: [{
+												barPercentage: 0.5,
+												barThickness:15,
+												maxBarThickness:30,
+												minBarLength:2,
+												data: [98, 95, 78, 65, 77, 78, 82, 80, 81, 88, 86, 94,],
+												backgroundColor: [
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												'rgba(153, 102, 255, 0.2)',
+												'rgba(201, 203, 207, 0.2)',
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												],
+											}]
+										},
+										options: {
+											lineAt: 80,//평균값
+											legend: {
+												display: false
+											},
+											tooltips: {
+												enabled: false
+											},
+											responsive: false,
+											scales: {
+												xAxes: [{
+													gridLines: {
+														display:false
+													}  
+												}],
+												yAxes: [{
+													ticks: {
+														min: 0,
+														max: 100,
+														stepSize : 10,
+														fontSize : 14,
+													},
+												}]
+											}
+										}
+									});
+								</script>
+							</dd>
+						</dl>
+						<dl class="graphWrap">
+							<dt class="tabTitle"><button type="button"><span>카이피라</span></button></dt>
+							<dd class="graph_box">
+								<div class="chart">
+									<canvas id="PopChart02" style="width:75rem !important;height:20rem">목표중량 달성율 차트</canvas>
+								</div>
+								<script>
+									var ctx = document.getElementById("PopChart02");
+									Chart.pluginService.register({
+										afterDraw: function(chart) {
+											if (typeof chart.config.options.lineAt != 'undefined') {
+												var lineAt = chart.config.options.lineAt;
+												var ctxPlugin = chart.chart.ctx;
+												var xAxe = chart.scales[chart.config.options.scales.xAxes[0].id];
+												var yAxe = chart.scales[chart.config.options.scales.yAxes[0].id];
+												
+												// I'm not good at maths
+												// So I couldn't find a way to make it work ...
+												// ... without having the `min` property set to 0
+												if(yAxe.min != 0) return;
+												
+												ctxPlugin.strokeStyle = "#f00";//평균색상
+												ctxPlugin.beginPath();
+												lineAt = (lineAt - yAxe.min) * (100 / yAxe.max);
+												lineAt = (100 - lineAt) / 100 * (yAxe.height) + yAxe.top;
+												ctxPlugin.moveTo(xAxe.left, lineAt);
+												ctxPlugin.lineTo(xAxe.right, lineAt);
+												ctxPlugin.stroke();
+											}
+										}
+									});
+
+									var myChart = new Chart(ctx, {
+										type: 'bar',
+										data: {
+											labels: [
+												'20년11월',
+												'20년12월',
+												'21년01월',
+												'21년02월',
+												'21년03월',
+												'21년04월',
+												'21년05월',
+												'21년06월',
+												'21년07월',
+												'21년08월',
+												'21년09월',
+												'21년10월',
+											],
+											datasets: [{
+												barPercentage: 0.5,
+												barThickness:15,
+												maxBarThickness:30,
+												minBarLength:2,
+												data: [88, 85, 48, 65, 57, 78, 52, 60, 81, 88, 86, 94,],
+												backgroundColor: [
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												'rgba(153, 102, 255, 0.2)',
+												'rgba(201, 203, 207, 0.2)',
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												],
+											}]
+										},
+										options: {
+											lineAt: 70,//평균값
+											legend: {
+												display: false
+											},
+											tooltips: {
+												enabled: false
+											},
+											responsive: false,
+											scales: {
+												xAxes: [{
+													gridLines: {
+														display:false
+													}  
+												}],
+												yAxes: [{
+													ticks: {
+														min: 0,
+														max: 100,
+														stepSize : 10,
+														fontSize : 14,
+													},
+												}]
+											}
+										}
+									});
+								</script>
+							</dd>
+						</dl>
+						<dl class="graphWrap">
+							<dt class="tabTitle"><button type="button"><span>이자벨</span></button></dt>
+							<dd class="graph_box">
+								<div class="chart">
+									<canvas id="PopChart03" style="width:75rem !important;height:20rem">목표중량 달성율 차트</canvas>
+								</div>
+								<script>
+									var ctx = document.getElementById("PopChart03");
+									Chart.pluginService.register({
+										afterDraw: function(chart) {
+											if (typeof chart.config.options.lineAt != 'undefined') {
+												var lineAt = chart.config.options.lineAt;
+												var ctxPlugin = chart.chart.ctx;
+												var xAxe = chart.scales[chart.config.options.scales.xAxes[0].id];
+												var yAxe = chart.scales[chart.config.options.scales.yAxes[0].id];
+												
+												// I'm not good at maths
+												// So I couldn't find a way to make it work ...
+												// ... without having the `min` property set to 0
+												if(yAxe.min != 0) return;
+												
+												ctxPlugin.strokeStyle = "#f00";//평균색상
+												ctxPlugin.beginPath();
+												lineAt = (lineAt - yAxe.min) * (100 / yAxe.max);
+												lineAt = (100 - lineAt) / 100 * (yAxe.height) + yAxe.top;
+												ctxPlugin.moveTo(xAxe.left, lineAt);
+												ctxPlugin.lineTo(xAxe.right, lineAt);
+												ctxPlugin.stroke();
+											}
+										}
+									});
+
+									var myChart = new Chart(ctx, {
+										type: 'bar',
+										data: {
+											labels: [
+												'20년11월',
+												'20년12월',
+												'21년01월',
+												'21년02월',
+												'21년03월',
+												'21년04월',
+												'21년05월',
+												'21년06월',
+												'21년07월',
+												'21년08월',
+												'21년09월',
+												'21년10월',
+											],
+											datasets: [{
+												barPercentage: 0.5,
+												barThickness:15,
+												maxBarThickness:30,
+												minBarLength:2,
+												data: [88, 85, 48, 65, 57, 78, 52, 60, 81, 88, 86, 94,],
+												backgroundColor: [
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												'rgba(153, 102, 255, 0.2)',
+												'rgba(201, 203, 207, 0.2)',
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												],
+											}]
+										},
+										options: {
+											lineAt: 60,//평균값
+											legend: {
+												display: false
+											},
+											tooltips: {
+												enabled: false
+											},
+											responsive: false,
+											scales: {
+												xAxes: [{
+													gridLines: {
+														display:false
+													}  
+												}],
+												yAxes: [{
+													ticks: {
+														min: 0,
+														max: 100,
+														stepSize : 10,
+														fontSize : 14,
+													},
+												}]
+											}
+										}
+									});
+								</script>
+							</dd>
+						</dl>
+					</div>						
+				</div>
+			</div><!-- //.popupContent -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 질문과답변
+	</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>PLS</span><em>질문과답변</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">질문과답변</h3>
+    		<div class="wrap_scroll_x">
+				<div class="wraptable">
+					<table class="table tbTypeList  tbFixed mt5">
+						<colgroup>
+							<col width="200">
+							<col width="*">
+						</colgroup>
+						<caption></caption>
+						<tbody>
+							<tr>
+								<th>문의유형</th>
+								<td>
+									<select class="select w30 alignC">
+										<option value="" selected>문의유형 선택</option>
+										<option value="">1</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>제목</th>
+								<td>
+									<input type="text" class="inputTxt w100" placeholder="제목을 적어주세요.">
+								</td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td><textarea class="textarea" placeholder="문의유형을 선택하시고 궁금하신 내용을 적어주세요"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="formCheckBox mt10">
+						<input type="checkbox" id="hold1" class="inputChek"><label for="hold1">비밀글로 문의하기</label>
+					</div>
+				</div>
+				<div class="btnAreaC mt70">
+					<button type="button" class="btn btnType02">취소</button>
+					<button type="button" class="btn btnType01">저장</button>
+				</div>
+			</div>	
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+
+<SCript>
+
+	$('input[type=file]').on('change',function(){
+			if(window.FileReader){
+			  var filename = $(this)[0].files[0].name;
+			} else {
+			  var filename = $(this).val().split('/').pop().split('\\').pop();
+			}
+			$(this).siblings('label').text(filename);
+			if ($(this).val().length > 0 ) {
+				console.log('11');
+				$(this).closest('.filebox').append('<button class="file_del" type="button"><sapn class="blind">삭제</span></button>');
+				$(this).closest('.filebox').addClass('file_text');
+			}else{
+				$(this).closest('.filebox').removeClass('file_text');
+			}
+		});
+
+	  $(document).on('click', '.file_del', function(e) {
+	  		$(this).siblings('input[type=file]').val('');
+			$(this).siblings('label').text('');
+			$(this).remove()
+	  })
+
+</SCript>
+
+</body>
+</html> 

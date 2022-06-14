@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING |A/S관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>PLS</span><em>A/S관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>	
+    	<div class="content">
+    		<h3 class="titH3">A/S관리</h3>
+			
+			<div class="btnAreaR">
+				<button type="button" class="btn btnTable point" onclick="popup.open('#pop1', this)">장애등록</button>
+			</div>
+				
+			
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner">
+			<div class="popupHeader">
+				<div class="popTitle">
+					장애 등록
+				</div>
+				<div class="popClose">
+					<button class="btn_pop_close" onclick="popup.close('#pop1', this)"></button>
+				</div>
+			</div>
+			<div class="popupContent">
+				<table class="table tbTypeList">
+					<colgroup>
+						<col width="*">
+						<col width="*">
+						<col width="*">
+						<col width="*">
+						<col width="*">
+						<col width="*">
+					</colgroup>
+					<caption></caption>
+					<tbody>
+						<tr>
+							<th>지역</th>
+							<td>
+								<select class="select w100">
+									<option value="" selected>전체</option>
+									<option value="">1</option>
+									<option value="">2</option>	
+								</select>
+							</td>
+							<th>품목</th>
+							<td>
+								<select class="select w100">
+									<option value="" selected>전체</option>
+									<option value="">1</option>
+									<option value="">2</option>	
+								</select>
+							</td>
+							<th>농가</th>
+							<td>
+								<select class="select w100">
+									<option value="" selected>농가선택</option>
+									<option value="">1</option>
+									<option value="">2</option>	
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="warp_formRadio">
+					<strong class="mr5">장애 유형:</strong>
+					<span class="formRadio"><input type="radio" id="tbRadio01" name="tbRadio00" checked><label for="tbRadio01">장비</label></span>
+					<span class="formRadio"><input type="radio" id="tbRadio02" name="tbRadio00"><label for="tbRadio02">시스템</label></span>
+					<span class="formRadio"><input type="radio" id="tbRadio03" name="tbRadio00"><label for="tbRadio03">기타</label></span>
+					<span class="filebox">
+						<input type="file" id="ex_file">
+						<label for="ex_file">
+							<span class="cliptext"></span>
+							<span class="file_del"></span>
+						</label>
+					</span>	
+				</div>
+											
+				<textarea class="textarea"></textarea>
+			</div>
+
+			<div class="popupFooter">
+				<div class="popup_buttons alignC">
+					<button type="button" class="btnPop_cancel" onclick="popup.close('#pop1')">취소</button>
+					<button type="button" class="btnPop_primary">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	
+});
+
+$('input[type=file]').on('change',function(){
+			if(window.FileReader){
+			  var filename = $(this)[0].files[0].name;
+			} else {
+			  var filename = $(this).val().split('/').pop().split('\\').pop();
+			}
+			$(this).siblings('label').text(filename);
+			if ($(this).val().length > 0 ) {
+				console.log('11');
+				$(this).closest('.filebox').append('<button class="file_del" type="button"><sapn class="blind">삭제</span></button>');
+				$(this).closest('.filebox').addClass('file_text');
+			}else{
+				$(this).closest('.filebox').removeClass('file_text');
+			}
+		});
+
+	  $(document).on('click', '.file_del', function(e) {
+	  		$(this).siblings('input[type=file]').val('');
+			$(this).siblings('label').text('');
+			$(this).remove()
+	  })
+
+
+
+</script>
+
+
+
+</body>
+</html> 

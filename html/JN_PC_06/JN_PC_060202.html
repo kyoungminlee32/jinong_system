@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 컨설팅관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>컨설팅관리</span><em>컨설팅관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">컨설팅관리</h3>
+			<!-- 탭 영역 시작 -->
+			<div class="jsTabWrap">
+				<ul class="jstabMenu tabType02">
+					<li><button type="button" data-tab-link="tab01">캘린더</button></li>
+					<li><button type="button" data-tab-link="tab02" class="active">목록</button></li>
+				</ul>
+				<!-- 탭 목록 시작 -->
+					<div class="tabContent active" data-tab-cont="tab02">
+						<div class="coninputbefore mt30">
+							<h3 class="titH3">김지농 농가 정식 18주차 컨설팅 정보</h3>
+							<button type="button" class="btn btn-primary point">대조군 설정</button>
+						</div>
+						<div class="jsTabWrap mt15">
+							<ul class="jstabMenu tabType01">
+								<li><button type="button" data-tab-link="tab01">컨설팅 입력</button></li>
+								<li><button type="button" data-tab-link="tab02" class="active">영농정보</button></li>
+							</ul>
+							<!-- 컨설팅 입력 -->
+							<div class="tabContent" data-tab-cont="tab01">컨설팅 입력</div>
+							<!-- //컨설팅 입력 -->
+						
+							<!-- 영농정보 -->
+							<div class="tabContent active" data-tab-cont="tab02">
+								<div class="wrap_farm_info_area">
+									<div class="wrapTitle_2">
+										<h3 class="titH3">수확량</h3>
+										<div class="farming_search">
+											<input type="date" name="" class="inputDate" value="2022-01-17"> <span class="txtRange">~</span> <input type="date" name="" class="inputDate mr10" value="2022-01-17">
+											<input type="text" class="inputTxt alignR mr10" value="Kg" name="">
+											<button type="button" class="btn btn-primary point"><span class="icon_add2">수확량 추가</span></button>
+										</div>
+									</div>
+									<div class="wrap_farming_list">
+										<ul class="farming_list bg_01">
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07 ~ <br>2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">수확량 : 200kg</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="wrap_farm_info_area">
+									<div class="wrapTitle_2">
+										<h3 class="titH3">농작업 정보</h3>
+										<div class="farming_search">
+											<input type="date" name="" class="inputDate mr10" value="2022-01-17">
+											<select class="select mr10">
+												<option selected>선택</option>
+												<option>option 1</option>
+											</select>
+											<button type="button" class="btn btn-primary point"><span class="icon_add2">농작업정보 추가</span></button>
+										</div>
+									</div>
+									<div class="wrap_farming_list">
+										<ul class="farming_list bg_02">
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">벌넣기</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link"></a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">수확</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link">+img : 1개</a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+								<div class="wrap_farm_info_area">
+									<div class="wrapTitle_2">
+										<h3 class="titH3">병충해 정보</h3>
+										<div class="farming_search">
+											<input type="date" name="" class="inputDate mr10" value="2022-01-17">
+											<select class="select mr10">
+												<option selected>병해충명 선택</option>
+												<option>option 1</option>
+											</select>
+											<select class="select mr10">
+												<option selected>발생정도 선택</option>
+												<option>option 1</option>
+											</select>
+											<button type="button" class="btn btn-primary point"><span class="icon_add2">방제정보 추가</span></button>
+										</div>
+									</div>
+									<div class="wrap_farming_list">
+										<ul class="farming_list bg_03">
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">잿빛곰파이병 주의(1단계)</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link"></a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">점박이응애 주의(1단계)</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link">+img : 1개</a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+								<div class="wrap_farm_info_area">
+									<div class="wrapTitle_2">
+										<h3 class="titH3">방제 정보</h3>
+										<div class="farming_search">
+											<input type="date" name="" class="inputDate mr10" value="2022-01-17">
+											<select class="select mr10">
+												<option selected>병해충명 선택</option>
+												<option>option 1</option>
+											</select>
+											<select class="select mr10">
+												<option selected>약제명 선택</option>
+												<option>option 1</option>
+											</select>
+											<button type="button" class="btn btn-primary point"><span class="icon_add2">방제정보 추가</span></button>
+										</div>
+									</div>
+									<div class="wrap_farming_list">
+										<ul class="farming_list bg_04">
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">잿빛곰파이병 더블 플레이 액상 수화제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link"></a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">점박이응애 밀베토크 유제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link">+img : 1개</a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">잿빛곰파이병 더블 플레이 액상 수화제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link"></a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">점박이응애 밀베토크 유제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link">+img : 1개</a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">잿빛곰파이병 더블 플레이 액상 수화제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link"></a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">점박이응애 밀베토크 유제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link">+img : 1개</a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">잿빛곰파이병 더블 플레이 액상 수화제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link"></a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">점박이응애 밀베토크 유제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link">+img : 1개</a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">잿빛곰파이병 더블 플레이 액상 수화제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link"></a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+											<li>
+												<div class="wrap_date">
+													<span class="date">2022-01-07</span>
+													<button type="button" class="farming_del"><span class="blind">삭제</span></button>
+												</div>
+												<div class="wrap_farming_cont">
+													<div class="farming_cont">점박이응애 밀베토크 유제</div>
+													<div class="farming_pic_add"><a href="#none" class="picfile_link">+img : 1개</a><button type="button" class="picfile_add"><span class="blind">사진추가</span></button></div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="wrapTitle mt30">
+									<h3 class="titH3">생육정보</h3>
+									<button type="button" class="btn btn-primary"><span class="icon_add">생육정보 추가</span></button>
+								</div>
+								<div class="wrap_scroll_x mt5">
+									<table class="table tbTypeList tdCenter tbFixed">
+										<colgroup>
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+											<col width="110">
+										</colgroup>
+										<caption></caption>
+										<thead>
+											<tr>
+												<th>샘플번호</th>
+												<th>초장(cm)</th>
+												<th>엽장(cm)</th>
+												<th>엽폭(cm)</th>
+												<th>엽병장(cm)</th>
+												<th>엽수(개)</th>
+												<th>관부직경(mm)</th>
+												<th>화방꽃수(개)</th>
+												<th>착과수(개)</th>
+												<th>최종화방번호</th>
+												<th>삭제</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="text" class="inputTxt w100 alignR" value="1001" ></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="10"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="20"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><button type="button" class="btn btn-primary"><span class="icon_del">삭제</span></button></td>
+											</tr>
+											<tr>
+												<td><input type="text" class="inputTxt w100 alignR" value="1001" ></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="10"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="20"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><button type="button" class="btn btn-primary"><span class="icon_del">삭제</span></button></td>
+											</tr>
+											<tr>
+												<td><input type="text" class="inputTxt w100 alignR" value="1001" ></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="10"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="20"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><button type="button" class="btn btn-primary"><span class="icon_del">삭제</span></button></td>
+											</tr>
+											<tr>
+												<td><input type="text" class="inputTxt w100 alignR" value="1001" ></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="10"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="20"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><button type="button" class="btn btn-primary"><span class="icon_del">삭제</span></button></td>
+											</tr>
+											<tr>
+												<td><input type="text" class="inputTxt w100 alignR" value="1001" ></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="50"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="10"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="20"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><input type="text" class="inputTxt w100 alignR" value="100"></td>
+												<td><button type="button" class="btn btn-primary"><span class="icon_del">삭제</span></button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="btnAreaC">
+									<button type="button" class="btn btnType01">컨설팅 완료</button>
+								</div>
+
+							</div>
+							<!-- //영농정보 -->	
+						</div>
+					</div>
+				<!-- //탭 목록 끝 -->
+				<div class="tabContent" data-tab-cont="tab01">캘린더</div>
+			</div>
+			<!-- //탭 영역 끝 -->
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	
+});
+
+$('input[type=file]').on('change',function(){
+			if(window.FileReader){
+			  var filename = $(this)[0].files[0].name;
+			} else {
+			  var filename = $(this).val().split('/').pop().split('\\').pop();
+			}
+			$(this).siblings('label').text(filename);
+			if ($(this).val().length > 0 ) {
+				console.log('11');
+				$(this).closest('.filebox').append('<button class="file_del" type="button"><sapn class="blind">삭제</span></button>');
+				$(this).closest('.filebox').addClass('file_text');
+			}else{
+				$(this).closest('.filebox').removeClass('file_text');
+			}
+		});
+
+	  $(document).on('click', '.file_del', function(e) {
+	  		$(this).siblings('input[type=file]').val('');
+			$(this).siblings('label').text('');
+			$(this).remove()
+	  })
+</script>
+
+</body>
+</html> 

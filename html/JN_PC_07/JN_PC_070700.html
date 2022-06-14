@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING |방제약제Profile관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING"> 
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>PLS</span><em>방제약제Profile관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>	
+    	<div class="content">
+    		<h3 class="titH3">방제약제Profile관리</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+    			<div class="tbSearch">
+	    			<table class="table">
+						<caption>데이터 조회 조건</caption>
+						<colgroup>
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+							<col width="100">
+							<col width="500">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>품목명</th>
+								<td>
+									<div>
+										<input type="text" class="inputTxt w80">
+									</div>
+								</td>
+								<th>작물</th>
+								<td>
+									<select class="select w80">
+										<option value="" selected>딸기</option>
+										<option value="" >1</option>
+										<option value="" >2</option>
+									</select>
+								</td>
+								<th>용도</th>
+								<td colspan="2">
+									<span class="formRadio"><input type="radio" id="tbRadio01" name="tbRadio00"><label for="tbRadio01">병</label></span>
+									<span class="formRadio ml40"><input type="radio" id="tbRadio02" name="tbRadio00" checked><label for="tbRadio02">해충</label></span>
+								</td>	
+							</tr>
+							<tr>
+								<th>주성분</th>
+								<td>
+									<div>
+										<input type="text" class="inputTxt w80">
+									</div>
+								</td>
+								<th>제품명</th>
+								<td>
+									<div>
+										<input type="text" class="inputTxt w80">
+									</div>
+								</td>
+								<th>제조사</th>
+								<td colspan="2">
+									<div>
+										<input type="text" class="inputTxt w80">
+									</div>
+								</td>	
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+				<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+			</div>
+			<div class="excel_btn_area">
+				<button class="excelBtn-download"><em>엑셀</em> <span>다운로드</span></button>
+				<button class="excelBtn-download2"><em>엑셀</em> <span>업로드</span></button>
+			</div>
+			<table class="data-table" id="myTable" data-fixed-header="0">
+				<caption></caption>
+				<thead>
+					<tr>
+						<th>품목명</th>
+						<th>함량</th>
+						<th>상표명</th>
+						<th>회사명</th>
+						<th>용도</th>
+						<th>작용기작</th>
+						<th>작물</th>	
+						<th>작용병해충</th>	
+						<th>PLS여부</th>	
+						<th>사용여부</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>이미다클로프리드 미탁제</td>
+						<td>imidacloprid-20</td>
+						<td>크로스</td>
+						<td>(주)케이씨생명과학</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>꼬마배나무이</td>
+						<td>N</td>
+						<td>미사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+					<tr>
+						<td>카벤다짐.테부코나졸 액상수화제</td>
+						<td>Carbendazim-12.5 Tebuconazole-12.5</td>
+						<td>탄탄</td>
+						<td>(유)로탐라이프사이언스코리아</td>
+						<td>살균제</td>
+						<td>나1+사1</td>
+						<td>포도</td>
+						<td>검은별무늬병</td>
+						<td>Y</td>
+						<td>사용</td>
+					</tr>
+				</tbody>
+			</table>	    		
+    	</div><!-- //.content -->
+
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	
+});
+
+
+
+</script>
+
+
+
+</body>
+</html> 

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | PLS기준정보설정</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>PLS</span><em>PLS기준정보설정</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">PLS기준정보설정</h3>
+    		<div class="wrap_threshold">
+    			<div class="threshold_list_area">
+    				<h4 class="titH4">PLS코드관리</h4>
+    				<dl class="threshold_list">
+    					<dt class="mb5">공통코드</dt>
+    					<dd class="treeSearchArea">
+							<input type="text" class="inputTxt">
+							<button type="button" class="btn iconButton-search"><span class="blind">검색</span></button>
+						</dd>
+    				</dl>
+    			</div>
+    			<div class="threshold_content">
+    				<div class="wrap_scroll_x">
+						<div class="wrapTitleR">
+							<h4 class="titH4">PLS기준상세정보</h4>
+							<div class="innerwrapTitleR">
+								<select class="select mr5">
+									<option value="">소분류코드</option>
+									<option value="">중분류코드</option>
+									<option value="">대분류코드</option>
+								</select>
+								<button type="button" class="btn btn-primary"><span class="icon_add">코드추가</span></button>		
+							</div>
+						</div>
+						<div class="wraptable">
+							<table class="table tbTypeList  tbFixed mt5">
+								<colgroup>
+									<col width="200">
+									<col width="*">
+									<col width="200">
+									<col width="*">	
+								</colgroup>
+								<caption></caption>
+								<tbody>
+									<tr>
+										<th>대분류코드</th>
+										<td><input type="text" class="inputTxt w100"></td>
+										<th>대분류코드명</th>
+										<td>
+											<select class="select w100">
+												<option value="" selected>김지농 농가 구역 01</option>
+												<option value="">김지농 농가 구역 02</option>
+												<option value="">김지농 농가 구역 03</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>중분류코드</th>
+										<td><input type="text" class="inputTxt w100"></td>
+										<th>중분류코드명</th>
+										<td>
+											<select class="select w100">
+												<option value="" selected>김지농 농가 구역 01</option>
+												<option value="">김지농 농가 구역 02</option>
+												<option value="">김지농 농가 구역 03</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>소분류코드</th>
+										<td><input type="text" class="inputTxt w100"></td>
+										<th>소분류코드명</th>
+										<td>
+											<select class="select w100">
+												<option value="" selected>김지농 농가 구역 01</option>
+												<option value="">김지농 농가 구역 02</option>
+												<option value="">김지농 농가 구역 03</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>코드설명</th>
+										<td colspan="3"><input type="text" class="inputTxt w100"></td>
+									</tr>
+									<tr>
+										<th>매핑분류</th>
+										<td>
+											<select class="select w100">
+												<option value="" selected></option>
+												<option value=""></option>
+												<option value=""></option>
+											</select>
+										</td>
+										<th>매핑코드</th>
+										<td>
+											<select class="select w100">
+												<option value="" selected></option>
+												<option value=""></option>
+												<option value=""></option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>정렬순서</th>
+										<td><input type="text" class="inputTxt w100"></td>
+										<th>사용여부</th>
+										<td>
+											<span class="formRadio"><input type="radio" id="tbRadio05" name="tbRadio00"><label for="tbRadio05">사용</label></span>
+											<span class="formRadio"><input type="radio" id="tbRadio06" name="tbRadio00" checked><label for="tbRadio06">미사용</label></span>
+										</td>
+									</tr>
+									<tr>
+										<th>등록자</th>
+										<td><input type="text" class="inputTxt w100"></td>
+										<th>등록일시</th>
+										<td>
+											<input type="text" class="inputTxt w100">
+										</td>
+									</tr>
+									<tr>
+										<th>수정자</th>
+										<td><input type="text" class="inputTxt w100"></td>
+										<th>수정일시</th>
+										<td>
+											<input type="text" class="inputTxt w100">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btnAreaC mt70">
+							<button type="button" class="btn btnType01">수정</button>
+						</div>
+					</div>
+    			</div><!-- //.threshold_content -->
+    		</div><!-- //.wrap_threshold -->
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html> 

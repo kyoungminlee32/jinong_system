@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | 농장관리</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+			<div class="location"><span>HOME</span><span>농장관리</span><em>농장관리</em></div>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>님</div>
+			<button type="button" class="userAdmin">시스템관리자</button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="subNavi">
+    		<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+    	</div>
+    	<div class="content">
+    		<h3 class="titH3">농장관리</h3>
+    		<div class="wrap_threshold">
+    			<div class="threshold_list_area">
+    				<h4 class="titH4">농장관리</h4>
+    				<dl class="threshold_list">
+    					<dt class="mb5">지농관제시스템</dt>
+    					<dd class="treeSearchArea">
+							<input type="text" class="inputTxt">
+							<button type="button" class="btn iconButton-search"><span class="blind">검색</span></button>
+						</dd>
+    				</dl>
+    			</div>
+    			<div class="threshold_content">
+    				<div class="wrap_scroll_x">
+						<div class="wraptable">
+							<h4 class="titH4">농장정보</h4>
+							<table class="table tbTypeList tdCenter mt5">
+								<colgroup>
+									<col width="150">
+									<col width="*">
+									<col width="150">
+									<col width="150">
+									<col width="200">	
+								</colgroup>
+								<caption></caption>
+								<thead>
+									<th>농가명</th>
+									<th>주소</th>
+									<th>전화번호</th>
+									<th>휴대전화</th>
+									<th>이메일</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="text" class="inputTxt alignC" value="김지농"></td>
+										<td>
+											<input type="text" class="inputTxt w80 alignC" value="충남 논산시 강경읍 대흥로5번길 20">
+											<button class="btn btnTable">주소검색</button>
+										</td>
+										<td>
+											<input type="text" class="inputTxt w80 alignC" value="042-1234-5678">
+										</td>
+										<td>
+											<input type="text" class="inputTxt w80 alignC" value="010-1234-5678">
+										</td>
+										<td>
+											<input type="text" class="inputTxt w80 alignC" value="kim123@daum.net">
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+						<div class="wrapTitleR">
+							<h4 class="titH4">농가정보</h4>
+							<div class="innerwrapTitleR">
+								<button type="button" class="btn btn-primary"><span class="icon_add">농장추가</span></button>		
+							</div>
+						</div>
+						<table class="table tbTypeList tdCenter mt5">
+							<colgroup>
+								<col width="150">
+								<col width="100">
+								<col width="100">
+								<col width="100">								
+								<col width="*">	
+								<col width="150">
+								<col width="100">	
+							</colgroup>
+							<caption></caption>
+							<thead>
+								<th>농장명</th>
+								<th>재배유형</th>
+								<th>대표품목1</th>
+								<th>대표품목2</th>
+								<th>주소</th>
+								<th>전화번호</th>
+								<th>사용여부</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="text" class="inputTxt alignC" value="김지농_농가(jinong)"></td>
+									<td>
+										<select class="select">
+											<option value="">온실</option>
+											<option value="">노지</option>
+											
+										</select>
+									</td>
+									<td>
+										<select class="select">
+											<option value="">없음</option>
+											<option value="">없음</option>
+											<option value="">없음</option>
+										</select>
+									</td>
+									<td>
+										<select class="select">
+											<option value="">없음</option>
+											<option value="">없음</option>
+											<option value="">없음</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" class="inputTxt w80 alignC" value="충남 논산시 강경읍 대흥로5번길 20">
+										<button class="btn btnTable">주소검색</button>
+									</td>
+									<td>
+										<input type="text" class="inputTxt w80 alignC" value="042-1234-5678">
+									</td>
+									<td>
+										<select class="select">
+											<option value="">사용</option>
+											<option value="">미사용</option>
+										</select>
+									</td>
+								</tr>	
+							</tbody>
+						</table>
+						<div class="wrapTitleR">
+							<h4 class="titH4">김지농_농가의 온실 정보</h4>
+							<div class="innerwrapTitleR">
+								<button type="button" class="btn btn-primary"><span class="icon_add">온실추가</span></button>		
+							</div>
+						</div>
+						<table class="table tbTypeList tdCenter mt5">
+							<colgroup>
+								<col width="150">
+								<col width="200">
+								<col width="*">
+								<col width="100">	
+							</colgroup>
+							<caption></caption>
+							<thead>
+								<th>온실명</th>
+								<th>온실면적</th>
+								<th>설명</th>
+								<th>사용여부</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="text" class="inputTxt alignC" value="김지농_농가 온실1"></td>
+									<td><input type="text" class="inputTxt alignC " value=""></td>
+									<td><input type="text" class="inputTxt alignC w100" value=""></td>
+									<td>
+										<button type="button" class="btn btn-primary"><span class="icon_del">삭제</span></button>
+									</td>
+								</tr>	
+							</tbody>
+						</table>
+						<div class="wrapTitleR">
+							<h4 class="titH4">김지농_농가의 구역 정보</h4>
+							<div class="innerwrapTitleR">
+								<button type="button" class="btn btn-primary"><span class="icon_add">구역추가</span></button>		
+							</div>
+						</div>
+						<table class="table tbTypeList tdCenter mt5">
+							<colgroup>
+								<col width="150">
+								<col width="*">
+								<col width="150">								
+								<col width="100">	
+							</colgroup>
+							<caption></caption>
+							<thead>
+								<th>구역명</th>
+								<th>설명</th>
+								<th>작기관리</th>
+								<th>사용여부</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="text" class="inputTxt alignC" value="김지농_농가 "></td>
+									<td><input type="text" class="inputTxt alignC w100" value=""></td>
+									<td><button type="button" class="btn btnTable">작가관리</button></td>
+									<td>
+										<select class="select">
+											<option value="">사용</option>
+											<option value="">미사용</option>
+										</select>
+									</td>
+								</tr>	
+							</tbody>
+						</table>
+						<div class="btnAreaC mt70">
+							<button type="button" class="btn btnType01">저장</button>
+						</div>
+					</div>
+    			</div><!-- //.threshold_content -->
+    		</div><!-- //.wrap_threshold -->
+    	</div><!-- //.content -->
+    </div><!-- //.container -->
+</div><!-- //.wrap -->
+
+</body>
+</html> 
