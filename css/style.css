@@ -494,6 +494,7 @@ input.inputDate::-webkit-calendar-picker-indicator {margin: 0}
 .popupWrap .wrapProgress {margin-top:0;}
 .popupWrap .wrapProgress > div {width:100%;}
 .popupWrap .alermWrap {margin-top:0;width:100%;}
+.popupWrap .alermWrap .listType02 {height:auto;}
 
 .popupWrap .graphWrap{display:flex;align-items: center;}
 .popupWrap .graphWrap .tabTitle {margin:2rem 0;text-align:center;}
