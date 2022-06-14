@@ -349,7 +349,7 @@ input.inputDate::-webkit-calendar-picker-indicator {margin: 0}
 
 .popupWrap .popupContainer .popupContent{min-height:150px;padding:15px 20px 16px 20px;overflow-y:scroll;max-height:calc(100% - 130px);}
 
-.popupWrap .popupContainer  .popupInner.popFoot_none .popupContent{max-height:calc(100% - 52px);}
+.popupWrap .popupContainer  .popupInner.popFoot_none .popupContent{max-height:calc(100% - 50px);}
 .popupHeader{border-bottom:solid 1px #e8e9f0;display:flex;justify-content:space-between;padding:12px 20px 8px  20px;line-height:25px;height:50px;align-items:center;}
 .popupHeader .popTitle{font-size:20px;}
 .popClose{width:16px;height:16px}
@@ -494,7 +494,7 @@ input.inputDate::-webkit-calendar-picker-indicator {margin: 0}
 .popupWrap .wrapProgress {margin-top:0;}
 .popupWrap .wrapProgress > div {width:100%;}
 .popupWrap .alermWrap {margin-top:0;width:100%;}
-.popupWrap .alermWrap .listType02 {height:auto;}
+.popupWrap .alermWrap .listType02 {height:18rem;}
 
 .popupWrap .graphWrap{display:flex;align-items: center;}
 .popupWrap .graphWrap .tabTitle {margin:2rem 0;text-align:center;}
