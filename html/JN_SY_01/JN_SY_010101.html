@@ -280,10 +280,10 @@
 					<div class="performanceWrap">
 						<div class="jsTabWrap">
 							<ul class="jstabMenu tabType04">
-								<li><button type="button" data-tab-link="tab01" class="active"><span class="icon_report">목료중량 달성율</span></button></li>
-								<li><button type="button" data-tab-link="tab02"><span class="icon_map">생산계획 달성율</span></button></li>
-								<li><button type="button" data-tab-link="tab03"><span class="icon_compa">메출추세</span></button></li>
-								<li><button type="button" data-tab-link="tab04"><span class="icon_compa">제조원가 추세</span></button></li>
+								<li class="list_01"><button type="button" data-tab-link="tab01" class="active"><span class="icon_report">목료중량 달성율</span></button></li>
+								<li class="list_02"><button type="button" data-tab-link="tab02"><span class="icon_map">생산계획 달성율</span></button></li>
+								<li class="list_03"><button type="button" data-tab-link="tab03"><span class="icon_compa">메출추세</span></button></li>
+								<li class="list_04"><button type="button" data-tab-link="tab04"><span class="icon_compa">제조원가 추세</span></button></li>
 							</ul>
 							
 							<!-- 목료중량 달성율 -->
@@ -1173,6 +1173,106 @@
 								</script>
 							</dd>
 						</dl>
+						<!-- <dl class="graphWrap">
+							<dt class="tabTitle"><button type="button"><span>이자벨</span></button></dt>
+							<dd class="graph_box">
+								<div class="chart">
+									<canvas id="PopChart04" style="width:75rem !important;height:20rem">목표중량 달성율 차트</canvas>
+								</div>
+								<script>
+									var ctx = document.getElementById("PopChart04");
+									Chart.pluginService.register({
+										afterDraw: function(chart) {
+											if (typeof chart.config.options.lineAt != 'undefined') {
+												var lineAt = chart.config.options.lineAt;
+												var ctxPlugin = chart.chart.ctx;
+												var xAxe = chart.scales[chart.config.options.scales.xAxes[0].id];
+												var yAxe = chart.scales[chart.config.options.scales.yAxes[0].id];
+												
+												// I'm not good at maths
+												// So I couldn't find a way to make it work ...
+												// ... without having the `min` property set to 0
+												if(yAxe.min != 0) return;
+												
+												ctxPlugin.strokeStyle = "#f00";//평균색상
+												ctxPlugin.beginPath();
+												lineAt = (lineAt - yAxe.min) * (100 / yAxe.max);
+												lineAt = (100 - lineAt) / 100 * (yAxe.height) + yAxe.top;
+												ctxPlugin.moveTo(xAxe.left, lineAt);
+												ctxPlugin.lineTo(xAxe.right, lineAt);
+												ctxPlugin.stroke();
+											}
+										}
+									});
+
+									var myChart = new Chart(ctx, {
+										type: 'bar',
+										data: {
+											labels: [
+												'20년11월',
+												'20년12월',
+												'21년01월',
+												'21년02월',
+												'21년03월',
+												'21년04월',
+												'21년05월',
+												'21년06월',
+												'21년07월',
+												'21년08월',
+												'21년09월',
+												'21년10월',
+											],
+											datasets: [{
+												barPercentage: 0.5,
+												barThickness:15,
+												maxBarThickness:30,
+												minBarLength:2,
+												data: [88, 85, 48, 65, 57, 78, 52, 60, 81, 88, 86, 94,],
+												backgroundColor: [
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												'rgba(153, 102, 255, 0.2)',
+												'rgba(201, 203, 207, 0.2)',
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(255, 205, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												],
+											}]
+										},
+										options: {
+											lineAt: 60,//평균값
+											legend: {
+												display: false
+											},
+											tooltips: {
+												enabled: false
+											},
+											responsive: false,
+											scales: {
+												xAxes: [{
+													gridLines: {
+														display:false
+													}  
+												}],
+												yAxes: [{
+													ticks: {
+														min: 0,
+														max: 100,
+														stepSize : 10,
+														fontSize : 14,
+													},
+												}]
+											}
+										}
+									});
+								</script>
+							</dd>
+						</dl> -->
 					</div>						
 				</div>
 			</div><!-- //.popupContent -->
